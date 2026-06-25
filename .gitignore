@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+.env*.local
+.vercel
+lib/wasm-sim
+rust-sim/target
+*.tsbuildinfo
+next-env.d.ts
+__pycache__
