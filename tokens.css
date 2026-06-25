@@ -1,0 +1,45 @@
+/* Hallmark · tokens · theme: court-night (custom)
+ * paper oklch(16% 0.02 255) dark · accent oklch(70% 0.19 47) warm-orange · display condensed-sans
+ */
+:root {
+  /* paper / ink */
+  --color-paper: oklch(15% 0.02 255);
+  --color-paper-2: oklch(19% 0.024 255);
+  --color-paper-3: oklch(24% 0.03 255);
+  --color-line: oklch(32% 0.03 255);
+  --color-ink: oklch(97% 0.008 255);
+  --color-muted: oklch(70% 0.02 255);
+  --color-faint: oklch(55% 0.02 255);
+
+  /* accents */
+  --color-accent: oklch(70% 0.19 47);     /* basketball orange */
+  --color-accent-ink: oklch(20% 0.06 47); /* text on accent */
+  --color-blue: oklch(72% 0.15 240);      /* away / secondary data */
+  --color-win: oklch(80% 0.17 150);
+  --color-loss: oklch(68% 0.2 25);
+  --color-focus: oklch(80% 0.13 240);
+
+  /* type */
+  --font-display: "Oswald", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --text-hero: clamp(2.6rem, 7vw, 5.5rem);
+  --text-display: clamp(2rem, 4.5vw, 3.2rem);
+  --text-xl: 1.5rem;
+  --text-lg: 1.2rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* 4pt spacing */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms; --dur-mid: 220ms;
+
+  --radius: 12px; --radius-sm: 8px; --radius-pill: 999px;
+  --rule: 1px solid var(--color-line);
+}
