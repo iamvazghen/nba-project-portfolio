@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-type Team = { tricode: string; name: string; conf: string; wins: number; losses: number; base: number; player: number; rating: number; ctxDelta: number; ctxNote: string; upside: number };
+type Team = { tricode: string; name: string; conf: string; wins: number; losses: number; base: number; market: number; rating: number; ctxDelta: number; ctxNote: string; upside: number };
 
 function PowerBoard({ teams }: { teams: Team[] }) {
   if (!teams.length) return <p className="muted"><span className="spin" /> loading the model…</p>;
@@ -14,7 +14,7 @@ function PowerBoard({ teams }: { teams: Team[] }) {
         <div className="board-row" key={t.tricode}>
           <span className="br-rank tnum">{i + 1}</span>
           <span className="br-team">{t.name}</span>
-          <span className="br-split tnum">SRS {t.base > 0 ? "+" : ""}{t.base} · roster {t.player > 0 ? "+" : ""}{t.player}</span>
+          <span className="br-split tnum">SRS {t.base > 0 ? "+" : ""}{t.base} · market {t.market > 0 ? "+" : ""}{t.market}</span>
           <span className="br-bar"><span style={{ width: `${Math.max(3, ((t.rating - min) / span) * 100)}%` }} /></span>
           <span className="br-val tnum">{t.rating > 0 ? "+" : ""}{t.rating}</span>
         </div>
@@ -90,8 +90,9 @@ export default function Landing() {
           <div className="lp-section-h"><span className="eyebrow">Projected power index · all 30</span><h2>Last season + current roster, blended</h2></div>
           <PowerBoard teams={teams} />
           <p className="muted" style={{ marginTop: "var(--space-4)", fontSize: "var(--text-sm)", maxWidth: "72ch" }}>
-            <b>Rating</b> = 40% last season (strength-of-schedule + recency-weighted margin) + 60% current roster
-            (each rotation player&apos;s news-grounded impact × minutes, league-centered). Edit <span className="tag">data/team-rosters.json</span> to tune any team.
+            <b>Rating</b> = 35% last season (strength-of-schedule + recency-weighted margin) + 65% the live betting
+            market&apos;s title odds, mapped to a net-rating scale. The market is the objective consensus — it already
+            prices injuries, trades, cap space and the aprons — so no hand-tuned guesses drive the ranking.
           </p>
         </section>
 
@@ -115,10 +116,10 @@ export default function Landing() {
           <div className="lp-section-h"><span className="eyebrow">Not just last year&apos;s record</span><h2>A model that knows what changed</h2></div>
           <div className="model-grid">
             <ol className="process">
-              <li><b>SRS base.</b> Strength-of-schedule-adjusted margin, so padding wins over weak teams doesn&apos;t fool it.</li>
-              <li><b>Recency form.</b> Recent games count more (45-day half-life) — how a team is playing <i>now</i>.</li>
-              <li><b>Roster context.</b> A live, news-grounded layer for this season&apos;s reality: trades, returning stars, rookies, tanking.</li>
-              <li><b>Upside variance.</b> Young, high-ceiling rosters get wider outcomes — a real shot at a leap, and floor risk.</li>
+              <li><b>SRS base.</b> Strength-of-schedule-adjusted margin from last season&apos;s real results — recency-weighted.</li>
+              <li><b>Market anchor.</b> The live title-odds market, mapped to a net-rating scale. The objective consensus that already prices injuries (Haliburton, Tatum), trades, and the aprons.</li>
+              <li><b>Future variability.</b> Cap space, 1st/2nd-apron status and youth set each team&apos;s in-season variance — flexible or young teams swing wider (deadline upside, or a leap).</li>
+              <li><b>Matchup layer.</b> Per-game, structural edges (star power, depth, experience) adjust the specific pairing, reweighted for the playoffs.</li>
               <li><b>Rust engine.</b> One WebAssembly Monte Carlo runs games, best-of-7 series, and full seasons client-side.</li>
             </ol>
             <div className="model-example">
@@ -126,9 +127,9 @@ export default function Landing() {
               {example ? (
                 <>
                   <div className="me-team">{example.name}</div>
-                  <div className="me-row"><span>Last season (SRS) · 40%</span><b className="tnum">{example.base > 0 ? "+" : ""}{example.base}</b></div>
-                  <div className="me-row"><span>Current roster · 60%</span><b className="tnum" style={{ color: "var(--color-accent)" }}>{example.player > 0 ? "+" : ""}{example.player}</b></div>
-                  <div className="me-row me-total"><span>Blended rating</span><b className="tnum">{example.rating > 0 ? "+" : ""}{example.rating}</b></div>
+                  <div className="me-row"><span>Last season (SRS) · 35%</span><b className="tnum">{example.base > 0 ? "+" : ""}{example.base}</b></div>
+                  <div className="me-row"><span>Betting market · 65%</span><b className="tnum" style={{ color: "var(--color-accent)" }}>{example.market > 0 ? "+" : ""}{example.market}</b></div>
+                  <div className="me-row me-total"><span>Objective rating</span><b className="tnum">{example.rating > 0 ? "+" : ""}{example.rating}</b></div>
                   <p className="muted" style={{ fontSize: "var(--text-xs)", marginTop: "var(--space-3)" }}>{example.ctxNote} · upside ×{example.upside}</p>
                 </>
               ) : <p className="muted"><span className="spin" /> loading…</p>}

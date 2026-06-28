@@ -23,9 +23,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Refresh schedule snapshot (best effort)
-        run: node scripts/gen-data.mjs || echo "live schedule blocked from CI; keeping committed snapshot"
-      - name: Refresh rosters + context from live news
+      - name: Refresh schedule snapshot + betting market (best effort)
+        run: |
+          node scripts/gen-data.mjs || echo "live schedule blocked from CI; keeping committed snapshot"
+          node scripts/gen-market.mjs || echo "market refresh skipped"
+      - name: Refresh rosters + cap/injury context from live news
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |

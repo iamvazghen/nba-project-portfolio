@@ -28,24 +28,29 @@ npm run gen:rosters# regenerate per-player rotations via Gemini (news-grounded)
 
 `rust-sim/` compiles to `lib/wasm-sim/` and runs **in the browser**. It exposes `simulate_game`, `simulate_season`, `simulate_playoffs_full`, and `simulate_playoffs_from_seeds`. A game is `margin ~ Normal(homeRating − awayRating + 2.6, σ)`, where σ widens with each team's **variance multiplier**. Series are best-of-7 (2-2-1-1-1, higher seed hosts). There is no TypeScript or Python simulator — those exist nowhere in the sim path.
 
-## The smart rating model (what's fed to the engine)
+## The rating model — objective by design
 
-The engine is dumb on purpose; the intelligence is in the rating each team carries:
+The power rating uses **no hand-tuned guesses for the mean**. Each team's rating is a blend of two market-grade signals:
 
-1. **SRS base** (`lib/nba.ts`) — Simple Rating System: average margin **adjusted for strength of schedule**, so a padded record vs weak teams doesn't inflate a team.
-2. **Recency / form** — games are weighted by recency (45-day half-life), so how a team is *currently* playing counts more than October.
-3. **Roster-context layer** (`data/team-context.json`, Gemini-drafted, **editable**) — `delta` shifts the rating for this season's reality (offseason moves, stars returning, top rookies, tanking); `upside` widens variance. Example: Washington is `−12.3` on last year's scoreboard but `+7 delta / 1.5 upside` for adding #1 pick AJ Dybantsa and getting its benched starters back → an effective `−5.3` and real boom/bust range, instead of an automatic blowout loss.
-4. **Young-player upside** — the `upside` multiplier gives 1st/2nd-year-led rosters wider outcomes: a genuine (if unlikely) chance to play like contenders, plus floor risk.
+```
+rating = 0.35 × last-season SRS   +   0.65 × betting-market title odds
+```
 
-Regenerate the context table any time with `npm run gen:context` (Gemini), or hand-edit `data/team-context.json` — every number is visible and overridable.
+1. **SRS base** (`lib/nba.ts`) — Simple Rating System: average margin **adjusted for strength of schedule** and recency (45-day half-life). Real results, objective.
+2. **Market anchor** (`data/market-snapshot.json`, from Polymarket — keyless) — the live 2026-27 championship odds, log-transformed and mapped to a net-rating scale. The market is the **objective consensus**: it already prices injuries (Haliburton/Tatum returning), trades, cap space and the aprons, so the ranking matches reality (e.g. Spurs near the top, a post-injury Celtics mid-pack) without anyone tuning a number.
 
-5. **Player matchup layer** (`data/team-rosters.json` + `lib/players.ts` + `lib/matchup.ts`) — each team's news-grounded rotation (impact / minutes / experience per player) produces structural features: **star power, bench depth, experience**. For a specific matchup these become a pairwise **matchup adjustment** (reweighted for the playoffs — stars and poise matter more, depth less), applied on top of the team rating in Single Game and the best-of-7 **series** simulator. So "on paper X is the favorite, but Y has the edge" shows up where it actually matters.
+The **variance** each team carries is a separate, news-grounded layer:
 
-**Not yet modeled (next phase):** lineup-level coverages/on-off splits and rest/travel — these need a player-tracking data feed.
+3. **Future variability** (`data/team-context.json`, Gemini-grounded, editable) — `upside` is an in-season variance multiplier from **youth + cap/apron flexibility**: a young, cap-flexible team (e.g. SAS, ×1.6) can swing up via a leap or a deadline upgrade; a team frozen at the **second apron** (e.g. OKC, ×1.0) is locked in. Each team also carries a scouting `note` and `apron` status (injury/return, biggest contract, buyer/seller outlook).
+4. **Matchup layer** (`data/team-rosters.json` + `lib/players.ts` + `lib/matchup.ts`) — news-grounded rotations give **star power / bench depth / experience**; for a specific game these become a pairwise adjustment (reweighted for the playoffs) used in Single Game and the best-of-7 **series** simulator.
+
+Regenerate any layer: `npm run gen:market` · `gen:context` · `gen:rosters`. Everything is editable JSON.
+
+**Not yet modeled:** lineup-level coverages/on-off and rest/travel (need a player-tracking feed); sportsbook **season win totals** will sharpen the middle of the board once books post them (the market anchor is title-odds-only in the offseason).
 
 ## Automation
 
-`.github/workflows/refresh.yml` re-grounds the rosters + context from live NBA news daily (Gemini Google-Search grounding) and pushes the updated JSON. To enable: add a repo secret `GEMINI_API_KEY`, and connect the repo to the Vercel project (Vercel → Settings → Git) so each push auto-deploys. Run it on demand from the Actions tab.
+`.github/workflows/refresh.yml` re-grounds the market snapshot, rosters, and cap/injury context from live sources daily and pushes the updated JSON. To enable: add a repo secret `GEMINI_API_KEY`, and connect the repo to the Vercel project (Vercel → Settings → Git) so each push auto-deploys. Run it on demand from the Actions tab.
 
 ## Odds (multi-source, context-aware)
 

@@ -8,6 +8,7 @@
     "start": "node --no-experimental-webstorage ./node_modules/next/dist/bin/next start",
     "build:wasm": "wasm-pack build rust-sim --target web --out-dir ../lib/wasm-sim --out-name nba_sim",
     "gen:data": "node scripts/gen-data.mjs",
+    "gen:market": "node scripts/gen-market.mjs",
     "gen:context": "node scripts/gen-context.mjs",
     "gen:rosters": "node scripts/gen-rosters.mjs",
     "deploy": "vercel deploy --prod"

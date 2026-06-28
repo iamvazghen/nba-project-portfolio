@@ -4,7 +4,7 @@ import { simGame, simSeason, simPlayoffsFull, simPlayoffsFromSeeds } from "@/lib
 import { matchupDelta, type Feat, type Edge } from "@/lib/matchup";
 
 type Player = { name: string; role: "S" | "B"; impact: number; min: number; exp: number };
-type Team = { tricode: string; name: string; conf: "East" | "West"; wins: number; losses: number; netRating: number; base: number; rating: number; upside: number; ctxDelta: number; ctxNote: string; feat: Feat; players: Player[] };
+type Team = { tricode: string; name: string; conf: "East" | "West"; wins: number; losses: number; netRating: number; base: number; market: number; rating: number; upside: number; apron: string; ctxDelta: number; ctxNote: string; feat: Feat; players: Player[] };
 type Game = { id: string; date: string; status: number; home: string; away: string; homeScore: number; awayScore: number };
 type Model = { teams: Team[]; ratings: number[]; variance: number[]; conf: number[]; homeIdx: number[]; awayIdx: number[]; idx: Record<string, number> };
 type Result = { homeWinPct: number; expectedMargin: number; homeScore: number; awayScore: number; sims: number };
@@ -209,9 +209,9 @@ function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
             <p className="muted" style={{ marginTop: "var(--space-3)" }}>
               Expected margin {result.expectedMargin >= 0 ? "+" : ""}{result.expectedMargin.toFixed(1)} {h.tricode} · matchup-adjusted · {result.sims.toLocaleString()} sims · <span className="tag">Rust → WASM</span>
             </p>
-            {[h, a].filter((tm) => tm.ctxDelta !== 0 || tm.upside > 1).map((tm) => (
+            {[h, a].filter((tm) => tm.ctxNote).map((tm) => (
               <p key={tm.tricode} className="muted" style={{ fontSize: "var(--text-xs)", margin: "3px 0" }}>
-                <span className="tag" style={{ marginRight: 6 }}>{tm.tricode} {tm.ctxDelta > 0 ? "+" : ""}{tm.ctxDelta} rtg{tm.upside > 1 ? ` · upside ×${tm.upside}` : ""}</span>
+                <span className="tag" style={{ marginRight: 6 }}>{tm.tricode}{tm.apron ? ` · ${tm.apron} apron` : ""}{tm.upside > 1 ? ` · variance ×${tm.upside}` : ""}</span>
                 {tm.ctxNote}
               </p>
             ))}

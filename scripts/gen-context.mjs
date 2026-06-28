@@ -1,9 +1,12 @@
-// Generates data/team-context.json with Gemini: a per-team, EDITABLE adjustment
-// reflecting THIS season's roster reality the prior-year scoreboard can't see.
-//   delta  = expected net-rating change vs last season (points, -12..12)
-//   upside = outcome-variance multiplier (1.0..1.6; higher for young/high-ceiling rosters)
-//   note   = short human explanation
-// Run: `npm run gen:context`. The numbers are a starting point — edit the JSON freely.
+// Generates data/team-context.json with Gemini (news-grounded): a per-team
+// FUTURE-VARIABILITY + scouting profile. The team rating itself is objective
+// (last-season SRS + the betting market); this layer only sets in-season variance
+// and the narrative — youth, cap space / apron status, contracts, trade outlook.
+//   upside = in-season variance multiplier (1.0..1.6): high when young OR cap-flexible
+//            with movable contracts (deadline upside); low when frozen at the 2nd apron
+//   apron  = 'room' | 'under' | '1st' | '2nd' | 'hard-capped'
+//   note   = short scouting line: key injury/return, cap/apron, biggest bad contract, trade outlook
+// Run: `npm run gen:context`. Everything is editable.
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 
 const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
@@ -21,13 +24,12 @@ const TEAMS = {
 };
 const clamp = (x, lo, hi) => Math.max(lo, Math.min(hi, Number(x) || 0));
 
-const prompt = `Use Google Search to find the LATEST NBA news (rosters, trades, free agency, draft, injuries) for the 2026-27 season as of today. Base every answer on what you find, NOT on older memory.
-You are an NBA front-office analyst. For EACH team output a roster-context adjustment vs how they looked on last season's scoreboard.
-Shape (output ONLY this JSON object, no markdown, all 30 tricodes): {"TRI": {"delta": number, "upside": number, "note": string}, ...}
-- delta: expected change in team net rating vs last season, points, range -12..12 (offseason additions/departures, stars returning, high draft picks, tanking).
-- upside: outcome-variance multiplier 1.0..1.6 (higher for young rosters built around 1st/2nd-year players or a franchise rookie).
-- note: <= 12 words, must reflect the CURRENT roster you found via search.
-Known current facts to honor: Washington (WAS) drafted #1 pick AJ Dybantsa and gets back starters it sat for lottery odds (positive delta, high upside). The Lakers (LAL) are in the LUKA DONCIC era — Doncic was traded to LA in Feb 2025 and Anthony Davis went to Dallas in that deal (do NOT call it post-LeBron or pair AD with LA); reflect LeBron's actual current status from the news.
+const prompt = `Use Google Search for each NBA team's 2026-27 outlook — injuries, salary cap, first/second apron status, contracts, and trade-deadline posture. Base every answer on what you find, not older memory. Do an end-to-end review of all 30 teams one by one.
+Output ONLY this JSON (no markdown, all 30 tricodes): {"TRI": {"upside": number, "apron": string, "note": string}, ...}
+- upside: in-season VARIANCE multiplier 1.0..1.6. Higher (1.3-1.6) when the team is YOUNG (likely to improve or swing) OR has cap flexibility plus movable/expiring contracts to make a trade-deadline upgrade. Lower (1.0-1.1) when capped-out and frozen/hard-capped at the second apron (roster can't change).
+- apron: one of "room", "under", "1st", "2nd", "hard-capped" — the team's 2026-27 cap/apron status.
+- note: <= 18 words. Cover the key factor(s): notable injury/return, cap/apron situation, biggest bad contract or top trade chip, and deadline outlook (buyer / seller / stand-pat).
+Honor these dated facts: Indiana (IND) — Tyrese Haliburton tore his Achilles in the 2025 Finals, missed 2025-26, returns healthy for 2026-27. Boston (BOS) — Jayson Tatum returns from his 2025 Achilles tear for 2026-27. San Antonio (SAS) — deep young core on cheap rookie-scale deals with real cap flexibility (high upside). Lakers (LAL) — Luka Doncic era (Anthony Davis is in Dallas). Washington (WAS) — #1 pick AJ Dybantsa.
 Teams (tricode: nickname): ${Object.entries(TEAMS).map(([t, n]) => `${t}=${n}`).join(", ")}.`;
 
 // Pull the JSON object out of a possibly prose/grounded response.
@@ -40,9 +42,8 @@ function extractJson(text) {
 async function main() {
   const k = key();
   const out = { generatedAt: new Date().toISOString().slice(0, 10), model: MODEL, teams: {} };
-  // safe default: neutral everywhere, plus the WAS anchor the user gave us.
-  for (const t of Object.keys(TEAMS)) out.teams[t] = { delta: 0, upside: 1.0, note: "" };
-  out.teams.WAS = { delta: 6, upside: 1.4, note: "Dybantsa (#1) + starters back from a tank season" };
+  const APRONS = ["room", "under", "1st", "2nd", "hard-capped"];
+  for (const t of Object.keys(TEAMS)) out.teams[t] = { upside: 1.0, apron: "", note: "" };
 
   if (k) {
     try {
@@ -51,7 +52,7 @@ async function main() {
         body: JSON.stringify({
           contents: [{ parts: [{ text: prompt }] }],
           tools: [{ google_search: {} }], // ground in live NBA news
-          generationConfig: { temperature: 0.3 },
+          generationConfig: { temperature: 0.3, maxOutputTokens: 16384 },
         }),
       });
       if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
@@ -60,7 +61,11 @@ async function main() {
       const parsed = extractJson(text);
       for (const [t, v] of Object.entries(parsed)) {
         if (!TEAMS[t]) continue;
-        out.teams[t] = { delta: clamp(v.delta, -12, 12), upside: clamp(v.upside || 1, 1, 1.6), note: String(v.note || "").slice(0, 80) };
+        out.teams[t] = {
+          upside: clamp(v.upside || 1, 1, 1.6),
+          apron: APRONS.includes(v.apron) ? v.apron : "",
+          note: String(v.note || "").slice(0, 130),
+        };
       }
       console.log("Gemini context generated for", Object.keys(parsed).length, "teams");
     } catch (e) {
