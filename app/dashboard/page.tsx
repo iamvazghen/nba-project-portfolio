@@ -528,15 +528,18 @@ function FuturesPanel({ highlight }: { highlight: string | null }) {
       <div className="eyebrow">Futures market — sportsbooks · Kalshi · Polymarket</div>
       {busy && <p className="muted"><span className="spin" /> Loading futures…</p>}
       {!busy && markets?.map((m) => <FuturesMarket key={m.key} m={m} highlight={m.key === "championship" ? highlight : null} />)}
-      {!busy && markets && markets.every((m) => m.rows.length === 0) && (
-        <p className="muted">No live futures quotes posted yet (offseason). Champion, MVP and DPOY markets light up across sportsbooks, Kalshi and Polymarket once the season nears.</p>
-      )}
+      {!busy && markets?.length === 0 && <p className="muted">No live futures available.</p>}
     </div>
   );
 }
 
 function FuturesMarket({ m, highlight }: { m: any; highlight: string | null }) {
-  if (!m.rows.length) return null;
+  if (!m.rows.length) return (
+    <div className="future-stub">
+      <span className="display" style={{ fontSize: "var(--text-base)", color: "var(--color-muted)" }}>{m.title}</span>
+      <span className="tag">tracked · live in-season</span>
+    </div>
+  );
   const rows = highlight ? [...m.rows].sort((a: any, b: any) => (b.tricode === highlight ? 1 : 0) - (a.tricode === highlight ? 1 : 0)) : m.rows;
   const max = Math.max(...m.rows.map((r: any) => r.consensus), 0.01);
   return (

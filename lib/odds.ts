@@ -80,8 +80,11 @@ async function polymarket(query: string, isTeam: boolean, titleRe: RegExp, exclu
     const now = Date.now();
     // Candidate events: right award, not closed/expired, NBA. Pick the single most-traded one
     // so we don't mix "win championship" with "make the finals".
+    // Require real liquidity so untraded offseason markets (placeholder prices,
+    // "Team B" outcomes) never show. Lower than the rating gate — a 10k-volume
+    // Rookie-of-the-Year market is real; a 700-volume conference market is not.
     const events = (d.events ?? []).filter((ev: any) =>
-      !ev.closed && /nba|basketball/i.test(ev.title || "") && titleRe.test(ev.title || "") &&
+      !ev.closed && (ev.volume ?? 0) >= 5000 && /nba|basketball/i.test(ev.title || "") && titleRe.test(ev.title || "") &&
       !exclude.test(ev.title || "") && (!ev.endDate || +new Date(ev.endDate) > now));
     if (!events.length) return [];
     events.sort((a: any, b: any) => (b.volume ?? b.liquidity ?? 0) - (a.volume ?? a.liquidity ?? 0));
@@ -92,8 +95,12 @@ async function polymarket(query: string, isTeam: boolean, titleRe: RegExp, exclu
       if (m.closed) continue;
       let outcomes: string[] = [], prices: string[] = [];
       try { outcomes = JSON.parse(m.outcomes || "[]"); prices = JSON.parse(m.outcomePrices || "[]"); } catch {}
+      const PLACEHOLDER = /^(player|team|candidate|option|tbd)\b/i;
       const push = (label: string, prob: number) => {
         if (!(prob > 0)) return;
+        // drop untraded placeholders: generic "Player G"/"Team B" names, or a price
+        // sitting exactly at a coin-flip (a market created but never traded).
+        if (PLACEHOLDER.test((label || "").trim()) || prob === 0.5) return;
         const tri = isTeam ? matchTeam(label) : undefined;
         if (isTeam && !tri) return;
         out.push({ name: isTeam ? nameOf(tri!) : label, tricode: tri, prob, source: "Polymarket" });
@@ -139,11 +146,17 @@ export type FuturesMarket = { key: string; title: string; rows: ReturnType<typeo
 
 export async function fetchFutures(oddsKey: string | undefined, awards: string[]) {
   const jobs: Record<string, Promise<Outcome[]>[]> = {
-    championship: [kalshi("KXNBA", true), polymarket("NBA Champion", true, /champion/i, /conference|division|mvp|make|reach|east|west/i), sportsbookChampion(oddsKey)],
+    championship: [kalshi("KXNBA", true), polymarket("NBA Champion", true, /champion/i, /conference|division|mvp|make|reach|east|west|rookie/i), sportsbookChampion(oddsKey)],
+    eastConf: [kalshi("KXNBAEAST", true), polymarket("NBA Eastern Conference Champion", true, /eastern conference/i, /western/i)],
+    westConf: [kalshi("KXNBAWEST", true), polymarket("NBA Western Conference Champion", true, /western conference/i, /eastern/i)],
     mvp: [kalshi("KXNBAMVP", false), polymarket("NBA MVP", false, /mvp|most valuable/i, /finals|cup|all-star/i)],
     dpoy: [kalshi("KXNBADPOY", false), polymarket("NBA Defensive Player of the Year", false, /defensive player|dpoy/i, /team/i)],
+    roy: [polymarket("NBA Rookie of the Year", false, /rookie of the year/i, /western|eastern/i)],
   };
-  const titles: Record<string, string> = { championship: "NBA Champion", mvp: "Most Valuable Player", dpoy: "Defensive Player of the Year" };
+  const titles: Record<string, string> = {
+    championship: "NBA Champion", eastConf: "Eastern Conference Winner", westConf: "Western Conference Winner",
+    mvp: "Most Valuable Player", dpoy: "Defensive Player of the Year", roy: "Rookie of the Year",
+  };
   const markets: FuturesMarket[] = [];
   for (const a of awards) {
     if (!jobs[a]) continue;

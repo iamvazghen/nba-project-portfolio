@@ -231,6 +231,8 @@ footer.site { border-top: var(--rule); margin-top: var(--space-9); padding: var(
 .cta-band h2 { font-size: var(--text-display); }
 .cta-band p { margin: var(--space-2) 0 var(--space-5); }
 
+.future-stub { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: var(--rule); }
+
 /* full power index board */
 .board { display: grid; grid-template-columns: 1fr 1fr; gap: 0 var(--space-7); }
 @media (max-width: 760px) { .board { grid-template-columns: minmax(0, 1fr); } }

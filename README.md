@@ -55,7 +55,7 @@ Regenerate any layer: `npm run gen:market` · `gen:context` · `gen:rosters`. Ev
 ## Odds (multi-source, context-aware)
 
 - **Single Game** → that matchup's moneyline/spread/total (else the next game day) via the-odds-api.
-- **Season** → futures: **Champion / MVP / DPOY** merged across **sportsbooks + Kalshi + Polymarket**, with your simulated/picked champion spotlighted. (Markets are thin in the offseason and fill in as the season nears.)
+- **Season** → futures across **sportsbooks + Kalshi + Polymarket**: **Champion · Eastern/Western Conference winner · MVP · DPOY · Rookie of the Year**, with your simulated/picked champion spotlighted. Each market is **liquidity-gated** (event volume ≥ 5k and no untraded placeholder outcomes), so only real prices show; the rest read "tracked · live in-season" and populate automatically once they trade. No keys needed for Kalshi/Polymarket.
 
 ## Environment (optional — graceful fallback)
 

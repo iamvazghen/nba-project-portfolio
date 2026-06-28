@@ -1,7 +1,8 @@
-// Snapshots the live betting-market championship odds (Polymarket — objective,
-// keyless) to data/market-snapshot.json: { championship: { TRI: prob } }.
-// This is the objective forward-looking signal the power rating is anchored to.
-// Refreshed by the daily Action. Run: `npm run gen:market`.
+// Snapshots live betting-market NBA odds (Polymarket — objective, keyless) to
+// data/market-snapshot.json: championship + Eastern/Western conference winners.
+// Championship + conference equity anchors the power rating (conference odds give
+// the middle of the board real spread that title-odds-alone can't). Refreshed by
+// the daily Action. Run: `npm run gen:market`.
 import { writeFileSync, mkdirSync } from "node:fs";
 
 const NAMES = {
@@ -23,29 +24,42 @@ function matchTeam(text) {
   return undefined;
 }
 
-const championship = {};
-try {
-  const d = await (await fetch("https://gamma-api.polymarket.com/public-search?q=NBA+Champion&limit_per_type=12")).json();
-  const evs = (d.events ?? []).filter(
-    (e) => !e.closed && /champion/i.test(e.title || "") && !/conference|east|west|division/i.test(e.title || ""),
-  );
-  evs.sort((a, b) => (b.volume ?? 0) - (a.volume ?? 0));
-  const ev = evs[0];
-  if (ev) {
-    for (const m of ev.markets ?? []) {
+// Find the most-traded open NBA event matching titleRe (not excludeRe) and return
+// {TRI: prob}. Requires real liquidity (volume >= MIN_VOL) so untraded offseason
+// markets sitting at placeholder prices don't pollute the rating.
+const MIN_VOL = 25000;
+async function pull(query, titleRe, excludeRe) {
+  try {
+    const d = await (await fetch(`https://gamma-api.polymarket.com/public-search?q=${encodeURIComponent(query)}&limit_per_type=12`)).json();
+    const evs = (d.events ?? []).filter(
+      (e) => !e.closed && (e.volume ?? 0) >= MIN_VOL && /nba|basketball/i.test(e.title || "") && titleRe.test(e.title || "") && !excludeRe.test(e.title || ""),
+    );
+    evs.sort((a, b) => (b.volume ?? 0) - (a.volume ?? 0));
+    const ev = evs[0];
+    const out = {};
+    for (const m of ev?.markets ?? []) {
       if (m.closed) continue;
-      let outs = [], prices = [];
-      try { outs = JSON.parse(m.outcomes || "[]"); prices = JSON.parse(m.outcomePrices || "[]"); } catch {}
+      let outs = [], pr = [];
+      try { outs = JSON.parse(m.outcomes || "[]"); pr = JSON.parse(m.outcomePrices || "[]"); } catch {}
       const yi = outs.findIndex((o) => /yes/i.test(o));
-      const prob = yi >= 0 ? parseFloat(prices[yi]) : NaN;
+      const prob = yi >= 0 ? parseFloat(pr[yi]) : NaN;
       const tri = matchTeam(m.groupItemTitle || m.question || "");
-      if (tri && prob > 0) championship[tri] = +(Math.max(championship[tri] ?? 0, prob)).toFixed(4);
+      if (tri && prob > 0) out[tri] = +Math.max(out[tri] ?? 0, prob).toFixed(4);
     }
+    return out;
+  } catch (e) {
+    console.warn(query, "failed:", String(e).slice(0, 120));
+    return {};
   }
-} catch (e) {
-  console.warn("market fetch failed:", String(e).slice(0, 160));
 }
 
+const championship = await pull("NBA Champion", /champion/i, /conference|eastern|western|division|rookie|mvp|defensive/i);
+const eastConf = await pull("NBA Eastern Conference Champion", /eastern conference/i, /western/i);
+const westConf = await pull("NBA Western Conference Champion", /western conference/i, /eastern/i);
+
 mkdirSync("data", { recursive: true });
-writeFileSync("data/market-snapshot.json", JSON.stringify({ at: new Date().toISOString().slice(0, 10), source: "polymarket", championship }, null, 2));
-console.log(`Wrote data/market-snapshot.json — ${Object.keys(championship).length} teams priced`);
+writeFileSync(
+  "data/market-snapshot.json",
+  JSON.stringify({ at: new Date().toISOString().slice(0, 10), source: "polymarket", championship, eastConf, westConf }, null, 2),
+);
+console.log(`Wrote data/market-snapshot.json — champ ${Object.keys(championship).length}, east ${Object.keys(eastConf).length}, west ${Object.keys(westConf).length}`);
