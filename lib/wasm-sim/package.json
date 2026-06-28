@@ -1,0 +1,15 @@
+{
+  "name": "nba-sim",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "nba_sim_bg.wasm",
+    "nba_sim.js",
+    "nba_sim.d.ts"
+  ],
+  "main": "nba_sim.js",
+  "types": "nba_sim.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
