@@ -32,3 +32,13 @@ export function featuresFor(tri: string): Feat {
 export function topPlayers(tri: string, n = 6): Player[] {
   return [...rosterOf(tri)].sort((a, b) => b.impact - a.impact).slice(0, n);
 }
+
+// Bottom-up team rating from the rotation: minutes-weighted average player impact
+// × 5 (five on court) → a team net-rating scale. The schedule route centers and
+// scales this across the league before blending with last season's SRS.
+export function playerRatingRaw(tri: string): number {
+  const p = rosterOf(tri);
+  if (!p.length) return 0;
+  const totMin = p.reduce((a, x) => a + x.min, 0) || 1;
+  return (p.reduce((a, x) => a + x.impact * x.min, 0) / totMin) * 5;
+}

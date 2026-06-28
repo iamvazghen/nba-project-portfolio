@@ -1,7 +1,27 @@
 "use client";
 import { useEffect, useState } from "react";
 
-type Team = { tricode: string; name: string; conf: string; wins: number; losses: number; base: number; rating: number; ctxDelta: number; ctxNote: string; upside: number };
+type Team = { tricode: string; name: string; conf: string; wins: number; losses: number; base: number; player: number; rating: number; ctxDelta: number; ctxNote: string; upside: number };
+
+function PowerBoard({ teams }: { teams: Team[] }) {
+  if (!teams.length) return <p className="muted"><span className="spin" /> loading the model…</p>;
+  const ranked = [...teams].sort((a, b) => b.rating - a.rating);
+  const vals = ranked.map((t) => t.rating);
+  const min = Math.min(...vals), span = (Math.max(...vals) - min) || 1;
+  return (
+    <div className="board">
+      {ranked.map((t, i) => (
+        <div className="board-row" key={t.tricode}>
+          <span className="br-rank tnum">{i + 1}</span>
+          <span className="br-team">{t.name}</span>
+          <span className="br-split tnum">SRS {t.base > 0 ? "+" : ""}{t.base} · roster {t.player > 0 ? "+" : ""}{t.player}</span>
+          <span className="br-bar"><span style={{ width: `${Math.max(3, ((t.rating - min) / span) * 100)}%` }} /></span>
+          <span className="br-val tnum">{t.rating > 0 ? "+" : ""}{t.rating}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 const MODES = [
   { tab: "Single Game", title: "Single Game", blurb: "Pick any matchup, run 10,000 sims for win probability, projected score, the roster context, an AI take, and that game's live odds.", art: ["LAL", "BOS"] },
@@ -65,6 +85,16 @@ export default function Landing() {
           </aside>
         </section>
 
+        {/* FULL POWER INDEX */}
+        <section id="power" className="wrap lp-section">
+          <div className="lp-section-h"><span className="eyebrow">Projected power index · all 30</span><h2>Last season + current roster, blended</h2></div>
+          <PowerBoard teams={teams} />
+          <p className="muted" style={{ marginTop: "var(--space-4)", fontSize: "var(--text-sm)", maxWidth: "72ch" }}>
+            <b>Rating</b> = 40% last season (strength-of-schedule + recency-weighted margin) + 60% current roster
+            (each rotation player&apos;s news-grounded impact × minutes, league-centered). Edit <span className="tag">data/team-rosters.json</span> to tune any team.
+          </p>
+        </section>
+
         {/* MODES */}
         <section id="modes" className="wrap lp-section">
           <div className="lp-section-h"><span className="eyebrow">Three ways to play</span><h2>Everything lives in the dashboard</h2></div>
@@ -96,9 +126,9 @@ export default function Landing() {
               {example ? (
                 <>
                   <div className="me-team">{example.name}</div>
-                  <div className="me-row"><span>Last season (SRS)</span><b className="tnum">{example.base > 0 ? "+" : ""}{example.base}</b></div>
-                  <div className="me-row"><span>Roster context</span><b className="tnum" style={{ color: "var(--color-accent)" }}>{example.ctxDelta > 0 ? "+" : ""}{example.ctxDelta}</b></div>
-                  <div className="me-row me-total"><span>This season</span><b className="tnum">{example.rating > 0 ? "+" : ""}{example.rating}</b></div>
+                  <div className="me-row"><span>Last season (SRS) · 40%</span><b className="tnum">{example.base > 0 ? "+" : ""}{example.base}</b></div>
+                  <div className="me-row"><span>Current roster · 60%</span><b className="tnum" style={{ color: "var(--color-accent)" }}>{example.player > 0 ? "+" : ""}{example.player}</b></div>
+                  <div className="me-row me-total"><span>Blended rating</span><b className="tnum">{example.rating > 0 ? "+" : ""}{example.rating}</b></div>
                   <p className="muted" style={{ fontSize: "var(--text-xs)", marginTop: "var(--space-3)" }}>{example.ctxNote} · upside ×{example.upside}</p>
                 </>
               ) : <p className="muted"><span className="spin" /> loading…</p>}

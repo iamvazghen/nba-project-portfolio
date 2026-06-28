@@ -231,6 +231,18 @@ footer.site { border-top: var(--rule); margin-top: var(--space-9); padding: var(
 .cta-band h2 { font-size: var(--text-display); }
 .cta-band p { margin: var(--space-2) 0 var(--space-5); }
 
+/* full power index board */
+.board { display: grid; grid-template-columns: 1fr 1fr; gap: 0 var(--space-7); }
+@media (max-width: 760px) { .board { grid-template-columns: minmax(0, 1fr); } }
+.board-row { display: grid; grid-template-columns: 24px 1.1fr 1.5fr 56px 44px; align-items: center; gap: var(--space-3); padding: var(--space-2) 0; border-bottom: var(--rule); }
+.br-rank { color: var(--color-faint); font-size: var(--text-sm); }
+.br-team { font-weight: 600; font-size: var(--text-sm); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.br-split { color: var(--color-faint); font-size: var(--text-xs); white-space: nowrap; }
+.br-bar { height: 7px; background: var(--color-paper-3); border-radius: 999px; overflow: hidden; }
+.br-bar span { display: block; height: 100%; background: var(--color-accent); }
+.br-val { text-align: right; font-family: var(--font-display); font-weight: 600; font-size: var(--text-sm); }
+@media (max-width: 1000px) { .board-row { grid-template-columns: 22px 1fr 50px 40px; } .br-split { display: none; } }
+
 /* ===================== matchup breakdown + series ===================== */
 .matchup { margin-top: var(--space-5); border-top: var(--rule); padding-top: var(--space-4); }
 .mu-grid { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: var(--space-4); align-items: start; margin-top: var(--space-3); }
