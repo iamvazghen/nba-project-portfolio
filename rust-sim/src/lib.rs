@@ -1,13 +1,13 @@
-// The ONLY simulation engine. Compiled to WASM and run client-side. Covers:
-// single game, full-season seeding, full season+playoffs, and playoffs-from-seeds.
-// Teams are referenced by index (0..n-1); the JS side owns the index<->tricode map.
+// The ONLY simulation engine. Compiled to WASM, run client-side. Covers single
+// game, season seeding, full season+playoffs, and playoffs-from-seeds.
+// Teams are referenced by index; the JS side owns the index<->tricode map and
+// builds the rating + per-team variance inputs from the smart rating pipeline.
 use wasm_bindgen::prelude::*;
 
 const HCA: f64 = 2.6; // home-court advantage, points
 const LEAGUE_AVG: f64 = 114.0; // for projecting a plausible final score
-const SIGMA: f64 = 12.0; // stdev of a single game's margin vs expectation
+const SIGMA: f64 = 12.0; // base stdev of a single game's margin vs expectation
 
-// xorshift64 + Box-Muller. Seeded once per call from JS Math.random().
 struct Rng(u64);
 impl Rng {
     fn new() -> Rng {
@@ -31,20 +31,23 @@ impl Rng {
     }
 }
 
+// Per-game margin. `vh`/`va` are the teams' variance multipliers (1.0 = normal;
+// >1 widens outcomes — young/high-upside rosters are more boom-or-bust).
 #[inline]
-fn margin(rng: &mut Rng, home: f64, away: f64) -> f64 {
-    home - away + HCA + SIGMA * rng.gauss()
+fn margin(rng: &mut Rng, home: f64, away: f64, vh: f64, va: f64) -> f64 {
+    let sig = SIGMA * ((vh * vh + va * va) / 2.0).sqrt();
+    home - away + HCA + sig * rng.gauss()
 }
 
 /// Single game. Returns [homeWinPct, expectedMargin, homeScore, awayScore].
 #[wasm_bindgen]
-pub fn simulate_game(home_rating: f64, away_rating: f64, sims: u32) -> Vec<f64> {
+pub fn simulate_game(home_rating: f64, away_rating: f64, sims: u32, home_var: f64, away_var: f64) -> Vec<f64> {
     let mut rng = Rng::new();
     let expected = home_rating - away_rating + HCA;
     let (mut hw, mut msum) = (0u32, 0.0);
     let n = sims.max(1);
     for _ in 0..n {
-        let m = expected + SIGMA * rng.gauss();
+        let m = margin(&mut rng, home_rating, away_rating, home_var, away_var);
         if m > 0.0 {
             hw += 1;
         }
@@ -56,29 +59,24 @@ pub fn simulate_game(home_rating: f64, away_rating: f64, sims: u32) -> Vec<f64> 
 }
 
 // Best-of-7, 2-2-1-1-1, higher seed has home court. True if higher seed wins.
-fn series_hi_wins(rng: &mut Rng, hi: f64, lo: f64) -> bool {
+fn series_hi_wins(rng: &mut Rng, hi: f64, lo: f64, vhi: f64, vlo: f64) -> bool {
     const HOME: [bool; 7] = [true, true, false, false, true, false, true];
     let (mut h, mut l) = (0u8, 0u8);
     let mut g = 0;
     while h < 4 && l < 4 && g < 7 {
         let hi_won = if HOME[g] {
-            margin(rng, hi, lo) > 0.0
+            margin(rng, hi, lo, vhi, vlo) > 0.0
         } else {
-            margin(rng, lo, hi) < 0.0
+            margin(rng, lo, hi, vlo, vhi) < 0.0
         };
-        if hi_won {
-            h += 1;
-        } else {
-            l += 1;
-        }
+        if hi_won { h += 1; } else { l += 1; }
         g += 1;
     }
     h == 4
 }
 
-// One conference: 8 team indices in seed order (seeds[0] = #1). Returns champion index.
-fn conf_champion(rng: &mut Rng, seeds: &[usize], ratings: &[f64]) -> usize {
-    // NBA fixed bracket order (1,8,4,5,3,6,2,7); pair = (team_idx, seed_rank).
+// One conference: 8 team indices in seed order. Returns champion index.
+fn conf_champion(rng: &mut Rng, seeds: &[usize], ratings: &[f64], var: &[f64]) -> usize {
     let order = [0usize, 7, 3, 4, 2, 5, 1, 6];
     let mut round: Vec<(usize, usize)> = order.iter().map(|&p| (seeds[p], p)).collect();
     while round.len() > 1 {
@@ -86,8 +84,8 @@ fn conf_champion(rng: &mut Rng, seeds: &[usize], ratings: &[f64]) -> usize {
         let mut i = 0;
         while i < round.len() {
             let (a, b) = (round[i], round[i + 1]);
-            let (hi, lo) = if a.1 < b.1 { (a, b) } else { (b, a) }; // lower seed_rank = better seed
-            next.push(if series_hi_wins(rng, ratings[hi.0], ratings[lo.0]) { hi } else { lo });
+            let (hi, lo) = if a.1 < b.1 { (a, b) } else { (b, a) };
+            next.push(if series_hi_wins(rng, ratings[hi.0], ratings[lo.0], var[hi.0], var[lo.0]) { hi } else { lo });
             i += 2;
         }
         round = next;
@@ -95,22 +93,14 @@ fn conf_champion(rng: &mut Rng, seeds: &[usize], ratings: &[f64]) -> usize {
     round[0].0
 }
 
-// Simulate one regular season -> wins per team. (Schedule as parallel index arrays.)
-fn play_regular_season(rng: &mut Rng, ratings: &[f64], home: &[u32], away: &[u32], wins: &mut [i32]) {
-    for w in wins.iter_mut() {
-        *w = 0;
-    }
+fn play_regular_season(rng: &mut Rng, ratings: &[f64], var: &[f64], home: &[u32], away: &[u32], wins: &mut [i32]) {
+    for w in wins.iter_mut() { *w = 0; }
     for k in 0..home.len() {
         let (h, a) = (home[k] as usize, away[k] as usize);
-        if margin(rng, ratings[h], ratings[a]) > 0.0 {
-            wins[h] += 1;
-        } else {
-            wins[a] += 1;
-        }
+        if margin(rng, ratings[h], ratings[a], var[h], var[a]) > 0.0 { wins[h] += 1; } else { wins[a] += 1; }
     }
 }
 
-// Seed a conference: indices of conf `c`, sorted by wins desc (tiny random tiebreak).
 fn seed_conf(rng: &mut Rng, n: usize, conf: &[u32], wins: &[i32], c: u32) -> Vec<usize> {
     let mut idx: Vec<usize> = (0..n).filter(|&i| conf[i] == c).collect();
     let key: Vec<f64> = (0..n).map(|i| wins[i] as f64 + rng.unit() * 0.01).collect();
@@ -120,27 +110,22 @@ fn seed_conf(rng: &mut Rng, n: usize, conf: &[u32], wins: &[i32], c: u32) -> Vec
 
 /// Full-season seeding sim. Returns per team [projWins, playoffPct, top6Pct, avgSeed] (n*4 flat).
 #[wasm_bindgen]
-pub fn simulate_season(ratings: Vec<f64>, conf: Vec<u32>, home: Vec<u32>, away: Vec<u32>, sims: u32) -> Vec<f64> {
+pub fn simulate_season(ratings: Vec<f64>, var: Vec<f64>, conf: Vec<u32>, home: Vec<u32>, away: Vec<u32>, sims: u32) -> Vec<f64> {
     let n = ratings.len();
-    let (mut win_sum, mut seed_sum, mut playoff, mut top6) =
-        (vec![0f64; n], vec![0f64; n], vec![0f64; n], vec![0f64; n]);
+    let (mut win_sum, mut seed_sum, mut playoff, mut top6) = (vec![0f64; n], vec![0f64; n], vec![0f64; n], vec![0f64; n]);
     let mut wins = vec![0i32; n];
     let mut rng = Rng::new();
     let s = sims.max(1);
     for _ in 0..s {
-        play_regular_season(&mut rng, &ratings, &home, &away, &mut wins);
+        play_regular_season(&mut rng, &ratings, &var, &home, &away, &mut wins);
         for c in 0..2u32 {
             let ranked = seed_conf(&mut rng, n, &conf, &wins, c);
             for (rank, &i) in ranked.iter().enumerate() {
                 let seed = rank + 1;
                 win_sum[i] += wins[i] as f64;
                 seed_sum[i] += seed as f64;
-                if seed <= 10 {
-                    playoff[i] += 1.0;
-                }
-                if seed <= 6 {
-                    top6[i] += 1.0;
-                }
+                if seed <= 10 { playoff[i] += 1.0; }
+                if seed <= 6 { top6[i] += 1.0; }
             }
         }
     }
@@ -157,24 +142,22 @@ pub fn simulate_season(ratings: Vec<f64>, conf: Vec<u32>, home: Vec<u32>, away: 
 
 /// Full season + playoffs. Returns per team [projWins, finalsPct, champPct] (n*3 flat).
 #[wasm_bindgen]
-pub fn simulate_playoffs_full(ratings: Vec<f64>, conf: Vec<u32>, home: Vec<u32>, away: Vec<u32>, sims: u32) -> Vec<f64> {
+pub fn simulate_playoffs_full(ratings: Vec<f64>, var: Vec<f64>, conf: Vec<u32>, home: Vec<u32>, away: Vec<u32>, sims: u32) -> Vec<f64> {
     let n = ratings.len();
     let (mut win_sum, mut finals, mut champ) = (vec![0f64; n], vec![0f64; n], vec![0f64; n]);
     let mut wins = vec![0i32; n];
     let mut rng = Rng::new();
     let s = sims.max(1);
     for _ in 0..s {
-        play_regular_season(&mut rng, &ratings, &home, &away, &mut wins);
-        for i in 0..n {
-            win_sum[i] += wins[i] as f64;
-        }
+        play_regular_season(&mut rng, &ratings, &var, &home, &away, &mut wins);
+        for i in 0..n { win_sum[i] += wins[i] as f64; }
         let east: Vec<usize> = seed_conf(&mut rng, n, &conf, &wins, 0).into_iter().take(8).collect();
         let west: Vec<usize> = seed_conf(&mut rng, n, &conf, &wins, 1).into_iter().take(8).collect();
-        let (ec, wc) = (conf_champion(&mut rng, &east, &ratings), conf_champion(&mut rng, &west, &ratings));
+        let (ec, wc) = (conf_champion(&mut rng, &east, &ratings, &var), conf_champion(&mut rng, &west, &ratings, &var));
         finals[ec] += 1.0;
         finals[wc] += 1.0;
         let (hi, lo) = if ratings[ec] >= ratings[wc] { (ec, wc) } else { (wc, ec) };
-        champ[if series_hi_wins(&mut rng, ratings[hi], ratings[lo]) { hi } else { lo }] += 1.0;
+        champ[if series_hi_wins(&mut rng, ratings[hi], ratings[lo], var[hi], var[lo]) { hi } else { lo }] += 1.0;
     }
     let sf = s as f64;
     let mut out = Vec::with_capacity(n * 3);
@@ -187,9 +170,9 @@ pub fn simulate_playoffs_full(ratings: Vec<f64>, conf: Vec<u32>, home: Vec<u32>,
 }
 
 /// Playoffs from fixed seeds. `east`/`west` are 8 team indices in seed order.
-/// Returns, for each of the 16 seeds (east then west), [champPct, finalsPct] (16*2 flat).
+/// Returns for each of the 16 seeds (east then west) [champPct, finalsPct] (16*2 flat).
 #[wasm_bindgen]
-pub fn simulate_playoffs_from_seeds(east: Vec<u32>, west: Vec<u32>, ratings: Vec<f64>, sims: u32) -> Vec<f64> {
+pub fn simulate_playoffs_from_seeds(east: Vec<u32>, west: Vec<u32>, ratings: Vec<f64>, var: Vec<f64>, sims: u32) -> Vec<f64> {
     let e: Vec<usize> = east.iter().map(|&x| x as usize).collect();
     let w: Vec<usize> = west.iter().map(|&x| x as usize).collect();
     let n = ratings.len();
@@ -197,11 +180,11 @@ pub fn simulate_playoffs_from_seeds(east: Vec<u32>, west: Vec<u32>, ratings: Vec
     let mut rng = Rng::new();
     let s = sims.max(1);
     for _ in 0..s {
-        let (ec, wc) = (conf_champion(&mut rng, &e, &ratings), conf_champion(&mut rng, &w, &ratings));
+        let (ec, wc) = (conf_champion(&mut rng, &e, &ratings, &var), conf_champion(&mut rng, &w, &ratings, &var));
         finals[ec] += 1.0;
         finals[wc] += 1.0;
         let (hi, lo) = if ratings[ec] >= ratings[wc] { (ec, wc) } else { (wc, ec) };
-        champ[if series_hi_wins(&mut rng, ratings[hi], ratings[lo]) { hi } else { lo }] += 1.0;
+        champ[if series_hi_wins(&mut rng, ratings[hi], ratings[lo], var[hi], var[lo]) { hi } else { lo }] += 1.0;
     }
     let sf = s as f64;
     let mut out = Vec::with_capacity(16 * 2);

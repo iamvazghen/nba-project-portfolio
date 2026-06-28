@@ -2,9 +2,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { simGame, simSeason, simPlayoffsFull, simPlayoffsFromSeeds } from "@/lib/wasm";
 
-type Team = { tricode: string; name: string; conf: "East" | "West"; wins: number; losses: number; netRating: number };
+type Team = { tricode: string; name: string; conf: "East" | "West"; wins: number; losses: number; netRating: number; base: number; rating: number; upside: number; ctxDelta: number; ctxNote: string };
 type Game = { id: string; date: string; status: number; home: string; away: string; homeScore: number; awayScore: number };
-type Model = { teams: Team[]; ratings: number[]; conf: number[]; homeIdx: number[]; awayIdx: number[]; idx: Record<string, number> };
+type Model = { teams: Team[]; ratings: number[]; variance: number[]; conf: number[]; homeIdx: number[]; awayIdx: number[]; idx: Record<string, number> };
 type Result = { homeWinPct: number; expectedMargin: number; homeScore: number; awayScore: number; sims: number };
 type Seeded = { tricode: string; name: string; seed: number; avgSeed: number };
 const OFFSEASON_GAME = "https://www.82-0.com/";
@@ -27,7 +27,8 @@ export default function Page() {
       }
       setModel({
         teams, idx,
-        ratings: teams.map((t) => t.netRating),
+        ratings: teams.map((t) => t.rating), // effective = SRS base + roster-context delta
+        variance: teams.map((t) => t.upside),
         conf: teams.map((t) => (t.conf === "East" ? 0 : 1)),
         homeIdx, awayIdx,
       });
@@ -35,7 +36,7 @@ export default function Page() {
     }).catch(() => {});
   }, []);
 
-  const top = useMemo(() => (model ? [...model.teams].sort((a, b) => b.netRating - a.netRating)[0] : null), [model]);
+  const top = useMemo(() => (model ? [...model.teams].sort((a, b) => b.rating - a.rating)[0] : null), [model]);
 
   return (
     <>
@@ -100,7 +101,8 @@ function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
   async function run() {
     if (!home || !away || home === away) return;
     setBusy(true); setAi(null); await yield_();
-    try { setResult(await simGame(ratings[idx[home]], ratings[idx[away]], 10000)); }
+    const hi = idx[home], ai = idx[away];
+    try { setResult(await simGame(ratings[hi], ratings[ai], 10000, teams[hi].upside, teams[ai].upside)); }
     finally { setBusy(false); }
   }
   async function getAI() {
@@ -157,6 +159,12 @@ function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
             <p className="muted" style={{ marginTop: "var(--space-3)" }}>
               Expected margin {result.expectedMargin >= 0 ? "+" : ""}{result.expectedMargin.toFixed(1)} {h.tricode} · {result.sims.toLocaleString()} sims · <span className="tag">Rust → WASM</span>
             </p>
+            {[h, a].filter((tm) => tm.ctxDelta !== 0 || tm.upside > 1).map((tm) => (
+              <p key={tm.tricode} className="muted" style={{ fontSize: "var(--text-xs)", margin: "3px 0" }}>
+                <span className="tag" style={{ marginRight: 6 }}>{tm.tricode} {tm.ctxDelta > 0 ? "+" : ""}{tm.ctxDelta} rtg{tm.upside > 1 ? ` · upside ×${tm.upside}` : ""}</span>
+                {tm.ctxNote}
+              </p>
+            ))}
             <button className="btn ghost" onClick={getAI} disabled={aiBusy}>{aiBusy ? <><span className="spin" /> Thinking</> : "🤖 AI take"}</button>
             {ai && <div className="ai">{ai}</div>}
           </div>
@@ -179,7 +187,7 @@ function Season({ model }: { model: Model }) {
   useEffect(() => {
     if (seeds) return;
     (async () => {
-      const rows = await simSeason(model.ratings, model.conf, model.homeIdx, model.awayIdx, 4000);
+      const rows = await simSeason(model.ratings, model.variance, model.conf, model.homeIdx, model.awayIdx, 4000);
       const withTeam = rows.map((r) => ({ team: model.teams[r.idx], avgSeed: r.avgSeed }));
       const build = (c: "East" | "West") =>
         withTeam.filter((r) => r.team.conf === c).sort((a, b) => a.avgSeed - b.avgSeed)
@@ -218,7 +226,7 @@ function FullSeason({ model, onFocus }: { model: Model; onFocus: (t: string) => 
   async function run() {
     setBusy(true); await yield_();
     try {
-      const r = await simPlayoffsFull(model.ratings, model.conf, model.homeIdx, model.awayIdx, 10000);
+      const r = await simPlayoffsFull(model.ratings, model.variance, model.conf, model.homeIdx, model.awayIdx, 10000);
       const mapped = r.map((x) => ({ ...x, tricode: model.teams[x.idx].tricode, name: model.teams[x.idx].name, conf: model.teams[x.idx].conf })).sort((a, b) => b.champPct - a.champPct);
       setRows(mapped); if (mapped[0]) onFocus(mapped[0].tricode);
     } finally { setBusy(false); }
@@ -263,7 +271,7 @@ function FromSeeds({ model, seeds, onFocus }: { model: Model; seeds: { east: See
   async function run() {
     setBusy(true); await yield_();
     try {
-      const r = await simPlayoffsFromSeeds(east.map((t) => model.idx[t]), west.map((t) => model.idx[t]), model.ratings, 10000);
+      const r = await simPlayoffsFromSeeds(east.map((t) => model.idx[t]), west.map((t) => model.idx[t]), model.ratings, model.variance, 10000);
       const mapped = r.map((x) => ({ ...x, tricode: model.teams[x.idx].tricode, name: model.teams[x.idx].name, conf: model.teams[x.idx].conf })).sort((a, b) => b.champPct - a.champPct);
       setRows(mapped); if (mapped[0]) onFocus(mapped[0].tricode);
     } finally { setBusy(false); }

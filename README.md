@@ -1,51 +1,58 @@
-# NBA Project Portfolio — Prediction Machine
+# NBA Project Portfolio — Hardwood Prediction Machine
 
-Monte Carlo NBA predictions with **three interchangeable engines** (TypeScript, Python, Rust→WASM), live schedule data from the NBA, full-season simulation with seeding + bracketology, a sportsbook odds aggregator, and an offseason redirect to the viral [82-0](https://www.82-0.com/) game.
+Monte Carlo NBA predictions with a **single Rust→WASM engine**, a **smart layered rating model**, live NBA schedule, season simulation with seeding + bracketology, and a **multi-source odds aggregator** (sportsbooks + Kalshi + Polymarket). Offseason mode redirects to the viral [82-0](https://www.82-0.com/) game.
+
+Live: https://nba-project-portfolio.vercel.app
+
+## Commands
+
+```bash
+npm install        # dependencies
+npm run dev        # http://localhost:3000
+npm run deploy     # vercel --prod
+npm run build:wasm # recompile the Rust engine (needs `cargo install wasm-pack`)
+npm run gen:context# regenerate the roster-context layer via Gemini
+```
 
 ## Modes
 
 | Mode | What it does |
 |------|--------------|
-| **Single Game** | Pick any matchup (prefilled with the latest games), run 10,000 Monte Carlo sims. Choose the **TS / Python / Rust-WASM** engine. Optional 🤖 AI take. |
-| **Season** | 10,000 full-season simulations from current power ratings → projected wins, playoff %, top-6 %, conference seeding and a first-round bracket. |
-| **Bets** | Moneyline / spread / total aggregated across major US books (via the-odds-api). |
-| **Offseason** | Button → the 82-0 "can your all-time roster go undefeated?" game. |
+| **Single Game** | Any matchup (prefilled with the latest games), 10,000 sims → win%, projected score, the team context applied, an optional Gemini take, and that matchup's betting lines. |
+| **Season** | Three sub-modes: **full season + playoffs** (10k), **playoffs from your own seeds** (10k), and **regular season then play the bracket yourself**. Plus the futures market (champion / MVP / DPOY). |
+| **Offseason** | Button → the 82-0 game. |
 
-## The model
+## The engine (Rust → WASM, the only simulator)
 
-Team **net rating** (avg point differential, regressed with a 5-game prior) is computed from completed games in the NBA's public schedule feed. A single game is `margin ~ Normal(homeNet − awayNet + 2.6, 12)`; win% and a projected score come from 10k samples. The **identical model** is implemented in `lib/sim.ts`, `api/py-predict.py`, and `rust-sim/src/lib.rs`.
+`rust-sim/` compiles to `lib/wasm-sim/` and runs **in the browser**. It exposes `simulate_game`, `simulate_season`, `simulate_playoffs_full`, and `simulate_playoffs_from_seeds`. A game is `margin ~ Normal(homeRating − awayRating + 2.6, σ)`, where σ widens with each team's **variance multiplier**. Series are best-of-7 (2-2-1-1-1, higher seed hosts). There is no TypeScript or Python simulator — those exist nowhere in the sim path.
 
-Data: `https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json` (no API key).
+## The smart rating model (what's fed to the engine)
 
-## Run locally
+The engine is dumb on purpose; the intelligence is in the rating each team carries:
 
-```bash
-npm install
-npm run dev            # http://localhost:3000
-python api/py-predict.py   # runs the model self-check
-```
+1. **SRS base** (`lib/nba.ts`) — Simple Rating System: average margin **adjusted for strength of schedule**, so a padded record vs weak teams doesn't inflate a team.
+2. **Recency / form** — games are weighted by recency (45-day half-life), so how a team is *currently* playing counts more than October.
+3. **Roster-context layer** (`data/team-context.json`, Gemini-drafted, **editable**) — `delta` shifts the rating for this season's reality (offseason moves, stars returning, top rookies, tanking); `upside` widens variance. Example: Washington is `−12.3` on last year's scoreboard but `+7 delta / 1.5 upside` for adding #1 pick AJ Dybantsa and getting its benched starters back → an effective `−5.3` and real boom/bust range, instead of an automatic blowout loss.
+4. **Young-player upside** — the `upside` multiplier gives 1st/2nd-year-led rosters wider outcomes: a genuine (if unlikely) chance to play like contenders, plus floor risk.
 
-### Build the Rust engine (optional)
+Regenerate the context table any time with `npm run gen:context` (Gemini), or hand-edit `data/team-context.json` — every number is visible and overridable.
 
-The site works without it (falls back to TS). To enable the real Rust→WASM engine:
+**Not yet modeled (next phase):** player/lineup-level matchups (bench-unit edges, coverages), rest/travel, and playoff-round-specific coaching/experience effects — these need a player-tracking data source.
 
-```bash
-cargo install wasm-pack   # one-time
-npm run build:wasm        # outputs lib/wasm-sim/
-```
+## Odds (multi-source, context-aware)
 
-## Environment (all optional — graceful fallback)
+- **Single Game** → that matchup's moneyline/spread/total (else the next game day) via the-odds-api.
+- **Season** → futures: **Champion / MVP / DPOY** merged across **sportsbooks + Kalshi + Polymarket**, with your simulated/picked champion spotlighted. (Markets are thin in the offseason and fill in as the season nears.)
+
+## Environment (optional — graceful fallback)
 
 | Var | Enables |
 |-----|---------|
-| `ANTHROPIC_API_KEY` | AI single-game take (server-side only) |
-| `ODDS_API_KEY` | Live odds in Bets mode ([the-odds-api.com](https://the-odds-api.com)) |
+| `ODDS_API_KEY` | sportsbook lines + champion futures ([the-odds-api.com](https://the-odds-api.com)) |
+| `GEMINI_API_KEY` | the AI take + `gen:context` |
 
-## Deploy
+Keys are read only server-side and never shipped to the client.
 
-Vercel-native (Next.js). Push to a Git repo and import in Vercel, or `vercel --prod`. The Python function (`api/py-predict.py`) deploys as a serverless function automatically.
+## Stack
 
-## Caveats / next steps
-
-- Ratings reflect whatever season the NBA CDN currently serves; in the offseason that's the completed season.
-- `npm run build:wasm` must be run (and `lib/wasm-sim` committed or built in CI) for the Rust engine to be live; otherwise the "Rust/WASM" button transparently uses TS.
+Next.js 16 · React 19 · TypeScript · Rust + wasm-pack · deployed on Vercel.

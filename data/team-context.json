@@ -1,0 +1,156 @@
+{
+  "generatedAt": "2026-06-28",
+  "model": "gemini-2.5-flash",
+  "teams": {
+    "ATL": {
+      "delta": 1,
+      "upside": 1.1,
+      "note": "Young core development, roster clarity post-trade."
+    },
+    "BOS": {
+      "delta": 0,
+      "upside": 1,
+      "note": "Elite continuity, prime core, minor veteran decline."
+    },
+    "BKN": {
+      "delta": -1,
+      "upside": 1.2,
+      "note": "Young core development, still seeking star talent."
+    },
+    "CHA": {
+      "delta": -2,
+      "upside": 1.3,
+      "note": "Continued rebuild, high draft picks, young core growth."
+    },
+    "CHI": {
+      "delta": -5,
+      "upside": 1.4,
+      "note": "Full rebuild initiated, high draft picks, new young core."
+    },
+    "CLE": {
+      "delta": 2,
+      "upside": 1.1,
+      "note": "Core entering prime, Mobley/Garland development."
+    },
+    "DET": {
+      "delta": 3,
+      "upside": 1.3,
+      "note": "Young core maturation, added talent, potential leap."
+    },
+    "IND": {
+      "delta": 2,
+      "upside": 1.1,
+      "note": "Haliburton prime, young core development, added depth."
+    },
+    "MIA": {
+      "delta": -1,
+      "upside": 1.1,
+      "note": "Post-Butler era, new core forming, Heat culture resilience."
+    },
+    "MIL": {
+      "delta": -3,
+      "upside": 1,
+      "note": "Aging core, Lillard/Middleton decline, retooling around Giannis."
+    },
+    "NYK": {
+      "delta": 1,
+      "upside": 1,
+      "note": "Brunson prime, young core maturation, strong continuity."
+    },
+    "ORL": {
+      "delta": 4,
+      "upside": 1.3,
+      "note": "Paolo/Franz prime, young core maturation, added talent."
+    },
+    "PHI": {
+      "delta": 3,
+      "upside": 1.1,
+      "note": "Embiid/Maxey prime, added star via cap space."
+    },
+    "TOR": {
+      "delta": 2,
+      "upside": 1.2,
+      "note": "Barnes prime, young core development, added talent."
+    },
+    "WAS": {
+      "delta": 7,
+      "upside": 1.5,
+      "note": "Dybantsa #1 pick, returning starters, youth leap."
+    },
+    "DAL": {
+      "delta": 1,
+      "upside": 1,
+      "note": "Luka prime, solidified supporting cast around him."
+    },
+    "DEN": {
+      "delta": 0,
+      "upside": 1,
+      "note": "Elite continuity, prime core, Jokic dominance."
+    },
+    "GSW": {
+      "delta": -8,
+      "upside": 1.5,
+      "note": "Full rebuild, post-dynasty, high draft picks, new core."
+    },
+    "HOU": {
+      "delta": 4,
+      "upside": 1.3,
+      "note": "Young core maturation, added talent, potential leap."
+    },
+    "LAC": {
+      "delta": -6,
+      "upside": 1.4,
+      "note": "Full rebuild, post-star era, high draft picks, new core."
+    },
+    "LAL": {
+      "delta": -2,
+      "upside": 1.2,
+      "note": "Post-LeBron era, new co-star for AD, roster reset."
+    },
+    "MEM": {
+      "delta": 3,
+      "upside": 1.1,
+      "note": "Core in prime, healthy Morant, added depth."
+    },
+    "MIN": {
+      "delta": 2,
+      "upside": 1.2,
+      "note": "Ant prime, retooling around him, better fit."
+    },
+    "NOP": {
+      "delta": 0,
+      "upside": 1.3,
+      "note": "Zion health/fit, young talent development, roster churn."
+    },
+    "OKC": {
+      "delta": 5,
+      "upside": 1.2,
+      "note": "SGA/Chet/J-Dub prime, young core leap, added talent."
+    },
+    "PHX": {
+      "delta": -7,
+      "upside": 1.5,
+      "note": "Full rebuild, post-superteam, high draft picks, new core."
+    },
+    "POR": {
+      "delta": 2,
+      "upside": 1.4,
+      "note": "Young core maturation, high draft picks, potential leap."
+    },
+    "SAC": {
+      "delta": 0,
+      "upside": 1,
+      "note": "Fox/Sabonis prime, maintaining solid status."
+    },
+    "SAS": {
+      "delta": 6,
+      "upside": 1.5,
+      "note": "Wemby leap, high draft picks, young core development."
+    },
+    "UTA": {
+      "delta": -4,
+      "upside": 1.4,
+      "note": "Full rebuild, young talent development, high draft picks."
+    }
+  }
+}

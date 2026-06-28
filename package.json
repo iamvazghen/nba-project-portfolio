@@ -7,6 +7,7 @@
     "build": "node --no-experimental-webstorage ./node_modules/next/dist/bin/next build",
     "start": "node --no-experimental-webstorage ./node_modules/next/dist/bin/next start",
     "build:wasm": "wasm-pack build rust-sim --target web --out-dir ../lib/wasm-sim --out-name nba_sim",
+    "gen:context": "node scripts/gen-context.mjs",
     "deploy": "vercel deploy --prod"
   },
   "engines": {
