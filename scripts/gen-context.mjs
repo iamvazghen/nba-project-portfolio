@@ -21,14 +21,21 @@ const TEAMS = {
 };
 const clamp = (x, lo, hi) => Math.max(lo, Math.min(hi, Number(x) || 0));
 
-const prompt = `You are an NBA front-office analyst projecting the 2026-27 season. For EACH team output a roster-context adjustment vs how they looked on last season's scoreboard.
-Return STRICT JSON only (no markdown), shape: {"TRI": {"delta": number, "upside": number, "note": string}, ...}
-- delta: expected change in team net rating vs last season, in points, range -12..12. Account for offseason additions/departures, stars returning from injury or rest, high draft picks, and explicit tanking.
-- upside: outcome-variance multiplier 1.0..1.6. Higher for young rosters built around 1st/2nd-year players or a franchise rookie (real chance of a leap, also a floor risk).
-- note: <= 12 words explaining the adjustment.
-Anchors you know: Washington (WAS) added #1 overall pick AJ Dybantsa and gets back starters it benched/rested last season for lottery odds — a meaningful positive delta and high upside. Tanking/rebuilding teams get negative delta.
-Teams (tricode: nickname): ${Object.entries(TEAMS).map(([t, n]) => `${t}=${n}`).join(", ")}.
-Output ONLY the JSON object for all 30 tricodes.`;
+const prompt = `Use Google Search to find the LATEST NBA news (rosters, trades, free agency, draft, injuries) for the 2026-27 season as of today. Base every answer on what you find, NOT on older memory.
+You are an NBA front-office analyst. For EACH team output a roster-context adjustment vs how they looked on last season's scoreboard.
+Shape (output ONLY this JSON object, no markdown, all 30 tricodes): {"TRI": {"delta": number, "upside": number, "note": string}, ...}
+- delta: expected change in team net rating vs last season, points, range -12..12 (offseason additions/departures, stars returning, high draft picks, tanking).
+- upside: outcome-variance multiplier 1.0..1.6 (higher for young rosters built around 1st/2nd-year players or a franchise rookie).
+- note: <= 12 words, must reflect the CURRENT roster you found via search.
+Known current facts to honor: Washington (WAS) drafted #1 pick AJ Dybantsa and gets back starters it sat for lottery odds (positive delta, high upside). The Lakers (LAL) are in the LUKA DONCIC era — Doncic was traded to LA in Feb 2025 and Anthony Davis went to Dallas in that deal (do NOT call it post-LeBron or pair AD with LA); reflect LeBron's actual current status from the news.
+Teams (tricode: nickname): ${Object.entries(TEAMS).map(([t, n]) => `${t}=${n}`).join(", ")}.`;
+
+// Pull the JSON object out of a possibly prose/grounded response.
+function extractJson(text) {
+  const cleaned = text.replace(/```json|```/g, "");
+  const a = cleaned.indexOf("{"), b = cleaned.lastIndexOf("}");
+  return JSON.parse(cleaned.slice(a, b + 1));
+}
 
 async function main() {
   const k = key();
@@ -41,13 +48,16 @@ async function main() {
     try {
       const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${k}`, {
         method: "POST", headers: { "content-type": "application/json" },
-        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0.4, responseMimeType: "application/json" } }),
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          tools: [{ google_search: {} }], // ground in live NBA news
+          generationConfig: { temperature: 0.3 },
+        }),
       });
       if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
       const json = await res.json();
-      let text = json?.candidates?.[0]?.content?.parts?.map((p) => p.text).join("") ?? "{}";
-      text = text.replace(/```json|```/g, "").trim();
-      const parsed = JSON.parse(text);
+      const text = json?.candidates?.[0]?.content?.parts?.map((p) => p.text).join("") ?? "{}";
+      const parsed = extractJson(text);
       for (const [t, v] of Object.entries(parsed)) {
         if (!TEAMS[t]) continue;
         out.teams[t] = { delta: clamp(v.delta, -12, 12), upside: clamp(v.upside || 1, 1, 1.6), note: String(v.note || "").slice(0, 80) };

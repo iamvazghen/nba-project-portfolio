@@ -3,154 +3,154 @@
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "delta": 1,
-      "upside": 1.1,
-      "note": "Young core development, roster clarity post-trade."
+      "delta": -4,
+      "upside": 1.4,
+      "note": "Young traded, Flemings leads new youth movement; Wiggins added."
     },
     "BOS": {
-      "delta": 0,
-      "upside": 1,
-      "note": "Elite continuity, prime core, minor veteran decline."
+      "delta": -2,
+      "upside": 1.1,
+      "note": "Jaylen Brown trade rumors persist; drafted Cenac, Mitchell."
     },
     "BKN": {
-      "delta": -1,
-      "upside": 1.2,
-      "note": "Young core development, still seeking star talent."
+      "delta": 3,
+      "upside": 1.3,
+      "note": "Randle acquired, Mikel Brown drafted; cap space for more."
     },
     "CHA": {
-      "delta": -2,
-      "upside": 1.3,
-      "note": "Continued rebuild, high draft picks, young core growth."
+      "delta": -5,
+      "upside": 1.5,
+      "note": "Ball traded; Reid, Steinbach lead new, young core."
     },
     "CHI": {
-      "delta": -5,
-      "upside": 1.4,
-      "note": "Full rebuild initiated, high draft picks, new young core."
+      "delta": 3,
+      "upside": 1.3,
+      "note": "Claxton acquired; Wilson, Swain drafted; Miller option picked up."
     },
     "CLE": {
-      "delta": 2,
+      "delta": 1,
       "upside": 1.1,
-      "note": "Core entering prime, Mobley/Garland development."
+      "note": "Harden expected to re-sign; drafted Thomas; Mobley untouchable."
     },
     "DET": {
-      "delta": 3,
+      "delta": 2,
       "upside": 1.3,
-      "note": "Young core maturation, added talent, potential leap."
+      "note": "Joe acquired; Duren staying; Herro interest; Harris free agent."
     },
     "IND": {
-      "delta": 2,
+      "delta": 1,
       "upside": 1.1,
-      "note": "Haliburton prime, young core development, added depth."
+      "note": "Braden Smith drafted; Turner remains; solid core."
     },
     "MIA": {
-      "delta": -1,
-      "upside": 1.1,
-      "note": "Post-Butler era, new core forming, Heat culture resilience."
+      "delta": 10,
+      "upside": 1.2,
+      "note": "Giannis acquired; immediate contender; Powell, Wiggins free agents."
     },
     "MIL": {
-      "delta": -3,
-      "upside": 1,
-      "note": "Aging core, Lillard/Middleton decline, retooling around Giannis."
+      "delta": -10,
+      "upside": 1.4,
+      "note": "Giannis traded; Herro leads new, younger core."
     },
     "NYK": {
-      "delta": 1,
+      "delta": -1,
       "upside": 1,
-      "note": "Brunson prime, young core maturation, strong continuity."
+      "note": "Mitchell Robinson likely leaving; Alvarado signed; strong core."
     },
     "ORL": {
-      "delta": 4,
-      "upside": 1.3,
-      "note": "Paolo/Franz prime, young core maturation, added talent."
+      "delta": 0,
+      "upside": 1.1,
+      "note": "Isaac waived; young core seeks next step."
     },
     "PHI": {
-      "delta": 3,
-      "upside": 1.1,
-      "note": "Embiid/Maxey prime, added star via cap space."
+      "delta": 1,
+      "upside": 1.2,
+      "note": "Philon drafted; Embiid leads established core."
     },
     "TOR": {
-      "delta": 2,
+      "delta": -1,
       "upside": 1.2,
-      "note": "Barnes prime, young core development, added talent."
+      "note": "Trent Jr. likely leaving; Graves drafted; Mamukelashvili interest."
     },
     "WAS": {
-      "delta": 7,
-      "upside": 1.5,
-      "note": "Dybantsa #1 pick, returning starters, youth leap."
+      "delta": 8,
+      "upside": 1.6,
+      "note": "Dybantsa #1 pick; Young, Davis acquired; starters return."
     },
     "DAL": {
-      "delta": 1,
-      "upside": 1,
-      "note": "Luka prime, solidified supporting cast around him."
-    },
-    "DEN": {
-      "delta": 0,
-      "upside": 1,
-      "note": "Elite continuity, prime core, Jokic dominance."
-    },
-    "GSW": {
       "delta": -8,
       "upside": 1.5,
-      "note": "Full rebuild, post-dynasty, high draft picks, new core."
+      "note": "Doncic, Davis traded; Middleton, young talent acquired."
+    },
+    "DEN": {
+      "delta": -1,
+      "upside": 1,
+      "note": "Jokic aging; Gordon injury concerns; Brazile drafted."
+    },
+    "GSW": {
+      "delta": 1,
+      "upside": 1.1,
+      "note": "Butler returning from injury; Lendeborg drafted."
     },
     "HOU": {
-      "delta": 4,
-      "upside": 1.3,
-      "note": "Young core maturation, added talent, potential leap."
+      "delta": 0,
+      "upside": 1.2,
+      "note": "Thornton drafted; Finney-Smith trade rumors; Eason stalled."
     },
     "LAC": {
-      "delta": -6,
-      "upside": 1.4,
-      "note": "Full rebuild, post-star era, high draft picks, new core."
+      "delta": -2,
+      "upside": 1.1,
+      "note": "Kawhi extension talks stalled; Wagler drafted; Mathurin struggles."
     },
     "LAL": {
-      "delta": -2,
-      "upside": 1.2,
-      "note": "Post-LeBron era, new co-star for AD, roster reset."
+      "delta": 2,
+      "upside": 1.3,
+      "note": "Doncic leads; LeBron free agent; Reaves extended; seeking center."
     },
     "MEM": {
       "delta": 3,
-      "upside": 1.1,
-      "note": "Core in prime, healthy Morant, added depth."
+      "upside": 1.5,
+      "note": "Boozer drafted; Morant's future uncertain; young core."
     },
     "MIN": {
-      "delta": 2,
-      "upside": 1.2,
-      "note": "Ant prime, retooling around him, better fit."
+      "delta": 4,
+      "upside": 1.3,
+      "note": "LaMelo Ball acquired; new backcourt leader."
     },
     "NOP": {
-      "delta": 0,
-      "upside": 1.3,
-      "note": "Zion health/fit, young talent development, roster churn."
+      "delta": -1,
+      "upside": 1.2,
+      "note": "Looney leaving; roster uncertainty; young core."
     },
     "OKC": {
-      "delta": 5,
-      "upside": 1.2,
-      "note": "SGA/Chet/J-Dub prime, young core leap, added talent."
+      "delta": 2,
+      "upside": 1.3,
+      "note": "Hartenstein signed; Mara drafted; continued young core growth."
     },
     "PHX": {
-      "delta": -7,
-      "upside": 1.5,
-      "note": "Full rebuild, post-superteam, high draft picks, new core."
-    },
-    "POR": {
-      "delta": 2,
-      "upside": 1.4,
-      "note": "Young core maturation, high draft picks, potential leap."
-    },
-    "SAC": {
       "delta": 0,
       "upside": 1,
-      "note": "Fox/Sabonis prime, maintaining solid status."
+      "note": "Ayton option picked up; Peat drafted; veteran core."
+    },
+    "POR": {
+      "delta": 1,
+      "upside": 1.4,
+      "note": "Aggressively pursuing star talent; new owner seeks splash."
+    },
+    "SAC": {
+      "delta": 1,
+      "upside": 1.2,
+      "note": "Acuff drafted; Karaban acquired; core remains."
     },
     "SAS": {
-      "delta": 6,
-      "upside": 1.5,
-      "note": "Wemby leap, high draft picks, young core development."
+      "delta": 3,
+      "upside": 1.6,
+      "note": "Quaintance drafted; building around Wemby; seeking shooting."
     },
     "UTA": {
-      "delta": -4,
-      "upside": 1.4,
-      "note": "Full rebuild, young talent development, high draft picks."
+      "delta": 2,
+      "upside": 1.5,
+      "note": "Peterson drafted; young core developing around Kessler."
     }
   }
 }
