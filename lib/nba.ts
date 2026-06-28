@@ -1,6 +1,8 @@
 // NBA data: pulls the official public schedule CDN (no API key needed) and
 // derives team power ratings from completed games. Used by every mode.
 
+import snapshot from "@/data/schedule-snapshot.json";
+
 export const SCHEDULE_URL =
   "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json";
 
@@ -40,52 +42,66 @@ export type Game = {
 
 type Rec = { name: string; w: number; l: number; plays: { opp: string; margin: number; t: number }[] };
 
+type Src = { games: Game[]; names: Record<string, string> };
 let cache: { at: number; data: { teams: Record<string, Team>; games: Game[] } } | null = null;
 
-export async function getLeague() {
-  if (cache && Date.now() - cache.at < 60 * 60 * 1000) return cache.data;
-
-  const res = await fetch(SCHEDULE_URL, {
-    next: { revalidate: 3600 },
-    headers: {
-      // cdn.nba.com 403s requests without a browser-like UA/Referer.
-      "User-Agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-      Referer: "https://www.nba.com/",
-      Origin: "https://www.nba.com",
-    },
-  });
-  if (!res.ok) throw new Error(`NBA schedule fetch failed: ${res.status}`);
-  const json = await res.json();
-
-  const rec: Record<string, Rec> = {};
+function parseLeague(json: any): Src {
   const games: Game[] = [];
-  const dates: any[] = json?.leagueSchedule?.gameDates ?? [];
-
-  for (const d of dates) {
+  const names: Record<string, string> = {};
+  for (const d of json?.leagueSchedule?.gameDates ?? []) {
     for (const g of d.games ?? []) {
       const h = g.homeTeam, a = g.awayTeam;
       if (!h?.teamTricode || !a?.teamTricode) continue;
       if (!CONFERENCE[h.teamTricode] || !CONFERENCE[a.teamTricode]) continue; // skip All-Star / intl
-      const hs = h.score ?? 0, as = a.score ?? 0;
+      names[h.teamTricode] = h.teamName ?? h.teamTricode;
+      names[a.teamTricode] = a.teamName ?? a.teamTricode;
       games.push({
-        id: g.gameId,
-        date: g.gameDateEst ?? d.gameDate,
-        status: g.gameStatus ?? 1,
-        statusText: g.gameStatusText ?? "",
-        home: h.teamTricode, away: a.teamTricode,
-        homeScore: hs, awayScore: as,
+        id: g.gameId, date: g.gameDateEst ?? d.gameDate, status: g.gameStatus ?? 1,
+        statusText: g.gameStatusText ?? "", home: h.teamTricode, away: a.teamTricode,
+        homeScore: h.score ?? 0, awayScore: a.score ?? 0,
       });
-      const t = +new Date(g.gameDateEst ?? d.gameDate);
-      for (const [tm, opp, sf, sa, won, nm] of [
-        [h.teamTricode, a.teamTricode, hs, as, hs > as, h.teamName],
-        [a.teamTricode, h.teamTricode, as, hs, as > hs, a.teamName],
-      ] as const) {
-        rec[tm] ??= { name: nm, w: 0, l: 0, plays: [] };
-        if (g.gameStatus === 3 && (sf > 0 || sa > 0)) {
-          if (won) rec[tm].w++; else rec[tm].l++;
-          rec[tm].plays.push({ opp, margin: sf - sa, t });
-        }
+    }
+  }
+  return { games, names };
+}
+
+async function fetchLive(): Promise<Src> {
+  const res = await fetch(SCHEDULE_URL, {
+    next: { revalidate: 3600 },
+    headers: {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      Referer: "https://www.nba.com/",
+    },
+  });
+  if (!res.ok) throw new Error(`NBA schedule fetch failed: ${res.status}`);
+  return parseLeague(await res.json());
+}
+
+export async function getLeague() {
+  if (cache && Date.now() - cache.at < 60 * 60 * 1000) return cache.data;
+
+  let src: Src;
+  try {
+    src = await fetchLive();
+    if (!src.games.length) throw new Error("empty schedule");
+  } catch {
+    // cdn.nba.com blocks some datacenter IPs (e.g. Vercel) — use the committed
+    // snapshot so the app always loads. Refresh with `npm run gen:data`.
+    src = snapshot as Src;
+  }
+
+  const rec: Record<string, Rec> = {};
+  const games = src.games;
+  for (const g of games) {
+    const t = +new Date(g.date);
+    for (const [tm, opp, sf, sa, won] of [
+      [g.home, g.away, g.homeScore, g.awayScore, g.homeScore > g.awayScore],
+      [g.away, g.home, g.awayScore, g.homeScore, g.awayScore > g.homeScore],
+    ] as const) {
+      rec[tm] ??= { name: src.names[tm] ?? tm, w: 0, l: 0, plays: [] };
+      if (g.status === 3 && (sf > 0 || sa > 0)) {
+        if (won) rec[tm].w++; else rec[tm].l++;
+        rec[tm].plays.push({ opp, margin: sf - sa, t });
       }
     }
   }
