@@ -9,6 +9,7 @@
     "build:wasm": "wasm-pack build rust-sim --target web --out-dir ../lib/wasm-sim --out-name nba_sim",
     "gen:data": "node scripts/gen-data.mjs",
     "gen:context": "node scripts/gen-context.mjs",
+    "gen:rosters": "node scripts/gen-rosters.mjs",
     "deploy": "vercel deploy --prod"
   },
   "engines": {

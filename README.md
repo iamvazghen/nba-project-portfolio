@@ -11,7 +11,9 @@ npm install        # dependencies
 npm run dev        # http://localhost:3000
 npm run deploy     # vercel --prod
 npm run build:wasm # recompile the Rust engine (needs `cargo install wasm-pack`)
-npm run gen:context# regenerate the roster-context layer via Gemini
+npm run gen:data   # refresh the NBA schedule snapshot
+npm run gen:context# regenerate the team roster-context via Gemini (news-grounded)
+npm run gen:rosters# regenerate per-player rotations via Gemini (news-grounded)
 ```
 
 ## Modes
@@ -37,7 +39,13 @@ The engine is dumb on purpose; the intelligence is in the rating each team carri
 
 Regenerate the context table any time with `npm run gen:context` (Gemini), or hand-edit `data/team-context.json` — every number is visible and overridable.
 
-**Not yet modeled (next phase):** player/lineup-level matchups (bench-unit edges, coverages), rest/travel, and playoff-round-specific coaching/experience effects — these need a player-tracking data source.
+5. **Player matchup layer** (`data/team-rosters.json` + `lib/players.ts` + `lib/matchup.ts`) — each team's news-grounded rotation (impact / minutes / experience per player) produces structural features: **star power, bench depth, experience**. For a specific matchup these become a pairwise **matchup adjustment** (reweighted for the playoffs — stars and poise matter more, depth less), applied on top of the team rating in Single Game and the best-of-7 **series** simulator. So "on paper X is the favorite, but Y has the edge" shows up where it actually matters.
+
+**Not yet modeled (next phase):** lineup-level coverages/on-off splits and rest/travel — these need a player-tracking data feed.
+
+## Automation
+
+`.github/workflows/refresh.yml` re-grounds the rosters + context from live NBA news daily (Gemini Google-Search grounding) and pushes the updated JSON. To enable: add a repo secret `GEMINI_API_KEY`, and connect the repo to the Vercel project (Vercel → Settings → Git) so each push auto-deploys. Run it on demand from the Actions tab.
 
 ## Odds (multi-source, context-aware)
 

@@ -1,4 +1,5 @@
 import { getLeague } from "@/lib/nba";
+import { featuresFor, topPlayers } from "@/lib/players";
 import context from "@/data/team-context.json";
 
 export const dynamic = "force-dynamic"; // fetch the live schedule per request, not at build
@@ -27,6 +28,8 @@ export async function GET() {
       ctxDelta: c.delta ?? 0,
       upside: c.upside ?? 1,
       ctxNote: c.note ?? "",
+      feat: featuresFor(t.tricode),
+      players: topPlayers(t.tricode),
     };
   }).sort((a, b) => a.name.localeCompare(b.name));
 

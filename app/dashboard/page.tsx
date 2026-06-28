@@ -1,8 +1,10 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import { simGame, simSeason, simPlayoffsFull, simPlayoffsFromSeeds } from "@/lib/wasm";
+import { matchupDelta, type Feat, type Edge } from "@/lib/matchup";
 
-type Team = { tricode: string; name: string; conf: "East" | "West"; wins: number; losses: number; netRating: number; base: number; rating: number; upside: number; ctxDelta: number; ctxNote: string };
+type Player = { name: string; role: "S" | "B"; impact: number; min: number; exp: number };
+type Team = { tricode: string; name: string; conf: "East" | "West"; wins: number; losses: number; netRating: number; base: number; rating: number; upside: number; ctxDelta: number; ctxNote: string; feat: Feat; players: Player[] };
 type Game = { id: string; date: string; status: number; home: string; away: string; homeScore: number; awayScore: number };
 type Model = { teams: Team[]; ratings: number[]; variance: number[]; conf: number[]; homeIdx: number[]; awayIdx: number[]; idx: Record<string, number> };
 type Result = { homeWinPct: number; expectedMargin: number; homeScore: number; awayScore: number; sims: number };
@@ -39,9 +41,19 @@ export default function Page() {
   const top = useMemo(() => (model ? [...model.teams].sort((a, b) => b.rating - a.rating)[0] : null), [model]);
 
   useEffect(() => {
-    const t = new URLSearchParams(window.location.search).get("tab");
-    if (t && (TABS as readonly string[]).includes(t)) setTab(t as (typeof TABS)[number]);
+    const sync = () => {
+      const t = new URLSearchParams(window.location.search).get("tab") ?? "Single Game";
+      if ((TABS as readonly string[]).includes(t)) setTab(t as (typeof TABS)[number]);
+    };
+    sync();
+    window.addEventListener("popstate", sync);
+    return () => window.removeEventListener("popstate", sync);
   }, []);
+
+  function selectTab(t: (typeof TABS)[number]) {
+    setTab(t);
+    window.history.pushState({ tab: t }, "", t === "Single Game" ? "/dashboard" : `/dashboard?tab=${encodeURIComponent(t)}`);
+  }
 
   return (
     <>
@@ -67,7 +79,7 @@ export default function Page() {
 
         <nav className="tabs" role="tablist">
           {TABS.map((t) => (
-            <button key={t} role="tab" aria-selected={tab === t} className={"tab" + (tab === t ? " active" : "")} onClick={() => setTab(t)}>{t}</button>
+            <button key={t} role="tab" aria-selected={tab === t} className={"tab" + (tab === t ? " active" : "")} onClick={() => selectTab(t)}>{t}</button>
           ))}
         </nav>
 
@@ -89,7 +101,10 @@ export default function Page() {
 function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
   const { teams, idx, ratings } = model;
   const [home, setHome] = useState(""); const [away, setAway] = useState("");
+  const [series, setSeries] = useState(false);
   const [result, setResult] = useState<Result | null>(null);
+  const [seriesRes, setSeriesRes] = useState<{ hi: Team; lo: Team; hiWin: number; lengths: number[] } | null>(null);
+  const [md, setMd] = useState<{ total: number; edges: Edge[] } | null>(null);
   const [busy, setBusy] = useState(false);
   const [ai, setAi] = useState<string | null>(null); const [aiBusy, setAiBusy] = useState(false);
 
@@ -100,12 +115,38 @@ function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
     }
   }, [teams, latest, home]);
 
+  function reset() { setResult(null); setSeriesRes(null); setMd(null); setAi(null); }
+
   async function run() {
     if (!home || !away || home === away) return;
     setBusy(true); setAi(null); await yield_();
-    const hi = idx[home], ai = idx[away];
-    try { setResult(await simGame(ratings[hi], ratings[ai], 10000, teams[hi].upside, teams[ai].upside)); }
-    finally { setBusy(false); }
+    const hI = idx[home], aI = idx[away];
+    try {
+      const delta = matchupDelta(teams[hI].feat, teams[aI].feat, series); // pairwise edge, points
+      setMd(delta);
+      if (!series) {
+        setResult(await simGame(ratings[hI] + delta.total, ratings[aI], 10000, teams[hI].upside, teams[aI].upside));
+        setSeriesRes(null);
+      } else {
+        // Best-of-7: the higher-rated team hosts (2-2-1-1-1). Series win% via the
+        // engine's per-game home/away probabilities, Monte-Carlo'd over 20k series.
+        const hostHome = ratings[hI] >= ratings[aI];
+        const hiI = hostHome ? hI : aI, loI = hostHome ? aI : hI;
+        const d = hostHome ? delta.total : -delta.total;
+        const pHome = (await simGame(ratings[hiI] + d, ratings[loI], 6000, teams[hiI].upside, teams[loI].upside)).homeWinPct;
+        const pAway = 1 - (await simGame(ratings[loI], ratings[hiI] + d, 6000, teams[loI].upside, teams[hiI].upside)).homeWinPct;
+        const pattern = [true, true, false, false, true, false, true]; // hi-seed home games
+        const lengths = [0, 0, 0, 0]; let hiWins = 0; const N = 20000;
+        for (let s = 0; s < N; s++) {
+          let h = 0, l = 0, g = 0;
+          while (h < 4 && l < 4) { if (Math.random() < (pattern[g] ? pHome : pAway)) h++; else l++; g++; }
+          if (h === 4) hiWins++;
+          lengths[g - 4]++;
+        }
+        setSeriesRes({ hi: teams[hiI], lo: teams[loI], hiWin: hiWins / N, lengths: lengths.map((c) => c / N) });
+        setResult(null);
+      }
+    } finally { setBusy(false); }
   }
   async function getAI() {
     setAiBusy(true);
@@ -117,6 +158,7 @@ function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
 
   const h = teams[idx[home]], a = teams[idx[away]];
   const hPct = result ? Math.round(result.homeWinPct * 100) : 0;
+  const sPct = seriesRes ? Math.round(seriesRes.hiWin * 100) : 0;
 
   return (
     <>
@@ -124,7 +166,7 @@ function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
         <div className="panel">
           <div className="eyebrow">Latest games — tap to load</div>
           {latest.slice(0, 5).map((g) => (
-            <div key={g.id} className="matchcard" onClick={() => { setHome(g.home); setAway(g.away); setResult(null); }}>
+            <div key={g.id} className="matchcard" onClick={() => { setHome(g.home); setAway(g.away); reset(); }}>
               <span><b>{g.away}</b> <span className="muted">@</span> <b>{g.home}</b></span>
               <span className="muted tnum">{g.status === 3 ? `Final ${g.awayScore}-${g.homeScore}` : new Date(g.date).toLocaleDateString()}</span>
             </div>
@@ -135,16 +177,22 @@ function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
       <div className="panel">
         <div className="row">
           <div><label className="lbl">Away</label>
-            <select value={away} onChange={(e) => { setAway(e.target.value); setResult(null); }}>
+            <select value={away} onChange={(e) => { setAway(e.target.value); reset(); }}>
               {teams.map((t) => <option key={t.tricode} value={t.tricode}>{t.name}</option>)}
             </select>
           </div>
           <div><label className="lbl">Home</label>
-            <select value={home} onChange={(e) => { setHome(e.target.value); setResult(null); }}>
+            <select value={home} onChange={(e) => { setHome(e.target.value); reset(); }}>
               {teams.map((t) => <option key={t.tricode} value={t.tricode}>{t.name}</option>)}
             </select>
           </div>
-          <button className="btn" onClick={run} disabled={busy || !home || home === away}>{busy ? <><span className="spin" /> Simulating</> : "Run 10,000 sims"}</button>
+          <div><label className="lbl">Format</label>
+            <div className="seg">
+              <button className={!series ? "on" : ""} onClick={() => { setSeries(false); reset(); }}>Single game</button>
+              <button className={series ? "on" : ""} onClick={() => { setSeries(true); reset(); }}>Best of 7</button>
+            </div>
+          </div>
+          <button className="btn" onClick={run} disabled={busy || !home || home === away}>{busy ? <><span className="spin" /> Simulating</> : series ? "Simulate series" : "Run 10,000 sims"}</button>
         </div>
 
         {result && h && a && (
@@ -159,7 +207,7 @@ function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
               <div className="team" style={{ textAlign: "right" }}><div className="muted">{h.name} <span className="tag">home</span></div><div className="score tnum">{result.homeScore}</div></div>
             </div>
             <p className="muted" style={{ marginTop: "var(--space-3)" }}>
-              Expected margin {result.expectedMargin >= 0 ? "+" : ""}{result.expectedMargin.toFixed(1)} {h.tricode} · {result.sims.toLocaleString()} sims · <span className="tag">Rust → WASM</span>
+              Expected margin {result.expectedMargin >= 0 ? "+" : ""}{result.expectedMargin.toFixed(1)} {h.tricode} · matchup-adjusted · {result.sims.toLocaleString()} sims · <span className="tag">Rust → WASM</span>
             </p>
             {[h, a].filter((tm) => tm.ctxDelta !== 0 || tm.upside > 1).map((tm) => (
               <p key={tm.tricode} className="muted" style={{ fontSize: "var(--text-xs)", margin: "3px 0" }}>
@@ -167,6 +215,34 @@ function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
                 {tm.ctxNote}
               </p>
             ))}
+          </div>
+        )}
+
+        {seriesRes && (
+          <div>
+            <div className="winbar">
+              <div className="h tnum" style={{ width: `${sPct}%` }}>{seriesRes.hi.tricode} {sPct}%</div>
+              <div className="a tnum" style={{ width: `${100 - sPct}%` }}>{100 - sPct}% {seriesRes.lo.tricode}</div>
+            </div>
+            <p className="muted" style={{ marginTop: "var(--space-3)" }}>
+              <b>{seriesRes.hi.name}</b> win the series {sPct}% · home court {seriesRes.hi.tricode} · 20,000 series sims
+            </p>
+            <div className="series-len">
+              {seriesRes.lengths.map((p, i) => (
+                <div className="len" key={i}>
+                  <span className="tnum len-pct">{(p * 100).toFixed(0)}%</span>
+                  <span className="len-bar" style={{ height: `${Math.max(4, p * 110)}px` }} />
+                  <span className="muted len-lab">{i + 4}g</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {md && h && a && <MatchupBreakdown h={h} a={a} md={md} series={series} />}
+
+        {(result || seriesRes) && (
+          <div style={{ marginTop: "var(--space-4)" }}>
             <button className="btn ghost" onClick={getAI} disabled={aiBusy}>{aiBusy ? <><span className="spin" /> Thinking</> : "🤖 AI take"}</button>
             {ai && <div className="ai">{ai}</div>}
           </div>
@@ -175,6 +251,35 @@ function SingleGame({ model, latest }: { model: Model; latest: Game[] }) {
 
       <GameOdds home={home} away={away} />
     </>
+  );
+}
+
+function MatchupBreakdown({ h, a, md, series }: { h: Team; a: Team; md: { total: number; edges: Edge[] }; series: boolean }) {
+  const sign = (v: number) => (v >= 0 ? "+" : "") + v.toFixed(1);
+  return (
+    <div className="matchup">
+      <div className="eyebrow">Matchup breakdown {series && <span className="tag">playoff weighting</span>}</div>
+      <div className="mu-grid">
+        <div className="mu-col">
+          <div className="mu-team">{a.name}</div>
+          {a.players.slice(0, 4).map((p) => (
+            <div className="mu-p" key={p.name}><span className={"role " + (p.role === "S" ? "s" : "b")}>{p.role}</span><span className="mu-name">{p.name}</span><b className="tnum">{p.impact > 0 ? "+" : ""}{p.impact}</b></div>
+          ))}
+        </div>
+        <div className="mu-mid">
+          {md.edges.map((e) => (
+            <div className="mu-edge" key={e.label}><span>{e.label}</span><span className={"tnum " + (e.value >= 0 ? "pos" : "neg")}>{sign(e.value)}</span></div>
+          ))}
+          <div className="mu-edge total"><span>Net edge</span><span className={"tnum " + (md.total >= 0 ? "pos" : "neg")}>{sign(md.total)} {h.tricode}</span></div>
+        </div>
+        <div className="mu-col rtl">
+          <div className="mu-team">{h.name}</div>
+          {h.players.slice(0, 4).map((p) => (
+            <div className="mu-p" key={p.name}><b className="tnum">{p.impact > 0 ? "+" : ""}{p.impact}</b><span className="mu-name">{p.name}</span><span className={"role " + (p.role === "S" ? "s" : "b")}>{p.role}</span></div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 

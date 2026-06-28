@@ -1,0 +1,44 @@
+name: Daily NBA context refresh
+
+# Refreshes the news-grounded roster/context (and schedule snapshot) once a day.
+# Setup: (1) add repo secret GEMINI_API_KEY, (2) connect this repo to the Vercel
+# project (Vercel → Settings → Git) so the push below auto-deploys.
+on:
+  schedule:
+    - cron: "0 12 * * *" # daily 12:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Refresh schedule snapshot (best effort)
+        run: node scripts/gen-data.mjs || echo "live schedule blocked from CI; keeping committed snapshot"
+      - name: Refresh rosters + context from live news
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node scripts/gen-rosters.mjs || echo "rosters refresh skipped"
+          node scripts/gen-context.mjs
+      - name: Commit & push if changed
+        run: |
+          git config user.name "nba-context-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: daily context refresh [skip ci]"
+            git push
+          fi
