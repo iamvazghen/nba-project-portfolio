@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-29",
+  "generatedAt": "2026-06-30",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Hard-capped at first apron, seeking center. Young core, draft picks, and Hield's contract are trade chips."
-    },
-    "BOS": {
       "upside": 1,
       "apron": "",
       "note": ""
+    },
+    "BOS": {
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Tatum returns healthy. Expensive core, near first apron. Need internal development and smart exceptions."
     },
     "BKN": {
       "upside": 1,
@@ -18,9 +18,9 @@
       "note": ""
     },
     "CHA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core with significant cap flexibility. Below aprons, potential buyer at deadline."
     },
     "CHI": {
       "upside": 1,
@@ -28,14 +28,14 @@
       "note": ""
     },
     "CLE": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Expensive core with Mitchell, Mobley, Allen. Harden re-signing. Likely at first apron."
     },
     "DET": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core with Cunningham. Mid-tier contracts for trade flexibility. Duren's extension is key."
     },
     "IND": {
       "upside": 1,
@@ -68,9 +68,9 @@
       "note": ""
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Expensive core, near first apron. May shed salary if not contending. Barnes is key."
     },
     "WAS": {
       "upside": 1,
@@ -84,18 +84,18 @@
     },
     "DEN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Expensive championship core, near second apron. Limited flexibility. Jokic's extension looms."
     },
     "GSW": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "hard-capped",
+      "note": "Pursuing LeBron/AD, implying major overhaul. Likely hard-capped at first apron. Curry aging."
     },
     "HOU": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "2nd",
+      "note": "Expensive roster, over second apron. Durant aging, VanVleet returns. Young core needs development."
     },
     "LAC": {
       "upside": 1,
@@ -103,9 +103,9 @@
       "note": ""
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "1st",
+      "note": "Doncic era. Ayton opted in, but trade possible. LeBron's decision is key. Roster incomplete."
     },
     "MEM": {
       "upside": 1,
@@ -133,9 +133,9 @@
       "note": ""
     },
     "POR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core with Henderson/Sharpe. Lillard returns from Achilles. Below aprons. Consolidation trades likely."
     },
     "SAC": {
       "upside": 1,
@@ -143,9 +143,9 @@
       "note": ""
     },
     "SAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Deep young core on cheap deals. Significant cap flexibility. High upside, potential buyer."
     },
     "UTA": {
       "upside": 1,
