@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-07-01",
+  "generatedAt": "2026-07-02",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Core likely intact, limited flexibility for major upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Tatum returns healthy. Capped out, roster frozen, limited trade flexibility."
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Roster in flux, potential for significant changes or cap space."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "Young core developing, significant cap space for future moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Limited flexibility, likely stand-pat at deadline. Key young players on cheap deals."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Young core on extensions, limited cap flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DET": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Deep young core, significant cap space, high upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Haliburton returns healthy. Competitive team, buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIA": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Veteran core, limited cap flexibility, potential for minor moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Capped out, roster frozen, limited trade flexibility."
+      "apron": "",
+      "note": ""
     },
     "NYK": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Competitive roster, potential for trade-deadline upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "ORL": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young, developing core with cap flexibility for future."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "High salaries, Paul George's contract is a bad chip, limited trade flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "TOR": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Re-tooling, potential for trades to reshape roster."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "WAS": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Dybantsa joins Davis/Young; building around young star."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Doncic era, contending team, capped out, limited flexibility."
+      "apron": "",
+      "note": ""
     },
     "DEN": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Contending team, capped out, limited flexibility."
+      "apron": "",
+      "note": ""
     },
     "GSW": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Roster transitioning, potential for trades with veteran contracts."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Young core with high salaries, likely buyer, limited cap flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Capped out, roster frozen, limited trade flexibility. Key players guaranteed."
+      "apron": "",
+      "note": ""
     },
     "LAL": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Doncic era, contending team, capped out, limited flexibility."
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core, potential for in-season improvement, buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Capped out, roster frozen, limited trade flexibility."
+      "apron": "",
+      "note": ""
     },
     "NOP": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Competitive, but injury concerns; buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Projected over second apron, need to slash payroll, limited flexibility."
+      "apron": "",
+      "note": ""
     },
     "PHX": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Capped out, roster frozen, limited trade flexibility."
+      "apron": "",
+      "note": ""
     },
     "POR": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Over cap but under tax, young core, Lillard's health key, seeking trades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Over second apron, limited flexibility, need depth at guard and wing."
+      "apron": "",
+      "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "1st",
-      "note": "Deep young core, Wembanyama extension, Quaintance injury, high upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core, Nurkic signed, Kessler RFA drama, good financial flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
