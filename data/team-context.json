@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-07-03",
+  "generatedAt": "2026-07-04",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.4,
+      "upside": 1.2,
       "apron": "under",
-      "note": "Young core with cap flexibility; Hield, Kispert, Risacher are trade chips; buyer at deadline for big man."
+      "note": "Moderate upside, potential for significant roster changes, cap status dependent on core."
     },
     "BOS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "2nd",
+      "note": "Tatum returns healthy, over second apron, severe trade restrictions, win-now mode."
     },
     "BKN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Rebuilding/retooling, moderate cap flexibility, active in trade market."
     },
     "CHA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Young core, significant cap flexibility, full trade flexibility, buyers at deadline."
     },
     "CHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "under",
+      "note": "Roster in flux, limited cap flexibility, potential sellers."
     },
     "CLE": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Over second apron, limiting trades/exceptions. Harden's option decision is crucial for flexibility."
     },
     "DET": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Rebuilding, young core, significant cap room, acquiring assets."
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Haliburton returns healthy, young core, likely cap flexibility, buyers at deadline."
     },
     "MIA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "hard-capped",
+      "note": "Hard-capped at first apron, Wiggins' player option is key trade chip, limited flexibility."
     },
     "MIL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Contending core, under first apron, moderate flexibility, buyers at deadline."
     },
     "NYK": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Competitive core, very close to second apron, limited trade flexibility, buyers."
     },
     "ORL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Young core, first apron limits trade flexibility, Banchero/Wagner extensions kick in."
     },
     "PHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "hard-capped",
+      "note": "Embiid/Maxey core, hard-capped at first apron, limited trade flexibility after George trade."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "hard-capped",
+      "note": "Hard-capped at first apron, Scottie Barnes' max contract, limited trade flexibility."
     },
     "WAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Rebuilding with #1 pick AJ Dybantsa, significant cap room, acquiring assets."
     },
     "DAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Contending core with Anthony Davis, limited cap flexibility, buyers at deadline."
     },
     "DEN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "2nd",
+      "note": "Championship core, likely over second apron, severe trade restrictions, stand-pat."
     },
     "GSW": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Over second apron, severe trade restrictions, capped out, relies on Curry."
     },
     "HOU": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core, Durant's contract, cap flexibility dependent on Eason/FVV decisions, potential trade activity."
     },
     "LAC": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Veteran core, likely over second apron, potential injury concerns, limited flexibility."
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Luka Doncic era, Anthony Davis gone, likely buyers, aiming to contend."
     },
     "MEM": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Young core, Ja Morant's health/availability key, buyers at deadline, moderate flexibility."
     },
     "MIN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Talented core, likely over second apron, severe trade restrictions, stand-pat."
     },
     "NOP": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Zion's health is key, limited cap flexibility, close to first apron, potential trade activity."
     },
     "OKC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "2nd",
+      "note": "Star young core, over second apron, severe trade restrictions, likely to shed salary (Dort)."
     },
     "PHX": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Over second apron, severe trade restrictions, capped out, upside relies on current star performance."
     },
     "POR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Rebuilding, young core, cap flexibility, acquiring assets."
     },
     "SAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Over first apron, LaVine's large contract, limited cap flexibility, likely stand-pat."
     },
     "SAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "under",
+      "note": "Deep young core, significant cap flexibility, high upside, buyers at deadline."
     },
     "UTA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Rebuilding/retooling, good cap flexibility, potential for significant roster changes."
     }
   }
 }
