@@ -2,8 +2,6 @@
 
 Monte Carlo NBA predictions with a **single Rust→WASM engine**, a **smart layered rating model**, live NBA schedule, season simulation with seeding + bracketology, and a **multi-source odds aggregator** (sportsbooks + Kalshi + Polymarket). Offseason mode redirects to the viral [82-0](https://www.82-0.com/) game.
 
-Live: https://nba-project-portfolio.vercel.app
-
 ## Commands
 
 ```bash
