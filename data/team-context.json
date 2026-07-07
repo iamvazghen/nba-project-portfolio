@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-07-06",
+  "generatedAt": "2026-07-07",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.1,
-      "apron": "hard-capped",
-      "note": "Hard-capped at 1st apron due to trades. Limited flexibility for further roster changes."
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core led by All-NBA Jalen Johnson. Cap flexibility after Kuminga option declined. Active in trades, buyer at deadline."
     },
     "BOS": {
       "upside": 1,
-      "apron": "under",
-      "note": "Tatum returns healthy. Core is expensive and locked in. Limited flexibility, but young players need to step up."
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Significant cap space (>$30M). Positioned to be major buyers in free agency."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.1,
-      "apron": "hard-capped",
-      "note": "Hard-capped at 1st apron. Limited flexibility for further roster changes."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Significant cap space (>$30M). High draft pick Caleb Wilson. Positioned to be buyers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Projected over 2nd apron. Harden's contract decision is key for cap flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DET": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core with flexibility. Duren's RFA decision is key. Movable mid-tier contracts."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Haliburton returns healthy. Near 1st apron, limiting flexibility. Willing to spend."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIA": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Giannis acquired. Adebayo/Herro core. Jovic's contract a potential trade challenge."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
       "upside": 1,
-      "apron": "under",
-      "note": "No specific 2026-27 outlook found."
+      "apron": "",
+      "note": ""
     },
     "NYK": {
       "upside": 1,
-      "apron": "1st",
-      "note": "Over 1st apron. Owner reluctant to exceed 2nd apron. Limited trade flexibility."
+      "apron": "",
+      "note": ""
     },
     "ORL": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Over 1st apron, near 2nd apron. Limited trade flexibility. Expensive young core."
+      "apron": "",
+      "note": ""
     },
     "PHI": {
       "upside": 1,
-      "apron": "under",
-      "note": "No specific 2026-27 outlook found."
+      "apron": "",
+      "note": ""
     },
     "TOR": {
       "upside": 1,
-      "apron": "under",
-      "note": "No specific 2026-27 outlook found."
+      "apron": "",
+      "note": ""
     },
     "WAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "#1 pick AJ Dybantsa. Rebuilding with young talent. High cap flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Anthony Davis in Dallas. Near 2nd apron, limiting flexibility. Need to shed salary."
+      "apron": "",
+      "note": ""
     },
     "DEN": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Over 1st apron, close to 2nd. Jokic/Murray/Gordon are maxed. Cam Johnson/Valanciunas are trade chips."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "GSW": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Over cap, under 1st apron. Moody injured. Butler addition. Limited flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Over second apron, limiting flexibility. Young core. Durant's age/injury a concern. Finney-Smith a trade chip."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
-      "upside": 1.3,
-      "apron": "hard-capped",
-      "note": "Hard-capped at 1st apron. Kawhi/Garland core. Flexibility through options/trades. Beal injury."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAL": {
-      "upside": 1.2,
-      "apron": "hard-capped",
-      "note": "Doncic era. Hard-capped at 1st apron. Flexibility depends on LeBron/options. No tradeable first-round picks."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.4,
-      "apron": "hard-capped",
-      "note": "Hard-capped at 1st apron, but significant cap room. High draft pick Cameron Boozer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Over 1st apron. Edwards is a star. Gobert/Randle are trade pieces. DiVincenzo injured."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NOP": {
       "upside": 1,
-      "apron": "under",
-      "note": "No specific 2026-27 outlook found."
+      "apron": "",
+      "note": ""
     },
     "OKC": {
-      "upside": 1.2,
-      "apron": "hard-capped",
-      "note": "Hard-capped at 1st apron. Known for draft capital. Limited trade flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHX": {
       "upside": 1,
-      "apron": "hard-capped",
-      "note": "Hard-capped at 1st apron. Limited flexibility for roster changes."
+      "apron": "",
+      "note": ""
     },
     "POR": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Above cap, below 1st apron. Young core. Lillard returns from Achilles. Trade-focused for upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Over 1st apron, near 2nd apron. Limited flexibility. DeRozan a trade candidate."
+      "apron": "",
+      "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "under",
-      "note": "Deep young core on cheap deals. Wembanyama. High cap flexibility. Quaintance injured."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Cap space, draft capital, young talent (Peterson). Flexibility for retooling."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
