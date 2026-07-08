@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-07",
+  "generatedAt": "2026-07-08",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core led by All-NBA Jalen Johnson. Cap flexibility after Kuminga option declined. Active in trades, buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
       "upside": 1,
