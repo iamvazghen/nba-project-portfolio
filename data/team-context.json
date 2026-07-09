@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-08",
+  "generatedAt": "2026-07-09",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core, cap flexibility, under apron. Movable contracts (Hield) for upgrades. Buyer at deadline, focused on development."
     },
     "BOS": {
       "upside": 1,
