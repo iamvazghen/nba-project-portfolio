@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10",
+  "generatedAt": "2026-07-11",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": [],
@@ -7,64 +7,64 @@
       {
         "name": "Jayson Tatum",
         "role": "S",
-        "impact": 8,
+        "impact": 7,
         "min": 34,
         "exp": 9
       },
       {
         "name": "Paul George",
         "role": "S",
-        "impact": 6,
-        "min": 32,
+        "impact": 4,
+        "min": 30,
         "exp": 16
       },
       {
         "name": "Derrick White",
         "role": "S",
-        "impact": 4,
+        "impact": 3,
         "min": 30,
         "exp": 9
       },
       {
-        "name": "Mitchell Robinson",
+        "name": "Nikola Vucevic",
         "role": "S",
-        "impact": 3,
+        "impact": 2,
         "min": 28,
-        "exp": 8
+        "exp": 15
       },
       {
         "name": "Payton Pritchard",
-        "role": "B",
+        "role": "S",
         "impact": 2,
-        "min": 26,
-        "exp": 6
+        "min": 28,
+        "exp": 7
       },
       {
-        "name": "Hugo Gonzalez",
-        "role": "S",
+        "name": "Neemias Queta",
+        "role": "B",
         "impact": 1,
-        "min": 28,
-        "exp": 1
+        "min": 18,
+        "exp": 5
       },
       {
         "name": "Sam Hauser",
         "role": "B",
         "impact": 0,
-        "min": 20,
-        "exp": 5
-      },
-      {
-        "name": "Neemias Queta",
-        "role": "B",
-        "impact": -1,
         "min": 18,
-        "exp": 5
+        "exp": 6
       },
       {
-        "name": "Baylor Scheierman",
+        "name": "Jordan Walsh",
+        "role": "B",
+        "impact": 0,
+        "min": 15,
+        "exp": 3
+      },
+      {
+        "name": "Hugo Gonzalez",
         "role": "B",
         "impact": -1,
-        "min": 16,
+        "min": 12,
         "exp": 2
       }
     ],
@@ -80,13 +80,141 @@
     "ORL": [],
     "PHI": [],
     "TOR": [],
-    "WAS": [],
+    "WAS": [
+      {
+        "name": "AJ Dybantsa",
+        "role": "S",
+        "impact": 3,
+        "min": 32,
+        "exp": 0
+      },
+      {
+        "name": "Trae Young",
+        "role": "S",
+        "impact": 6,
+        "min": 34,
+        "exp": 8
+      },
+      {
+        "name": "Anthony Davis",
+        "role": "S",
+        "impact": 5,
+        "min": 28,
+        "exp": 15
+      },
+      {
+        "name": "Alex Sarr",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 2
+      },
+      {
+        "name": "Kyshawn George",
+        "role": "S",
+        "impact": 1,
+        "min": 26,
+        "exp": 2
+      },
+      {
+        "name": "Bilal Coulibaly",
+        "role": "B",
+        "impact": 1,
+        "min": 22,
+        "exp": 3
+      },
+      {
+        "name": "Bub Carrington",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 1
+      },
+      {
+        "name": "Tristan Vukcevic",
+        "role": "B",
+        "impact": 0,
+        "min": 16,
+        "exp": 3
+      },
+      {
+        "name": "Tre Johnson",
+        "role": "B",
+        "impact": -1,
+        "min": 12,
+        "exp": 1
+      }
+    ],
     "DAL": [],
     "DEN": [],
     "GSW": [],
     "HOU": [],
     "LAC": [],
-    "LAL": [],
+    "LAL": [
+      {
+        "name": "Luka Doncic",
+        "role": "S",
+        "impact": 8,
+        "min": 36,
+        "exp": 9
+      },
+      {
+        "name": "Walker Kessler",
+        "role": "S",
+        "impact": 4,
+        "min": 30,
+        "exp": 4
+      },
+      {
+        "name": "Austin Reaves",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 6
+      },
+      {
+        "name": "Quentin Grimes",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 6
+      },
+      {
+        "name": "Collin Sexton",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 9
+      },
+      {
+        "name": "Sandro Mamukelashvili",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 6
+      },
+      {
+        "name": "Kevon Looney",
+        "role": "B",
+        "impact": 0,
+        "min": 16,
+        "exp": 12
+      },
+      {
+        "name": "Jarred Vanderbilt",
+        "role": "B",
+        "impact": 0,
+        "min": 15,
+        "exp": 9
+      },
+      {
+        "name": "Bronny James",
+        "role": "B",
+        "impact": -1,
+        "min": 12,
+        "exp": 2
+      }
+    ],
     "MEM": [],
     "MIN": [],
     "NOP": [],
