@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-07-11",
+  "generatedAt": "2026-07-12",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Core includes Johnson, Daniels, McCollum, Kuminga. Limited flexibility."
     },
     "BOS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Tatum healthy. Hard-capped at first apron. Core with Tatum, White, Vucevic. Limited flexibility."
     },
     "BKN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "$11.75M cap space, not hard-capped. Acquired Randle. Young core, potential buyer."
     },
     "CHA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Young core with Ball, Miller. Mid-tier tradable contracts."
     },
     "CHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Used cap space on signings. Young core, limited flexibility."
     },
     "CLE": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Capped out, over second apron. Mitchell, Mobley, Harden core. Very limited flexibility."
     },
     "DET": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Young core led by Cunningham. Cap space available. Potential buyer at deadline."
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Haliburton returns healthy. Hard-capped at first apron. Core is set, limited flexibility."
     },
     "MIA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Giannis acquired. Hard-capped at first apron. Veteran core, limited flexibility."
     },
     "MIL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Giannis traded. Retooling with Herro, young talent, cap space. High upside."
     },
     "NYK": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "1st",
+      "note": "Capped out, over first apron. Towns, Anunoby, Brunson core. Limited flexibility."
     },
     "ORL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Young core with Banchero, Wagner. Over first apron, near second. Limited flexibility."
     },
     "PHI": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "1st",
+      "note": "Capped out, over tax. Embiid, Brown, Maxey, George core. Limited flexibility."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Kawhi, Barnes core. Limited flexibility for trades."
     },
     "WAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "1st",
+      "note": "#1 pick Dybantsa. Davis, Young core. Hard-capped at first apron. Limited flexibility."
     },
     "DAL": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Anthony Davis on roster. Capped out, over second apron. Limited flexibility for trades."
     },
     "DEN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Capped out, over second apron. Jokic, Murray, Gordon lead expensive core. Limited flexibility."
     },
     "GSW": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Hard-capped at second apron. Curry, Butler, Green, Porzingis core. Moody injured."
     },
     "HOU": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Hard-capped at second apron. Durant, Sengun, VanVleet core. Limited flexibility."
     },
     "LAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Significant cap space. Acquired Ingram, Dick. Potential buyer for a star."
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Doncic-led team. Hard-capped at first apron. Roster mostly set, limited flexibility."
     },
     "MEM": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "room",
+      "note": "Cap space available. Young core, acquired assets via trade. Potential buyer."
     },
     "MIN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Hard-capped at second apron. Edwards, Ball, Gobert core. Limited flexibility."
     },
     "NOP": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Zion healthy. Over cap, under first apron. Poole's contract is a trade chip."
     },
     "OKC": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Capped out, well over second apron. SGA, Holmgren, Williams core. Very limited flexibility."
     },
     "PHX": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Under first apron, some cap flexibility. Booker is the star. Potential for upgrades."
     },
     "POR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Morant acquired. Lillard returning from Achilles. Over cap, under first apron."
     },
     "SAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Sabonis, LaVine, Hunter core. Limited flexibility for trades."
     },
     "SAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "1st",
+      "note": "Deep young core (Wemby, Castle, Harper). Hard-capped at first apron. Prioritizing short-term deals."
     },
     "UTA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Young core with Markkanen, Jackson Jr. Flexibility for complementary pieces."
     }
   }
 }
