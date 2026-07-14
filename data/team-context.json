@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-07-13",
+  "generatedAt": "2026-07-14",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.2,
+      "upside": 1.3,
       "apron": "1st",
-      "note": "Hard-capped at first apron; young core (Johnson, Daniels, Risacher); limited flexibility for major trades."
+      "note": "Hard-capped at 1st apron. Young core, draft capital. Kuminga/Risacher trade chips. Seeking PG/C upgrades."
     },
     "BOS": {
       "upside": 1,
-      "apron": "1st",
-      "note": "Tatum returns healthy; hard-capped at first apron; high salaries for Tatum/George limit flexibility."
+      "apron": "2nd",
+      "note": "Tatum returns healthy. Second apron team, limited flexibility. Restricted to minor moves."
     },
     "BKN": {
       "upside": 1.5,
-      "apron": "under",
-      "note": "Young core, significant cap flexibility, multiple draft picks, likely buyers at trade deadline."
+      "apron": "room",
+      "note": "Significant cap space and draft picks. Young core, potential major free agency/trade player."
     },
     "CHA": {
       "upside": 1.4,
-      "apron": "1st",
-      "note": "Young core (Ball, Miller); hard-capped at first apron; tradable contracts; potential buyer."
+      "apron": "under",
+      "note": "Young core on rookie deals, cap flexibility. Seeking upgrades, potential buyer at deadline."
     },
     "CHI": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core (Giddey, Williams, Buzelis); hard-capped at first apron; some cap space remains."
-    },
-    "CLE": {
       "upside": 1.1,
       "apron": "1st",
-      "note": "Capped out with core four; Harden's player option; potential trades for Strus/Schroder."
+      "note": "Limited cap flexibility, likely over 1st apron. Older core, potential seller at deadline."
+    },
+    "CLE": {
+      "upside": 1.2,
+      "apron": "2nd",
+      "note": "Second apron team. Core locked in, minor flexibility. Stand-pat or minor buyer."
     },
     "DET": {
-      "upside": 1.6,
-      "apron": "under",
-      "note": "Young core (Cunningham, Thompson, Duren); significant cap flexibility; potential buyer."
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Young core, significant cap space. Aggressive buyer in free agency/trades."
     },
     "IND": {
       "upside": 1.4,
       "apron": "under",
-      "note": "Haliburton returns healthy; young team with potential to improve; cautious spending."
+      "note": "Haliburton returns healthy. Young core, cap flexibility. Potential buyer for upgrades."
     },
     "MIA": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Giannis/Adebayo core; hard-capped at first apron; limited flexibility; over luxury tax."
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Second apron team. Limited flexibility, veteran core. Minor moves or stand-pat."
     },
     "MIL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Retooling after Giannis trade; significant dead cap (Lillard); acquired young talent (Herro, Jaquez Jr.)."
+      "upside": 1,
+      "apron": "2nd",
+      "note": "Second apron team. Veteran core, limited flexibility. Hard-capped, stand-pat."
     },
     "NYK": {
-      "upside": 1,
+      "upside": 1.2,
       "apron": "2nd",
-      "note": "Championship core; strict second apron limits; very limited flexibility; over luxury tax."
+      "note": "Second apron team. Core locked in, limited flexibility. Buyer for specific needs."
     },
     "ORL": {
-      "upside": 1.1,
+      "upside": 1.3,
       "apron": "1st",
-      "note": "Strong young core; over first apron; very limited flexibility; banking on internal improvement."
+      "note": "Hard-capped at 1st apron. Young core, some trade assets. Buyer for complementary pieces."
     },
     "PHI": {
-      "upside": 1,
-      "apron": "1st",
-      "note": "Embiid/Brown/Maxey core; over luxury tax, near first apron; very limited flexibility."
+      "upside": 1.4,
+      "apron": "room",
+      "note": "Significant cap space. Embiid-led, aggressive buyer for star talent."
     },
     "TOR": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Hard-capped at first apron; Barnes/Leonard core; limited flexibility; near luxury tax."
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core, some cap flexibility. Seeking talent, potential buyer at deadline."
     },
     "WAS": {
-      "upside": 1.4,
-      "apron": "2nd",
-      "note": "#1 pick Dybantsa; Young/Davis core; Davis injury concern; hard-capped at second apron."
+      "upside": 1.6,
+      "apron": "room",
+      "note": "#1 pick Dybantsa. Deep cap space, young core. Aggressive rebuild, buyer for future assets."
     },
     "DAL": {
-      "upside": 1,
+      "upside": 1.1,
       "apron": "2nd",
-      "note": "Anthony Davis (injury-prone); severe cap issues; deep into luxury tax; limited flexibility."
+      "note": "Davis/Doncic era. Second apron team, limited flexibility. Buyer for veteran depth."
     },
     "DEN": {
       "upside": 1,
       "apron": "2nd",
-      "note": "Deep into repeater tax; Jokic/Murray core; likely salary dump trades (Johnson, Braun)."
+      "note": "Second apron team. Championship core, limited flexibility. Stand-pat or minor moves."
     },
     "GSW": {
-      "upside": 1,
+      "upside": 1.1,
       "apron": "2nd",
-      "note": "Aging core; Butler/Moody injuries; likely hard-capped at second apron; limited flexibility."
+      "note": "Second apron team. Aging core, limited flexibility. Potential seller or minor moves."
     },
     "HOU": {
-      "upside": 1.2,
-      "apron": "2nd",
-      "note": "Hard-capped at second apron; young core with Durant; injury concerns (Durant, VanVleet, Adams)."
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core, some cap flexibility. Seeking veteran talent, potential buyer."
     },
     "LAC": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Hard-capped at first apron; Kawhi Leonard; acquired Garland/Mathurin; seeking youth/dynamism."
+      "upside": 1,
+      "apron": "2nd",
+      "note": "Second apron team. Veteran core, limited flexibility. Hard-capped, stand-pat."
     },
     "LAL": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Luka Doncic era; significant cap space; built around Doncic with new additions; buyer."
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Doncic era. Hard-capped at 1st apron. Seeking complementary talent, buyer at deadline."
     },
     "MEM": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Significant cap space; large trade exception; crowded roster needs thinning; potential buyer."
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core, cap flexibility. Morant returns healthy. Buyer for upgrades."
     },
     "MIN": {
       "upside": 1.1,
       "apron": "2nd",
-      "note": "Edwards/Ball core; hard-capped at second apron; DiVincenzo injury; limited flexibility."
+      "note": "Second apron team. Core locked in, limited flexibility. Stand-pat or minor buyer."
     },
     "NOP": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Zion Williamson; need roster changes; Jordan Poole's bad contract; potential buyer."
-    },
-    "OKC": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Elite young core; deep into second apron; likely sellers (Hartenstein, Dort, Caruso)."
-    },
-    "PHX": {
       "upside": 1.2,
       "apron": "1st",
-      "note": "Booker core; some flexibility to stay under first apron; significant dead money (Beal)."
+      "note": "Hard-capped at 1st apron. Zion trade chip. Seeking roster retooling."
+    },
+    "OKC": {
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Young core on rookie deals, cap flexibility. Buyer for star talent or key role players."
+    },
+    "PHX": {
+      "upside": 1,
+      "apron": "2nd",
+      "note": "Second apron team. Veteran core, limited flexibility. Hard-capped, stand-pat."
     },
     "POR": {
       "upside": 1.4,
-      "apron": "under",
-      "note": "Young core with Morant; cap flexibility; potential for significant trades; Lillard's contract."
+      "apron": "room",
+      "note": "Young core, cap space. Seeking talent, potential buyer in free agency/trades."
     },
     "SAC": {
-      "upside": 1.1,
+      "upside": 1.2,
       "apron": "1st",
-      "note": "Hard-capped at first apron; core of LaVine/Sabonis; over luxury tax; needs depth."
+      "note": "Hard-capped at 1st apron. Core locked in, limited flexibility. Buyer for depth."
     },
     "SAS": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "Deep young core (Wemby, Castle, Harper); hard-capped at first apron; good flexibility."
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Deep young core on cheap deals, significant cap flexibility. Aggressive buyer/trader."
     },
     "UTA": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "Young core with stars; hard-capped at first apron; good flexibility; potential buyer."
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core, cap flexibility. Seeking talent, potential buyer at deadline."
     }
   }
 }
