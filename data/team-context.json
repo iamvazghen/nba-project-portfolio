@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-17",
+  "generatedAt": "2026-07-18",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Hard-capped at 1st apron. Young core (Johnson, Daniels, Okongwu) on favorable deals. Gueye injured. Seeking trades for Kispert/Hie"
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
       "upside": 1,
