@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-07-18",
+  "generatedAt": "2026-07-19",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Limited flexibility for trades. Stand-pat/minor buyer. Young core developing."
     },
     "BOS": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Tatum healthy. Hard-capped at second apron. Roster frozen, minimal flexibility. Stand-pat."
     },
     "BKN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Hard-capped at second apron. Limited flexibility. Likely stand-pat at deadline."
     },
     "CHA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Some young talent, potential for minor trades. Buyer/stand-pat."
     },
     "CHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Limited flexibility. Likely stand-pat at deadline."
     },
     "CLE": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Above second apron. High payroll, limited trade flexibility. Harden declined option."
     },
     "DET": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Young core, some flexibility for minor moves. Buyer/stand-pat."
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "1st",
+      "note": "Haliburton healthy. Hard-capped at first apron. Young core, some trade flexibility. Buyer."
     },
     "MIA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Giannis acquired. Limited flexibility. Buyer for depth."
     },
     "MIL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Giannis traded. Hard-capped at first apron. Limited flexibility. Rebuilding/retooling."
     },
     "NYK": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Hard-capped at second apron. Roster frozen, minimal flexibility. Stand-pat."
     },
     "ORL": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Projected over second apron. High payroll, limited flexibility. Stand-pat/seller for relief."
     },
     "PHI": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Three max contracts. Limited flexibility. Stand-pat."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Hard-capped at first apron after Kawhi trade. Limited flexibility. Stand-pat."
     },
     "WAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "#1 pick AJ Dybantsa. Significant cap space. Young, rebuilding team. Buyers."
     },
     "DAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Hard-capped at second apron. Luka era. Limited flexibility for trades. Stand-pat."
     },
     "DEN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Above second apron. High payroll, limited flexibility. Stand-pat."
     },
     "GSW": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Hard-capped at second apron. Roster frozen, minimal flexibility. Stand-pat."
     },
     "HOU": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "2nd",
+      "note": "Projected over second apron. No cap space, some trade flexibility. Buyer/stand-pat."
     },
     "LAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Kawhi traded. Limited flexibility. Retooling."
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Luka Doncic era. Hard-capped at first apron. Seeking upgrades. Buyer."
     },
     "MEM": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Young core, cap space for flexibility. Buyers."
     },
     "MIN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Hard-capped at second apron. High payroll, limited flexibility. Stand-pat."
     },
     "NOP": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Some flexibility for trades. Buyer/stand-pat."
     },
     "OKC": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Hard-capped at second apron. High payroll, limited flexibility. Stand-pat."
     },
     "PHX": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Hard-capped at second apron. High payroll, limited flexibility. Stand-pat."
     },
     "POR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. Young core, some flexibility for trades. Buyer."
     },
     "SAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Hard-capped at first apron. DeRozan waived. Some flexibility. Buyer for upgrades."
     },
     "SAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "1st",
+      "note": "Deep young core, cheap deals, huge cap flexibility. Major buyers. High upside."
     },
     "UTA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Under luxury tax. Some cap flexibility. Young team. Buyer/retooling."
     }
   }
 }
