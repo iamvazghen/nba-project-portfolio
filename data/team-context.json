@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-07-29",
+  "generatedAt": "2026-07-30",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Unclear 2026-27 outlook; likely retooling around existing young core."
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Outlook unclear for 2026-27. Likely capped out, limited flexibility. Stand-pat."
     },
     "BOS": {
-      "upside": 1.2,
+      "upside": 1,
       "apron": "1st",
-      "note": "Tatum returns, strong core with Paul George, near luxury tax, limited trade flexibility."
+      "note": "Tatum returns healthy. Capped out, managing first apron. Limited flexibility."
     },
     "BKN": {
-      "upside": 1.1,
-      "apron": "under",
-      "note": "Unclear 2026-27 outlook; stable roster but limited financial details available."
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Significant cap space, high draft picks. Aggressive buyer for talent."
     },
     "CHA": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Roster changes with Ball/Green trade; some non-guaranteed deals; likely retooling."
-    },
-    "CHI": {
-      "upside": 1.1,
-      "apron": "under",
-      "note": "Stable roster with no non-guaranteed contracts; limited financial details available."
-    },
-    "CLE": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "High payroll with Mitchell, Mobley, Harden; limited flexibility for upgrades; buyers."
-    },
-    "DET": {
       "upside": 1.4,
       "apron": "under",
-      "note": "Young core led by Cunningham, Duren; movable mid-tier contracts for flexibility."
+      "note": "Young core, significant cap space. Potential buyer, looking to improve."
+    },
+    "CHI": {
+      "upside": 1,
+      "apron": "1st",
+      "note": "Outlook unclear for 2026-27. Capped out, limited flexibility. Stand-pat."
+    },
+    "CLE": {
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Outlook unclear for 2026-27. Core locked up, limited flexibility. Buyer for depth."
+    },
+    "DET": {
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Outlook unclear for 2026-27. Young team, likely cap space. Aggressive buyer."
     },
     "IND": {
       "upside": 1.3,
-      "apron": "under",
-      "note": "Haliburton returns healthy; stable roster, but financial details are limited."
+      "apron": "1st",
+      "note": "Haliburton returns healthy. Core intact, likely over cap. Buyer for depth."
     },
     "MIA": {
       "upside": 1.1,
-      "apron": "under",
-      "note": "Unclear 2026-27 outlook; limited financial details available."
+      "apron": "1st",
+      "note": "Outlook unclear for 2026-27. Veteran core, limited flexibility. Buyer for key pieces."
     },
     "MIL": {
-      "upside": 1.1,
-      "apron": "under",
-      "note": "Unclear 2026-27 outlook; limited financial details available."
+      "upside": 1,
+      "apron": "2nd",
+      "note": "Outlook unclear for 2026-27. Giannis era, capped out. Limited flexibility. Stand-pat."
     },
     "NYK": {
-      "upside": 1.1,
-      "apron": "under",
-      "note": "Unclear 2026-27 outlook; limited financial details available."
+      "upside": 1,
+      "apron": "1st",
+      "note": "Capped out with core deals. Close to second apron. Limited flexibility. Stand-pat."
     },
     "ORL": {
-      "upside": 1.1,
-      "apron": "under",
-      "note": "Unclear 2026-27 outlook; limited financial details available."
+      "upside": 1,
+      "apron": "2nd",
+      "note": "Young core, but very capped out. Close to second apron. Limited flexibility. Stand-pat."
     },
     "PHI": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "George traded; likely retooling for future assets and cap flexibility."
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Embiid, George, Maxey on max deals. No cap space, managing first apron. Buyer for depth."
     },
     "TOR": {
       "upside": 1.3,
-      "apron": "1st",
-      "note": "Leonard, Barnes lead strong core; tight cap, near first apron; potential buyers."
+      "apron": "under",
+      "note": "Outlook unclear for 2026-27. Young core, some flexibility. Buyer for future assets."
     },
     "WAS": {
       "upside": 1.5,
-      "apron": "room",
-      "note": "Young core with #1 pick Dybantsa; rebuilding, high upside, cap flexibility."
+      "apron": "under",
+      "note": "#1 pick AJ Dybantsa. Rebuilding, some cap space. Buyer for young talent."
     },
     "DAL": {
       "upside": 1.2,
       "apron": "1st",
-      "note": "Strong core with Anthony Davis; likely contenders, limited cap flexibility."
+      "note": "Doncic era. Likely over cap, managing first apron. Buyer for impact players."
     },
     "DEN": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Stable roster; likely contenders, limited flexibility for major upgrades."
+      "upside": 1,
+      "apron": "2nd",
+      "note": "Outlook unclear for 2026-27. Jokic era, capped out. Limited flexibility. Stand-pat."
     },
     "GSW": {
-      "upside": 1.1,
-      "apron": "under",
-      "note": "Unclear 2026-27 outlook; some non-guaranteed contracts, limited financial details."
+      "upside": 1,
+      "apron": "1st",
+      "note": "Capped out with Curry, Butler, Green. Above first apron. Limited flexibility. Stand-pat."
     },
     "HOU": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Flexible roster with several non-guaranteed contracts; potential for retooling."
-    },
-    "LAC": {
       "upside": 1.4,
       "apron": "under",
-      "note": "Leonard traded; likely retooling for future assets and cap flexibility."
+      "note": "Outlook unclear for 2026-27. Young core, some cap space. Buyer for veterans."
+    },
+    "LAC": {
+      "upside": 1,
+      "apron": "2nd",
+      "note": "Outlook unclear for 2026-27. Capped out, limited flexibility. Stand-pat."
     },
     "LAL": {
       "upside": 1.2,
       "apron": "1st",
-      "note": "Doncic era; likely contenders, limited financial details, aiming for deep playoff run."
+      "note": "Doncic era. Likely over cap, managing first apron. Buyer for impact players."
     },
     "MEM": {
       "upside": 1.3,
-      "apron": "under",
-      "note": "Morant traded; likely retooling for future assets and cap flexibility."
+      "apron": "1st",
+      "note": "Outlook unclear for 2026-27. Young core, some flexibility. Buyer for depth."
     },
     "MIN": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Under aprons; expiring contracts and player options offer trade flexibility; active in moves."
-    },
-    "NOP": {
-      "upside": 1.1,
-      "apron": "under",
-      "note": "Unclear 2026-27 outlook; limited financial details available."
-    },
-    "OKC": {
       "upside": 1,
       "apron": "2nd",
-      "note": "Hard-capped at second apron; strong young core, but no in-season flexibility."
+      "note": "Hard-capped at second apron. Gobert/Randle trade chips. Very limited flexibility. Stand-pat."
+    },
+    "NOP": {
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Outlook unclear for 2026-27. Core intact, limited flexibility. Buyer for depth."
+    },
+    "OKC": {
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Outlook unclear for 2026-27. Young, deep core, cap space. Aggressive buyer."
     },
     "PHX": {
       "upside": 1.1,
       "apron": "under",
-      "note": "Unclear 2026-27 outlook; limited financial details available."
+      "note": "Booker is key. Paying Beal dead money. Aiming to stay under first apron. Limited buyer."
     },
     "POR": {
-      "upside": 1.5,
+      "upside": 1.3,
       "apron": "under",
-      "note": "Young core with Morant, Henderson, Sharpe; trade flexibility; Lillard injury."
+      "note": "Over cap, under first apron. Rely on MLE and trades. Young core developing. Buyer for talent."
     },
     "SAC": {
-      "upside": 1.1,
-      "apron": "under",
-      "note": "Unclear 2026-27 outlook; limited financial details available."
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Outlook unclear for 2026-27. Core intact, limited flexibility. Buyer for depth."
     },
     "SAS": {
       "upside": 1.6,
       "apron": "room",
-      "note": "Wembanyama leads young core; high cap flexibility, building for future."
+      "note": "Deep young core, massive cap flexibility. Aggressive buyer for talent."
     },
     "UTA": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Young core, cap flexibility, exercised options; balancing growth and future moves."
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Outlook unclear for 2026-27. Rebuilding, cap space. Buyer for young talent."
     }
   }
 }
