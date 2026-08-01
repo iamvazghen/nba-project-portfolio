@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-07-31",
+  "generatedAt": "2026-08-01",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Young's large contract limits flexibility; Jalen Johnson's potential is key; likely buyers if competitive."
     },
     "BOS": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Hard-capped at second apron, limiting moves. Tatum returns healthy; roster largely set."
     },
     "BKN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     },
     "CHA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Some cap flexibility from trade exception; young core development is key; potential buyers."
     },
     "CHI": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     },
     "CLE": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     },
     "DET": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Prioritizing cap flexibility and developing young talent; potential buyers at deadline."
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Haliburton returns healthy, boosting team outlook; young core has high potential."
     },
     "MIA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Prioritizing cap flexibility and assets for a star chase; likely sellers or major buyers."
     },
     "MIL": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Giannis Antetokounmpo's contract and trade rumors are key; outlook uncertain."
     },
     "NYK": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     },
     "ORL": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     },
     "PHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Gained flexibility through trade; likely buyers if competitive."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Hard-capped at first apron; limited flexibility; expiring contracts are trade chips."
     },
     "WAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Hard-capped at first apron; young core (Dybantsa, Sarr) offers upside; Watkins injured."
     },
     "DAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Luka Doncic era with Anthony Davis; likely buyers at deadline."
     },
     "DEN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     },
     "GSW": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Financial flexibility and tradeable veteran contracts; potential buyers or sellers."
     },
     "HOU": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "2nd",
+      "note": "Hard-capped at second apron; large contracts; young core development is key."
     },
     "LAC": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Kawhi Leonard traded; ongoing NBA investigation creates uncertainty."
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Luka Doncic era; Anthony Davis is in Dallas (per dated fact)."
     },
     "MEM": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Acquired assets via trade; likely looking to develop young talent."
     },
     "MIN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "DiVincenzo out with Achilles tear; limited cap flexibility and draft picks."
     },
     "NOP": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     },
     "OKC": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     },
     "PHX": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     },
     "POR": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     },
     "SAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Massive contracts (LaVine, Sabonis) limit flexibility; close to apron; Hunter a trade chip."
     },
     "SAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Deep young core, cheap deals, real cap flexibility; Quaintance injured."
     },
     "UTA": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "under",
+      "note": "Insufficient information for detailed outlook."
     }
   }
 }
