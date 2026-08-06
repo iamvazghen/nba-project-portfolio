@@ -1,73 +1,9 @@
 {
-  "generatedAt": "2026-08-05",
+  "generatedAt": "2026-08-06",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": [],
-    "BOS": [
-      {
-        "name": "Jayson Tatum",
-        "role": "S",
-        "impact": 8,
-        "min": 36,
-        "exp": 9
-      },
-      {
-        "name": "Paul George",
-        "role": "S",
-        "impact": 6,
-        "min": 32,
-        "exp": 16
-      },
-      {
-        "name": "Derrick White",
-        "role": "S",
-        "impact": 3,
-        "min": 30,
-        "exp": 9
-      },
-      {
-        "name": "Mitchell Robinson",
-        "role": "S",
-        "impact": 2,
-        "min": 28,
-        "exp": 8
-      },
-      {
-        "name": "Payton Pritchard",
-        "role": "S",
-        "impact": 1,
-        "min": 26,
-        "exp": 6
-      },
-      {
-        "name": "Mike Conley Jr.",
-        "role": "B",
-        "impact": 1,
-        "min": 20,
-        "exp": 19
-      },
-      {
-        "name": "Sam Hauser",
-        "role": "B",
-        "impact": 0,
-        "min": 18,
-        "exp": 5
-      },
-      {
-        "name": "Neemias Queta",
-        "role": "B",
-        "impact": 0,
-        "min": 16,
-        "exp": 5
-      },
-      {
-        "name": "Chris Cenac Jr.",
-        "role": "B",
-        "impact": -1,
-        "min": 10,
-        "exp": 0
-      }
-    ],
+    "BOS": [],
     "BKN": [],
     "CHA": [],
     "CHI": [],
