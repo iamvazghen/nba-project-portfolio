@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-08-09",
+  "generatedAt": "2026-08-10",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
       "upside": 1.4,
-      "apron": "hard-capped",
-      "note": "Young core led by Jalen Johnson; many expiring contracts offer trade flexibility or future cap space."
+      "apron": "under",
+      "note": "Flexible cap, many expiring contracts. Over roster limit, expect moves. Buyer/consolidator."
     },
     "BOS": {
-      "upside": 1.1,
-      "apron": "hard-capped",
-      "note": "Tatum returns healthy; hard-capped at first apron with limited flexibility; veteran roster aims for contention."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Significant cap space and draft assets; young core with potential; Michael Porter Jr. extension eligible."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.4,
-      "apron": "hard-capped",
-      "note": "Young core developing; significant trade exception from LaMelo Ball trade; hard-capped at first apron."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.3,
-      "apron": "hard-capped",
-      "note": "Under cap with flexibility; young core developing; potential bad contracts; buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Core of Mitchell, Mobley, Allen. Exploring Schroder trades for financial flexibility to pursue Kuminga/Watson."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DET": {
       "upside": 1,
@@ -38,14 +38,14 @@
       "note": ""
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Haliburton returns healthy. Over tax, but cap flexibility with expiring deals. Buyer/seller."
     },
     "MIA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Giannis acquired, contender. Below first apron, some expiring deals. Buyer."
     },
     "MIL": {
       "upside": 1,
@@ -53,9 +53,9 @@
       "note": ""
     },
     "NYK": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Above luxury tax, near first apron. Dolan avoids second apron. Limited flexibility, potential seller."
     },
     "ORL": {
       "upside": 1,
@@ -64,13 +64,13 @@
     },
     "PHI": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "1st",
+      "note": "Hard-capped at first apron; limited flexibility with Embiid, Brown, Maxey, James contracts. Stand-pat."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Tight financial picture, near luxury tax. RJ Barrett expiring. Potential seller/consolidator."
     },
     "WAS": {
       "upside": 1,
@@ -98,9 +98,9 @@
       "note": ""
     },
     "LAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "2nd",
+      "note": "High payroll, can create space by moving options. Seeking impact player. Buyer."
     },
     "LAL": {
       "upside": 1,
@@ -123,9 +123,9 @@
       "note": ""
     },
     "OKC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "1st",
+      "note": "Under second apron, over first apron. Young core on max deals. Buyer for depth."
     },
     "PHX": {
       "upside": 1,
