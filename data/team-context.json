@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-08-11",
+  "generatedAt": "2026-08-12",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Young core, $60M+ in expiring deals for trade flexibility. Buyer at deadline."
+      "upside": 1.4,
+      "apron": "1st",
+      "note": "Young core, hard-capped at 1st apron. Many expiring contracts offer trade flexibility for a star."
     },
     "BOS": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Tatum returns healthy. Capped out with max contracts, limited flexibility. Stand-pat."
-    },
-    "BKN": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Michael Porter Jr. hamstring strain, Day'Ron Sharpe thumb surgery. Cap space for upgrades. Buyer."
-    },
-    "CHA": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "Young core, cap flexibility. Potential buyer for future assets."
-    },
-    "CHI": {
-      "upside": 1.3,
-      "apron": "room",
-      "note": "Projected cap space. Could be a buyer for young talent or absorb bad contracts. "
-    },
-    "CLE": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Likely over first apron. Limited flexibility for major moves. Stand-pat/minor adjustments."
-    },
-    "DET": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "Young team with cap space. Potential to make significant moves or absorb contracts. Buyer."
-    },
-    "IND": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Haliburton returns healthy. Cap flexibility, potential to add talent. Buyer. "
-    },
-    "MIA": {
       "upside": 1.2,
       "apron": "1st",
-      "note": "Giannis, Adebayo, Wiggins on roster. Operating below first apron. Expiring deals for trade flexibility."
+      "note": "Tatum returns healthy. Hard-capped at 1st apron, limiting trade flexibility. Aiming to reset repeater tax."
+    },
+    "BKN": {
+      "upside": 1,
+      "apron": "",
+      "note": ""
+    },
+    "CHA": {
+      "upside": 1,
+      "apron": "",
+      "note": ""
+    },
+    "CHI": {
+      "upside": 1,
+      "apron": "",
+      "note": ""
+    },
+    "CLE": {
+      "upside": 1,
+      "apron": "",
+      "note": ""
+    },
+    "DET": {
+      "upside": 1,
+      "apron": "",
+      "note": ""
+    },
+    "IND": {
+      "upside": 1,
+      "apron": "",
+      "note": ""
+    },
+    "MIA": {
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Capped out with star contracts. Limited flexibility. Stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NYK": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Likely over first apron. Focus on internal development and minor trades. Stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "ORL": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Young core. Cap flexibility for potential upgrades or extensions. Buyer. "
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
       "upside": 1,
-      "apron": "1st",
-      "note": "Embiid, Brown, Maxey on max deals. Near first apron, limited flexibility. Stand-pat."
+      "apron": "",
+      "note": ""
     },
     "TOR": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Over projected cap, near tax line. Limited room, likely shedding salary. Seller/stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "WAS": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "#1 pick AJ Dybantsa. Cap flexibility for rebuild. Seller/asset accumulation."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Anthony Davis in Dallas. Likely over first apron. Limited flexibility. Buyer/stand-pat. "
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DEN": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Capped out with core contracts. Limited flexibility. Stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "GSW": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Curry, Green, Butler III can be FAs. Potential cap space. Buyer/retool."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Over second apron with cap holds. Limited flexibility. Stand-pat/minor trades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Kawhi Leonard's contract ends 2026-27. Capped out, limited flexibility. Stand-pat."
+      "apron": "",
+      "note": ""
     },
     "LAL": {
-      "upside": 1.3,
-      "apron": "room",
-      "note": "Luka Doncic era. Projected cap space. Potential for significant free agency moves. Buyer. "
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core on rookie deals. Cap space and trade exception. Buyer. "
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "DiVincenzo out with Achilles tear. Capped out, limited flexibility. Stand-pat. "
+      "apron": "",
+      "note": ""
     },
     "NOP": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Potential cap space. Flexibility for trades or free agency. Buyer. "
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Young core on cheap deals. Cap flexibility for extensions or trades. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHX": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Capped out with star contracts. Limited flexibility. Stand-pat. "
+      "apron": "",
+      "note": ""
     },
     "POR": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "Young team. Cap flexibility for rebuild. Buyer/asset accumulation."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Potential cap space. Flexibility for trades or free agency. Buyer. "
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Deep young core, cheap rookie deals, real cap flexibility. High upside. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Potential cap space. Flexibility for trades or free agency. Buyer. "
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
