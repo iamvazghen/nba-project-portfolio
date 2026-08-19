@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-18",
+  "generatedAt": "2026-08-19",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Young core, many expiring contracts offer trade flexibility. Likely 1st apron. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
       "upside": 1,
