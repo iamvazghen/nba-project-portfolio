@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21",
+  "generatedAt": "2026-08-22",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
@@ -118,9 +118,9 @@
       "note": ""
     },
     "NOP": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Under tax, young core with picks; Zion's health key; seeking center upgrade; buyer at deadline."
     },
     "OKC": {
       "upside": 1,
