@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22",
+  "generatedAt": "2026-08-23",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": [],
@@ -30,71 +30,7 @@
     "PHX": [],
     "POR": [],
     "SAC": [],
-    "SAS": [
-      {
-        "name": "Victor Wembanyama",
-        "role": "S",
-        "impact": 9,
-        "min": 35,
-        "exp": 3
-      },
-      {
-        "name": "De'Aaron Fox",
-        "role": "S",
-        "impact": 6,
-        "min": 34,
-        "exp": 9
-      },
-      {
-        "name": "Devin Vassell",
-        "role": "S",
-        "impact": 4,
-        "min": 32,
-        "exp": 6
-      },
-      {
-        "name": "Tobias Harris",
-        "role": "S",
-        "impact": 3,
-        "min": 30,
-        "exp": 15
-      },
-      {
-        "name": "Stephon Castle",
-        "role": "S",
-        "impact": 2,
-        "min": 28,
-        "exp": 1
-      },
-      {
-        "name": "Keldon Johnson",
-        "role": "B",
-        "impact": 2,
-        "min": 26,
-        "exp": 7
-      },
-      {
-        "name": "Harrison Barnes",
-        "role": "B",
-        "impact": 1,
-        "min": 20,
-        "exp": 14
-      },
-      {
-        "name": "Julian Champagnie",
-        "role": "B",
-        "impact": 0,
-        "min": 18,
-        "exp": 3
-      },
-      {
-        "name": "Dylan Harper",
-        "role": "B",
-        "impact": -1,
-        "min": 15,
-        "exp": 0
-      }
-    ],
+    "SAS": [],
     "UTA": []
   }
 }
