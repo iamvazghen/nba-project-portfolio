@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-08-23",
+  "generatedAt": "2026-08-24",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core led by Jalen Johnson after Trae Young trade. Tight cap, near 1st apron; Kispert a bad contract."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
-      "upside": 1.1,
-      "apron": "under",
-      "note": "Tatum returns healthy. Over tax, under 1st apron. Jaylen Brown traded for Paul George."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Significant cap space and flexibility. Michael Porter Jr. extension-eligible. Aiming for playoff contention."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core after LaMelo Ball trade. Over cap, under tax. Grant Williams is a key trade chip."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Young core with Josh Giddey, Caleb Wilson. Under cap/tax. Some flexibility for trades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Win-now core of Mitchell, Mobley, Harden, Allen. Over cap, under tax. Max Strus movable."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DET": {
-      "upside": 1.5,
+      "upside": 1.4,
       "apron": "under",
-      "note": "Young core led by Cade Cunningham. Significant cap space and flexibility. Aiming to add talent."
+      "note": "Young core led by Cunningham, Thompson, Holland. Movable mid-tier contracts. Cap flexibility for trades."
     },
     "IND": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Haliburton returns healthy. Over tax, near 1st apron. Limited flexibility for major moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIA": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Giannis Antetokounmpo acquired. High payroll, aiming for championship. Limited cap flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
-      "upside": 1.6,
-      "apron": "1st",
-      "note": "Rebuilding after Giannis trade. Hard-capped at 1st apron. Herro, Kuzma are key trade chips."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NYK": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Championship contender. Over 1st apron, limiting flexibility. Brunson's contract is team-friendly."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "ORL": {
       "upside": 1.3,
       "apron": "1st",
-      "note": "Young core of Banchero, Wagner. Over 1st apron, limiting flexibility. High internal growth potential."
+      "note": "Young core with Banchero, Wagner, Suggs. Over first apron, but under second apron for flexibility."
     },
     "PHI": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Championship contender with Embiid, Brown, Maxey, LeBron. Embiid's health a factor."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "TOR": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Kawhi Leonard acquired. High payroll, over tax/near 1st apron. RJ Barrett is a key trade chip."
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core with Barnes, Quickley, Barrett, plus Kawhi. Poeltl's contract is a bad deal."
     },
     "WAS": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "New core of Young, Davis, #1 pick Dybantsa. Hard-capped at 1st apron. High upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core with Cooper Flagg. Hard-capped at 1st apron. Flexibility for trades to acquire assets."
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Young core with Flagg, Lively, plus Anthony Davis. Injury concerns for Irving and Lively. Potential trade deadline sellers."
     },
     "DEN": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Championship core of Jokic, Murray. Over 2nd apron. Likely to trade Nnaji."
+      "apron": "",
+      "note": ""
     },
     "GSW": {
       "upside": 1,
-      "apron": "1st",
-      "note": "Aging core of Curry, Butler, Green. Over 1st apron, limiting flexibility. Upside relies on star health."
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Talented core with Durant, Sengun. Over cap, under tax. Clint Capela is a bad contract."
+      "upside": 1.4,
+      "apron": "1st",
+      "note": "Young core with veteran stars Durant, VanVleet. Tari Eason's new deal impacts cap. Aiming for contention."
     },
     "LAC": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "New era after Kawhi trade. Good cap space, under tax. Young core with Garland, Ingram."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAL": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Luka Doncic era. Hard-capped at 1st apron, limited flexibility. Doncic's health is key."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Young core with cap space and large trade exception. Jerami Grant movable. High flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
       "upside": 1.2,
       "apron": "1st",
-      "note": "Talented core with Edwards, Ball. Over 1st apron, limited flexibility. DiVincenzo injured."
+      "note": "Core of Edwards, Ball, Gobert. Over first apron, limiting flexibility."
     },
     "NOP": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Talented core with Zion Williamson. Under tax/aprons. Could explore trading young players."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
-      "upside": 1.4,
+      "upside": 1.5,
       "apron": "1st",
-      "note": "Young, talented core with SGA, Holmgren, Jalen Williams. Over 1st apron, under 2nd."
+      "note": "Elite young core (SGA, Holmgren, Jalen Williams). Under second apron, offering trade flexibility."
     },
     "PHX": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Hard-capped at 2nd apron. Core of Booker, Green, Bridges. Severely limited flexibility."
+      "apron": "",
+      "note": ""
     },
     "POR": {
       "upside": 1.3,
-      "apron": "under",
-      "note": "Talented core with Morant, Holiday, Sharpe, Henderson. Under tax/aprons. Jerami Grant trade chip."
+      "apron": "1st",
+      "note": "Ja Morant leads young core. Lillard returning from Achilles. Building through trades, not free agency."
     },
     "SAC": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Core of Sabonis, LaVine. Over tax, near 1st apron. Limited flexibility, Sabonis a trade candidate."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAS": {
       "upside": 1.6,
       "apron": "under",
-      "note": "Deep young core with Wembanyama, Fox. Good cap flexibility. High upside."
+      "note": "Deep young core (Wemby, Castle, Harper). Significant cap flexibility for trades/additions."
     },
     "UTA": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core with Jackson Jr., Markkanen. Good cap flexibility. Potential for future aggressive moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
