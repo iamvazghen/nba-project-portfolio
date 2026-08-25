@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24",
+  "generatedAt": "2026-08-25",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
@@ -33,9 +33,9 @@
       "note": ""
     },
     "DET": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core led by Cunningham, Thompson, Holland. Movable mid-tier contracts. Cap flexibility for trades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
       "upside": 1,
@@ -58,9 +58,9 @@
       "note": ""
     },
     "ORL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core with Banchero, Wagner, Suggs. Over first apron, but under second apron for flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
       "upside": 1,
@@ -68,9 +68,9 @@
       "note": ""
     },
     "TOR": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core with Barnes, Quickley, Barrett, plus Kawhi. Poeltl's contract is a bad deal."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "WAS": {
       "upside": 1,
@@ -78,9 +78,9 @@
       "note": ""
     },
     "DAL": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Young core with Flagg, Lively, plus Anthony Davis. Injury concerns for Irving and Lively. Potential trade deadline sellers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DEN": {
       "upside": 1,
@@ -93,9 +93,9 @@
       "note": ""
     },
     "HOU": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Young core with veteran stars Durant, VanVleet. Tari Eason's new deal impacts cap. Aiming for contention."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
       "upside": 1,
@@ -113,9 +113,9 @@
       "note": ""
     },
     "MIN": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Core of Edwards, Ball, Gobert. Over first apron, limiting flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NOP": {
       "upside": 1,
@@ -123,9 +123,9 @@
       "note": ""
     },
     "OKC": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "Elite young core (SGA, Holmgren, Jalen Williams). Under second apron, offering trade flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHX": {
       "upside": 1,
@@ -133,9 +133,9 @@
       "note": ""
     },
     "POR": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Ja Morant leads young core. Lillard returning from Achilles. Building through trades, not free agency."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
       "upside": 1,
@@ -143,9 +143,9 @@
       "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "under",
-      "note": "Deep young core (Wemby, Castle, Harper). Significant cap flexibility for trades/additions."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
       "upside": 1,
