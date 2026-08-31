@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-30",
+  "generatedAt": "2026-08-31",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "hard-capped",
+      "note": "Young core, hard-capped at first apron. Many expiring contracts offer trade flexibility; likely deadline buyer."
     },
     "BOS": {
       "upside": 1,
