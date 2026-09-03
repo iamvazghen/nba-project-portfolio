@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-09-02",
+  "generatedAt": "2026-09-03",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Trae Young's supermax anchors cap. Could be a buyer at deadline if competitive, or retooling."
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core with expiring contracts offers trade flexibility. Gueye injured. Projected playoff team."
     },
     "BOS": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Tatum healthy return boosts title hopes. Second apron limits flexibility; minor trade upgrades only."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Rebuilding/retooling. Cap flexibility and assets could lead to big trade-deadline moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Young core developing, significant cap room. Buyers at deadline to add talent."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Roster likely in flux. Could be sellers or retooling with some cap flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
-      "upside": 1.2,
-      "apron": "2nd",
-      "note": "Core locked into big deals. Limited cap flexibility for major trade-deadline upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DET": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Young core developing, significant cap room. Aggressive buyers at deadline to improve."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Haliburton returns healthy. Young core, potential cap flexibility. Buyers at deadline to compete."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIA": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Veteran core, limited cap flexibility. Buyers at deadline for minor upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Giannis anchors expensive veteran core. First apron hard-capped. Limited flexibility for upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NYK": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Competitive team with draft assets. Buyers at deadline for significant upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "ORL": {
-      "upside": 1.6,
-      "apron": "1st",
-      "note": "Young core developing, significant cap room. Aggressive buyers at deadline to improve."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Embiid/Maxey core. Hard-capped at first apron; buyers for targeted upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "TOR": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Kawhi Leonard trade makes them hard-capped at first apron. Young core developing."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "WAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Rebuilding around #1 pick Dybantsa. Significant cap room; likely sellers or asset accumulators."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Doncic and Davis lead expensive core. Second apron limits flexibility; minor trade upgrades only."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DEN": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Jokic leads expensive veteran core. First apron team; minor trade upgrades only."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "GSW": {
-      "upside": 1.3,
-      "apron": "2nd",
-      "note": "Veteran core aging. Second apron hard-capped. Limited flexibility for major changes."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.5,
-      "apron": "2nd",
-      "note": "Young core developing. Not a cap-space team, but some apron room."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Veteran core, injury history. First apron team; buyers for minor upgrades or retooling."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAL": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Doncic era. Aggressive front office, likely buyers at deadline for upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core around Morant/Jackson Jr. First apron team; buyers for targeted upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Expensive core around Edwards. Second apron limits flexibility; minor trade upgrades only."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NOP": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core with Zion. Cap flexibility and assets for trade-deadline moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
-      "upside": 1.6,
-      "apron": "1st",
-      "note": "Young core, SGA leads. Over first apron, but below second. Buyers for star talent."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHX": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Expensive star core. Second apron hard-capped. Limited flexibility for upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "POR": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Young core developing, significant cap room. Aggressive buyers at deadline to improve."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Fox/Sabonis core. Hard-capped at first apron; buyers for targeted upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Wembanyama leads deep young core. Huge cap room; aggressive buyers for talent."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Rebuilding/retooling. Cap flexibility and assets could lead to big trade-deadline moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
