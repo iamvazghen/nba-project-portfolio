@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-09-05",
+  "generatedAt": "2026-09-06",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.3,
-      "apron": "hard-capped",
-      "note": "Over cap, hard-capped at first apron; many expiring contracts, potential sellers."
+      "upside": 1.4,
+      "apron": "1st",
+      "note": "Hard-capped at 1st apron. Young core, many expiring contracts for trade flexibility. Gueye injured."
     },
     "BOS": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Tatum returns healthy. Deep into 2nd apron with long-term deals; limited flexibility."
     },
     "BKN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Significant cap space and draft assets for a potential star acquisition; young core."
     },
     "CHA": {
-      "upside": 1.4,
+      "upside": 1.3,
       "apron": "under",
-      "note": "Over cap but under tax/aprons; retooling post-Ball trade, looking for young assets."
+      "note": "Under cap, young core developing. Limited trade assets, but flexibility for minor upgrades."
     },
     "CHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "room",
+      "note": "Large cap space, few long-term contracts. Rebuilding, likely sellers at deadline."
     },
     "CLE": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Deep into 2nd apron. Core locked long-term, limited flexibility. Buyer for minor upgrades."
     },
     "DET": {
-      "upside": 1.5,
+      "upside": 1.4,
       "apron": "under",
-      "note": "Under cap, well below aprons; competitive team, likely buyers at deadline."
+      "note": "Young core, significant cap space. Potential buyer at deadline with flexibility."
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Haliburton returns healthy. Hard-capped at 1st apron. Limited flexibility, stand-pat."
     },
     "MIA": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Giannis/Bam core, Wiggins' unique contract; limited flexibility, likely buyers."
+      "upside": 1.2,
+      "apron": "2nd",
+      "note": "Giannis arrival pushes team deep into 2nd apron. Limited flexibility; buyer."
     },
     "MIL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Deep into 2nd apron. Core locked long-term, limited flexibility. Buyer for minor upgrades."
     },
     "NYK": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Deep into 2nd apron. Championship contender, limited flexibility. Buyer for minor upgrades."
     },
     "ORL": {
       "upside": 1.2,
-      "apron": "1st",
-      "note": "Four max-level contracts; in tax, near second apron, limited flexibility, buyers."
+      "apron": "2nd",
+      "note": "Deep into 2nd apron. Core locked long-term, limited flexibility. Buyer for minor upgrades."
     },
     "PHI": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "LeBron/Brown additions push team deep into 2nd apron. Championship contender."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "2nd",
+      "note": "Kawhi Leonard acquired. Deep into 2nd apron. Limited flexibility, buyer for minor upgrades."
     },
     "WAS": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Davis/Young core, #1 pick Dybantsa; over cap, limited flexibility, building."
+      "upside": 1.5,
+      "apron": "under",
+      "note": "#1 pick Dybantsa. Young core, cap flexibility. Rebuilding, likely sellers."
     },
     "DAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Doncic era. Deep into 2nd apron. Limited flexibility, buyer for minor upgrades."
     },
     "DEN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Deep into 2nd apron. Core locked long-term, limited flexibility. Stand-pat."
     },
     "GSW": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Deep into 2nd apron. Core locked long-term, limited flexibility. Buyer for minor upgrades."
     },
     "HOU": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core, cap flexibility. Potential buyer at deadline with assets."
     },
     "LAC": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Post-Kawhi era, retooling; over cap, near first apron, looking for future assets."
+      "upside": 1,
+      "apron": "2nd",
+      "note": "Deep into 2nd apron, docked picks. Limited flexibility, likely sellers."
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Doncic era. Cap flexibility, young talent. Potential buyer at deadline."
     },
     "MEM": {
-      "upside": 1.5,
+      "upside": 1.3,
       "apron": "under",
-      "note": "Cap space, large trade exception; favorable cap, likely buyers for upgrades."
+      "note": "Young core, cap flexibility. Potential buyer at deadline with assets."
     },
     "MIN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Deep into 2nd apron. Core locked long-term, limited flexibility. Buyer for minor upgrades."
     },
     "NOP": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Deep into 2nd apron. Core locked long-term, limited flexibility. Buyer for minor upgrades."
     },
     "OKC": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Deep into 2nd apron. Core locked long-term, limited flexibility. Stand-pat."
     },
     "PHX": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Deep into 2nd apron. Core locked long-term, limited flexibility. Stand-pat."
     },
     "POR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
-    },
-    "SAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
-    },
-    "SAS": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Young core on rookie deals, Wembanyama extension; cap flexibility, buyers for talent."
-    },
-    "UTA": {
       "upside": 1.4,
       "apron": "under",
-      "note": "Over cap but under tax/aprons; young core, some flexibility, potential buyers."
+      "note": "Young core, cap flexibility. Rebuilding, likely sellers at deadline. Sharpe injured."
+    },
+    "SAC": {
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Hard-capped at 1st apron. Core locked, limited flexibility. Buyer for minor upgrades."
+    },
+    "SAS": {
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Deep young core on cheap deals, significant cap flexibility. High upside."
+    },
+    "UTA": {
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core, cap flexibility. Rebuilding, likely sellers at deadline."
     }
   }
 }
