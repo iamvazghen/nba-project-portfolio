@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18",
+  "generatedAt": "2026-09-19",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": [],
@@ -26,71 +26,7 @@
     "MEM": [],
     "MIN": [],
     "NOP": [],
-    "OKC": [
-      {
-        "name": "Shai Gilgeous-Alexander",
-        "role": "S",
-        "impact": 9,
-        "min": 36,
-        "exp": 8
-      },
-      {
-        "name": "Jalen Williams",
-        "role": "S",
-        "impact": 6,
-        "min": 34,
-        "exp": 4
-      },
-      {
-        "name": "Chet Holmgren",
-        "role": "S",
-        "impact": 6,
-        "min": 32,
-        "exp": 3
-      },
-      {
-        "name": "Isaiah Hartenstein",
-        "role": "S",
-        "impact": 3,
-        "min": 28,
-        "exp": 9
-      },
-      {
-        "name": "Cason Wallace",
-        "role": "S",
-        "impact": 2,
-        "min": 28,
-        "exp": 3
-      },
-      {
-        "name": "Alex Caruso",
-        "role": "B",
-        "impact": 2,
-        "min": 24,
-        "exp": 9
-      },
-      {
-        "name": "Jared McCain",
-        "role": "B",
-        "impact": 1,
-        "min": 20,
-        "exp": 1
-      },
-      {
-        "name": "Ajay Mitchell",
-        "role": "B",
-        "impact": 1,
-        "min": 18,
-        "exp": 1
-      },
-      {
-        "name": "Jaylin Williams",
-        "role": "B",
-        "impact": 0,
-        "min": 15,
-        "exp": 4
-      }
-    ],
+    "OKC": [],
     "PHX": [],
     "POR": [],
     "SAC": [],
