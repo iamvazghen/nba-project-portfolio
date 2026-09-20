@@ -1,36 +1,1746 @@
 {
-  "generatedAt": "2026-09-19",
+  "generatedAt": "2026-09-20",
   "model": "gemini-2.5-flash",
   "teams": {
-    "ATL": [],
-    "BOS": [],
-    "BKN": [],
-    "CHA": [],
-    "CHI": [],
-    "CLE": [],
-    "DET": [],
-    "IND": [],
-    "MIA": [],
-    "MIL": [],
-    "NYK": [],
-    "ORL": [],
-    "PHI": [],
-    "TOR": [],
-    "WAS": [],
-    "DAL": [],
-    "DEN": [],
-    "GSW": [],
-    "HOU": [],
-    "LAC": [],
-    "LAL": [],
-    "MEM": [],
-    "MIN": [],
-    "NOP": [],
-    "OKC": [],
-    "PHX": [],
-    "POR": [],
-    "SAC": [],
-    "SAS": [],
-    "UTA": []
+    "ATL": [
+      {
+        "name": "Jalen Johnson",
+        "role": "S",
+        "impact": 4,
+        "min": 34,
+        "exp": 4
+      },
+      {
+        "name": "CJ McCollum",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 13
+      },
+      {
+        "name": "Onyeka Okongwu",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 6
+      },
+      {
+        "name": "Dyson Daniels",
+        "role": "S",
+        "impact": 2,
+        "min": 32,
+        "exp": 4
+      },
+      {
+        "name": "Nickeil Alexander-Walker",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 7
+      },
+      {
+        "name": "Zaccharie Risacher",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 1
+      },
+      {
+        "name": "Luke Kennard",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 11
+      },
+      {
+        "name": "Vit Krejci",
+        "role": "B",
+        "impact": -1,
+        "min": 16,
+        "exp": 5
+      }
+    ],
+    "BOS": [
+      {
+        "name": "Jayson Tatum",
+        "role": "S",
+        "impact": 7,
+        "min": 35,
+        "exp": 9
+      },
+      {
+        "name": "Paul George",
+        "role": "S",
+        "impact": 5,
+        "min": 33,
+        "exp": 16
+      },
+      {
+        "name": "Derrick White",
+        "role": "S",
+        "impact": 4,
+        "min": 32,
+        "exp": 8
+      },
+      {
+        "name": "Mitchell Robinson",
+        "role": "S",
+        "impact": 3,
+        "min": 28,
+        "exp": 8
+      },
+      {
+        "name": "Payton Pritchard",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 6
+      },
+      {
+        "name": "Mike Conley",
+        "role": "B",
+        "impact": 1,
+        "min": 22,
+        "exp": 19
+      },
+      {
+        "name": "Sam Hauser",
+        "role": "B",
+        "impact": 1,
+        "min": 20,
+        "exp": 5
+      },
+      {
+        "name": "Neemias Queta",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 5
+      }
+    ],
+    "BKN": [
+      {
+        "name": "Julius Randle",
+        "role": "S",
+        "impact": 4,
+        "min": 33,
+        "exp": 12
+      },
+      {
+        "name": "Michael Porter Jr.",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 7
+      },
+      {
+        "name": "Day'Ron Sharpe",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 5
+      },
+      {
+        "name": "Mikel Brown Jr.",
+        "role": "S",
+        "impact": 1,
+        "min": 26,
+        "exp": 0
+      },
+      {
+        "name": "Egor Demin",
+        "role": "S",
+        "impact": 1,
+        "min": 25,
+        "exp": 1
+      },
+      {
+        "name": "Terance Mann",
+        "role": "B",
+        "impact": 0,
+        "min": 22,
+        "exp": 8
+      },
+      {
+        "name": "Noah Clowney",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 3
+      },
+      {
+        "name": "Danny Wolf",
+        "role": "B",
+        "impact": -1,
+        "min": 18,
+        "exp": 0
+      }
+    ],
+    "CHA": [
+      {
+        "name": "Miles Bridges",
+        "role": "S",
+        "impact": 4,
+        "min": 32,
+        "exp": 8
+      },
+      {
+        "name": "Brandon Miller",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 3
+      },
+      {
+        "name": "Naz Reid",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 7
+      },
+      {
+        "name": "Coby White",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 7
+      },
+      {
+        "name": "Kon Knueppel",
+        "role": "S",
+        "impact": 1,
+        "min": 26,
+        "exp": 1
+      },
+      {
+        "name": "Dennis Schroder",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 14
+      },
+      {
+        "name": "Moussa Diabate",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 3
+      },
+      {
+        "name": "Christian Anderson",
+        "role": "B",
+        "impact": -1,
+        "min": 15,
+        "exp": 0
+      }
+    ],
+    "CHI": [
+      {
+        "name": "Nic Claxton",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 7
+      },
+      {
+        "name": "Josh Giddey",
+        "role": "S",
+        "impact": 2,
+        "min": 30,
+        "exp": 5
+      },
+      {
+        "name": "Norman Powell",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 11
+      },
+      {
+        "name": "Matas Buzelis",
+        "role": "S",
+        "impact": 1,
+        "min": 27,
+        "exp": 1
+      },
+      {
+        "name": "Caleb Wilson",
+        "role": "S",
+        "impact": 1,
+        "min": 26,
+        "exp": 0
+      },
+      {
+        "name": "Tre Jones",
+        "role": "B",
+        "impact": 0,
+        "min": 22,
+        "exp": 6
+      },
+      {
+        "name": "Zach Collins",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 9
+      },
+      {
+        "name": "Jalen Smith",
+        "role": "B",
+        "impact": -1,
+        "min": 18,
+        "exp": 7
+      }
+    ],
+    "CLE": [
+      {
+        "name": "Donovan Mitchell",
+        "role": "S",
+        "impact": 6,
+        "min": 35,
+        "exp": 9
+      },
+      {
+        "name": "Evan Mobley",
+        "role": "S",
+        "impact": 4,
+        "min": 33,
+        "exp": 5
+      },
+      {
+        "name": "Jarrett Allen",
+        "role": "S",
+        "impact": 3,
+        "min": 31,
+        "exp": 9
+      },
+      {
+        "name": "James Harden",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 17
+      },
+      {
+        "name": "Peyton Watson",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 3
+      },
+      {
+        "name": "Sam Merrill",
+        "role": "B",
+        "impact": 1,
+        "min": 20,
+        "exp": 5
+      },
+      {
+        "name": "Jaylon Tyson",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 2
+      },
+      {
+        "name": "Craig Porter Jr.",
+        "role": "B",
+        "impact": 0,
+        "min": 16,
+        "exp": 2
+      }
+    ],
+    "DET": [
+      {
+        "name": "Cade Cunningham",
+        "role": "S",
+        "impact": 4,
+        "min": 33,
+        "exp": 5
+      },
+      {
+        "name": "Jalen Duren",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 3
+      },
+      {
+        "name": "Ausar Thompson",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 3
+      },
+      {
+        "name": "Duncan Robinson",
+        "role": "S",
+        "impact": 1,
+        "min": 27,
+        "exp": 7
+      },
+      {
+        "name": "Ron Holland II",
+        "role": "S",
+        "impact": 1,
+        "min": 25,
+        "exp": 1
+      },
+      {
+        "name": "Paul Reed",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 6
+      },
+      {
+        "name": "Isaiah Joe",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 6
+      },
+      {
+        "name": "Karim Lopez",
+        "role": "B",
+        "impact": -1,
+        "min": 15,
+        "exp": 0
+      }
+    ],
+    "IND": [
+      {
+        "name": "Tyrese Haliburton",
+        "role": "S",
+        "impact": 6,
+        "min": 35,
+        "exp": 6
+      },
+      {
+        "name": "Pascal Siakam",
+        "role": "S",
+        "impact": 4,
+        "min": 33,
+        "exp": 10
+      },
+      {
+        "name": "Ivica Zubac",
+        "role": "S",
+        "impact": 3,
+        "min": 29,
+        "exp": 10
+      },
+      {
+        "name": "Andrew Nembhard",
+        "role": "S",
+        "impact": 2,
+        "min": 30,
+        "exp": 4
+      },
+      {
+        "name": "Aaron Nesmith",
+        "role": "S",
+        "impact": 1,
+        "min": 28,
+        "exp": 6
+      },
+      {
+        "name": "Jarace Walker",
+        "role": "B",
+        "impact": 0,
+        "min": 22,
+        "exp": 3
+      },
+      {
+        "name": "Ben Sheppard",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 2
+      },
+      {
+        "name": "T.J. McConnell",
+        "role": "B",
+        "impact": 0,
+        "min": 16,
+        "exp": 12
+      }
+    ],
+    "MIA": [
+      {
+        "name": "Giannis Antetokounmpo",
+        "role": "S",
+        "impact": 9,
+        "min": 36,
+        "exp": 13
+      },
+      {
+        "name": "Bam Adebayo",
+        "role": "S",
+        "impact": 5,
+        "min": 34,
+        "exp": 10
+      },
+      {
+        "name": "Terry Rozier",
+        "role": "S",
+        "impact": 2,
+        "min": 30,
+        "exp": 12
+      },
+      {
+        "name": "Caleb Martin",
+        "role": "S",
+        "impact": 1,
+        "min": 28,
+        "exp": 7
+      },
+      {
+        "name": "Nikola Jovic",
+        "role": "S",
+        "impact": 1,
+        "min": 26,
+        "exp": 4
+      },
+      {
+        "name": "Duncan Robinson",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 8
+      },
+      {
+        "name": "Josh Richardson",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 12
+      },
+      {
+        "name": "Haywood Highsmith",
+        "role": "B",
+        "impact": 0,
+        "min": 16,
+        "exp": 5
+      }
+    ],
+    "MIL": [
+      {
+        "name": "Tyler Herro",
+        "role": "S",
+        "impact": 3,
+        "min": 31,
+        "exp": 7
+      },
+      {
+        "name": "Kyle Kuzma",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 9
+      },
+      {
+        "name": "Myles Turner",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 11
+      },
+      {
+        "name": "Ryan Rollins",
+        "role": "S",
+        "impact": 1,
+        "min": 27,
+        "exp": 4
+      },
+      {
+        "name": "AJ Green",
+        "role": "S",
+        "impact": 1,
+        "min": 25,
+        "exp": 4
+      },
+      {
+        "name": "Kevin Porter Jr.",
+        "role": "B",
+        "impact": 0,
+        "min": 22,
+        "exp": 8
+      },
+      {
+        "name": "Kel'el Ware",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 2
+      },
+      {
+        "name": "Jericho Sims",
+        "role": "B",
+        "impact": -1,
+        "min": 18,
+        "exp": 5
+      }
+    ],
+    "NYK": [
+      {
+        "name": "Jalen Brunson",
+        "role": "S",
+        "impact": 7,
+        "min": 34,
+        "exp": 8
+      },
+      {
+        "name": "Mikal Bridges",
+        "role": "S",
+        "impact": 4,
+        "min": 32,
+        "exp": 8
+      },
+      {
+        "name": "OG Anunoby",
+        "role": "S",
+        "impact": 3,
+        "min": 31,
+        "exp": 9
+      },
+      {
+        "name": "Karl-Anthony Towns",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 11
+      },
+      {
+        "name": "Miles McBride",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 6
+      },
+      {
+        "name": "Josh Hart",
+        "role": "B",
+        "impact": 1,
+        "min": 25,
+        "exp": 10
+      },
+      {
+        "name": "Jose Alvarado",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 5
+      },
+      {
+        "name": "Andre Drummond",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 15
+      }
+    ],
+    "ORL": [
+      {
+        "name": "Paolo Banchero",
+        "role": "S",
+        "impact": 5,
+        "min": 35,
+        "exp": 4
+      },
+      {
+        "name": "Franz Wagner",
+        "role": "S",
+        "impact": 4,
+        "min": 32,
+        "exp": 5
+      },
+      {
+        "name": "Desmond Bane",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 6
+      },
+      {
+        "name": "Jalen Suggs",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 5
+      },
+      {
+        "name": "Wendell Carter Jr.",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 8
+      },
+      {
+        "name": "Nikola Vucevic",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 15
+      },
+      {
+        "name": "Anthony Black",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 3
+      },
+      {
+        "name": "Tristan da Silva",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 2
+      }
+    ],
+    "PHI": [
+      {
+        "name": "Joel Embiid",
+        "role": "S",
+        "impact": 8,
+        "min": 33,
+        "exp": 9
+      },
+      {
+        "name": "LeBron James",
+        "role": "S",
+        "impact": 7,
+        "min": 32,
+        "exp": 22
+      },
+      {
+        "name": "Jaylen Brown",
+        "role": "S",
+        "impact": 6,
+        "min": 34,
+        "exp": 10
+      },
+      {
+        "name": "Tyrese Maxey",
+        "role": "S",
+        "impact": 5,
+        "min": 35,
+        "exp": 6
+      },
+      {
+        "name": "VJ Edgecombe",
+        "role": "S",
+        "impact": 1,
+        "min": 28,
+        "exp": 1
+      },
+      {
+        "name": "Anfernee Simons",
+        "role": "B",
+        "impact": 2,
+        "min": 26,
+        "exp": 9
+      },
+      {
+        "name": "Kentavious Caldwell-Pope",
+        "role": "B",
+        "impact": 1,
+        "min": 22,
+        "exp": 14
+      },
+      {
+        "name": "Dean Wade",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 8
+      }
+    ],
+    "TOR": [
+      {
+        "name": "Scottie Barnes",
+        "role": "S",
+        "impact": 5,
+        "min": 34,
+        "exp": 5
+      },
+      {
+        "name": "Kawhi Leonard",
+        "role": "S",
+        "impact": 5,
+        "min": 32,
+        "exp": 15
+      },
+      {
+        "name": "Immanuel Quickley",
+        "role": "S",
+        "impact": 3,
+        "min": 31,
+        "exp": 6
+      },
+      {
+        "name": "RJ Barrett",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 7
+      },
+      {
+        "name": "Jakob Poeltl",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 9
+      },
+      {
+        "name": "Jamal Shead",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 1
+      },
+      {
+        "name": "Collin Murray-Boyles",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 1
+      },
+      {
+        "name": "Ja'Kobe Walter",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 1
+      }
+    ],
+    "WAS": [
+      {
+        "name": "Trae Young",
+        "role": "S",
+        "impact": 5,
+        "min": 34,
+        "exp": 8
+      },
+      {
+        "name": "Anthony Davis",
+        "role": "S",
+        "impact": 4,
+        "min": 30,
+        "exp": 14
+      },
+      {
+        "name": "AJ Dybantsa",
+        "role": "S",
+        "impact": 3,
+        "min": 29,
+        "exp": 0
+      },
+      {
+        "name": "Alex Sarr",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 1
+      },
+      {
+        "name": "Deandre Ayton",
+        "role": "S",
+        "impact": 2,
+        "min": 27,
+        "exp": 8
+      },
+      {
+        "name": "Khris Middleton",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 14
+      },
+      {
+        "name": "Bub Carrington",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 1
+      },
+      {
+        "name": "Bilal Coulibaly",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 3
+      }
+    ],
+    "DAL": [
+      {
+        "name": "Kyrie Irving",
+        "role": "S",
+        "impact": 5,
+        "min": 34,
+        "exp": 15
+      },
+      {
+        "name": "Cooper Flagg",
+        "role": "S",
+        "impact": 3,
+        "min": 32,
+        "exp": 0
+      },
+      {
+        "name": "PJ Washington",
+        "role": "S",
+        "impact": 2,
+        "min": 30,
+        "exp": 7
+      },
+      {
+        "name": "Daniel Gafford",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 6
+      },
+      {
+        "name": "Max Christie",
+        "role": "S",
+        "impact": 1,
+        "min": 27,
+        "exp": 4
+      },
+      {
+        "name": "Marcus Sasser",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 3
+      },
+      {
+        "name": "Morez Johnson Jr.",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 0
+      },
+      {
+        "name": "Dereck Lively II",
+        "role": "B",
+        "impact": -1,
+        "min": 15,
+        "exp": 2
+      }
+    ],
+    "DEN": [
+      {
+        "name": "Nikola Jokic",
+        "role": "S",
+        "impact": 9,
+        "min": 36,
+        "exp": 11
+      },
+      {
+        "name": "Jamal Murray",
+        "role": "S",
+        "impact": 6,
+        "min": 35,
+        "exp": 10
+      },
+      {
+        "name": "Aaron Gordon",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 12
+      },
+      {
+        "name": "Christian Braun",
+        "role": "S",
+        "impact": 2,
+        "min": 30,
+        "exp": 3
+      },
+      {
+        "name": "Cameron Johnson",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 7
+      },
+      {
+        "name": "DeMar DeRozan",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 18
+      },
+      {
+        "name": "Peyton Watson",
+        "role": "B",
+        "impact": 1,
+        "min": 22,
+        "exp": 3
+      },
+      {
+        "name": "Julian Strawther",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 3
+      }
+    ],
+    "GSW": [
+      {
+        "name": "Stephen Curry",
+        "role": "S",
+        "impact": 7,
+        "min": 34,
+        "exp": 17
+      },
+      {
+        "name": "Draymond Green",
+        "role": "S",
+        "impact": 3,
+        "min": 29,
+        "exp": 14
+      },
+      {
+        "name": "Brandin Podziemski",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 2
+      },
+      {
+        "name": "Kristaps Porzingis",
+        "role": "S",
+        "impact": 2,
+        "min": 27,
+        "exp": 11
+      },
+      {
+        "name": "Gui Santos",
+        "role": "S",
+        "impact": 1,
+        "min": 25,
+        "exp": 2
+      },
+      {
+        "name": "Jimmy Butler III",
+        "role": "B",
+        "impact": 3,
+        "min": 26,
+        "exp": 15
+      },
+      {
+        "name": "Moses Moody",
+        "role": "B",
+        "impact": 1,
+        "min": 20,
+        "exp": 6
+      },
+      {
+        "name": "De'Anthony Melton",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 9
+      }
+    ],
+    "HOU": [
+      {
+        "name": "Kevin Durant",
+        "role": "S",
+        "impact": 6,
+        "min": 34,
+        "exp": 19
+      },
+      {
+        "name": "Alperen Sengun",
+        "role": "S",
+        "impact": 4,
+        "min": 32,
+        "exp": 5
+      },
+      {
+        "name": "Jalen Green",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 5
+      },
+      {
+        "name": "Fred VanVleet",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 10
+      },
+      {
+        "name": "Jabari Smith Jr.",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 4
+      },
+      {
+        "name": "Amen Thompson",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 3
+      },
+      {
+        "name": "Tari Eason",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 4
+      },
+      {
+        "name": "Steven Adams",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 14
+      }
+    ],
+    "LAC": [
+      {
+        "name": "Darius Garland",
+        "role": "S",
+        "impact": 4,
+        "min": 33,
+        "exp": 7
+      },
+      {
+        "name": "Brandon Ingram",
+        "role": "S",
+        "impact": 4,
+        "min": 32,
+        "exp": 10
+      },
+      {
+        "name": "Brook Lopez",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 18
+      },
+      {
+        "name": "Rui Hachimura",
+        "role": "S",
+        "impact": 2,
+        "min": 27,
+        "exp": 7
+      },
+      {
+        "name": "Derrick Jones Jr.",
+        "role": "S",
+        "impact": 1,
+        "min": 25,
+        "exp": 9
+      },
+      {
+        "name": "Kris Dunn",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 10
+      },
+      {
+        "name": "Keaton Wagler",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 1
+      },
+      {
+        "name": "Bradley Beal",
+        "role": "B",
+        "impact": 0,
+        "min": 10,
+        "exp": 14
+      }
+    ],
+    "LAL": [
+      {
+        "name": "Luka Doncic",
+        "role": "S",
+        "impact": 8,
+        "min": 36,
+        "exp": 8
+      },
+      {
+        "name": "Austin Reaves",
+        "role": "S",
+        "impact": 3,
+        "min": 32,
+        "exp": 5
+      },
+      {
+        "name": "Walker Kessler",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 4
+      },
+      {
+        "name": "Quentin Grimes",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 5
+      },
+      {
+        "name": "Sandro Mamukelashvili",
+        "role": "S",
+        "impact": 1,
+        "min": 27,
+        "exp": 5
+      },
+      {
+        "name": "Collin Sexton",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 7
+      },
+      {
+        "name": "Jake LaRavia",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 4
+      },
+      {
+        "name": "Jarred Vanderbilt",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 7
+      }
+    ],
+    "MEM": [
+      {
+        "name": "Jerami Grant",
+        "role": "S",
+        "impact": 3,
+        "min": 31,
+        "exp": 13
+      },
+      {
+        "name": "Ty Jerome",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 7
+      },
+      {
+        "name": "Cameron Boozer",
+        "role": "S",
+        "impact": 2,
+        "min": 27,
+        "exp": 0
+      },
+      {
+        "name": "Zach Edey",
+        "role": "S",
+        "impact": 1,
+        "min": 26,
+        "exp": 1
+      },
+      {
+        "name": "Cedric Coward",
+        "role": "S",
+        "impact": 1,
+        "min": 25,
+        "exp": 1
+      },
+      {
+        "name": "Jaylen Wells",
+        "role": "B",
+        "impact": 0,
+        "min": 22,
+        "exp": 1
+      },
+      {
+        "name": "Cam Spencer",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 1
+      },
+      {
+        "name": "Scotty Pippen Jr.",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 4
+      }
+    ],
+    "MIN": [
+      {
+        "name": "Anthony Edwards",
+        "role": "S",
+        "impact": 7,
+        "min": 36,
+        "exp": 6
+      },
+      {
+        "name": "LaMelo Ball",
+        "role": "S",
+        "impact": 5,
+        "min": 34,
+        "exp": 6
+      },
+      {
+        "name": "Karl-Anthony Towns",
+        "role": "S",
+        "impact": 4,
+        "min": 32,
+        "exp": 11
+      },
+      {
+        "name": "Jaden McDaniels",
+        "role": "S",
+        "impact": 2,
+        "min": 30,
+        "exp": 7
+      },
+      {
+        "name": "Rudy Gobert",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 14
+      },
+      {
+        "name": "Nickeil Alexander-Walker",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 7
+      },
+      {
+        "name": "Kyle Anderson",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 14
+      },
+      {
+        "name": "Leonard Miller",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 3
+      }
+    ],
+    "NOP": [
+      {
+        "name": "Zion Williamson",
+        "role": "S",
+        "impact": 5,
+        "min": 32,
+        "exp": 8
+      },
+      {
+        "name": "Brandon Ingram",
+        "role": "S",
+        "impact": 4,
+        "min": 30,
+        "exp": 10
+      },
+      {
+        "name": "CJ McCollum",
+        "role": "S",
+        "impact": 3,
+        "min": 28,
+        "exp": 13
+      },
+      {
+        "name": "Herbert Jones",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 6
+      },
+      {
+        "name": "Jonas Valanciunas",
+        "role": "S",
+        "impact": 2,
+        "min": 27,
+        "exp": 15
+      },
+      {
+        "name": "Jordan Poole",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 8
+      },
+      {
+        "name": "Jeremiah Fears",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 0
+      },
+      {
+        "name": "Bennedict Mathurin",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 4
+      }
+    ],
+    "OKC": [
+      {
+        "name": "Shai Gilgeous-Alexander",
+        "role": "S",
+        "impact": 8,
+        "min": 35,
+        "exp": 8
+      },
+      {
+        "name": "Chet Holmgren",
+        "role": "S",
+        "impact": 5,
+        "min": 32,
+        "exp": 2
+      },
+      {
+        "name": "Jalen Williams",
+        "role": "S",
+        "impact": 4,
+        "min": 31,
+        "exp": 3
+      },
+      {
+        "name": "Isaiah Hartenstein",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 9
+      },
+      {
+        "name": "Cason Wallace",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 3
+      },
+      {
+        "name": "Alex Caruso",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 10
+      },
+      {
+        "name": "Ajay Mitchell",
+        "role": "B",
+        "impact": 1,
+        "min": 20,
+        "exp": 1
+      },
+      {
+        "name": "Jaylin Williams",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 4
+      }
+    ],
+    "PHX": [
+      {
+        "name": "Devin Booker",
+        "role": "S",
+        "impact": 6,
+        "min": 35,
+        "exp": 11
+      },
+      {
+        "name": "Miles Bridges",
+        "role": "S",
+        "impact": 4,
+        "min": 32,
+        "exp": 8
+      },
+      {
+        "name": "Jalen Green",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 5
+      },
+      {
+        "name": "Dillon Brooks",
+        "role": "S",
+        "impact": 2,
+        "min": 28,
+        "exp": 9
+      },
+      {
+        "name": "Mark Williams",
+        "role": "S",
+        "impact": 2,
+        "min": 27,
+        "exp": 4
+      },
+      {
+        "name": "Collin Gillespie",
+        "role": "B",
+        "impact": 1,
+        "min": 22,
+        "exp": 4
+      },
+      {
+        "name": "Luke Kennard",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 10
+      },
+      {
+        "name": "Koa Peat",
+        "role": "B",
+        "impact": 0,
+        "min": 15,
+        "exp": 0
+      }
+    ],
+    "POR": [
+      {
+        "name": "Ja Morant",
+        "role": "S",
+        "impact": 5,
+        "min": 32,
+        "exp": 7
+      },
+      {
+        "name": "Shaedon Sharpe",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 4
+      },
+      {
+        "name": "Deni Avdija",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 6
+      },
+      {
+        "name": "Toumani Camara",
+        "role": "S",
+        "impact": 1,
+        "min": 27,
+        "exp": 2
+      },
+      {
+        "name": "Donovan Clingan",
+        "role": "S",
+        "impact": 1,
+        "min": 26,
+        "exp": 1
+      },
+      {
+        "name": "Damian Lillard",
+        "role": "B",
+        "impact": 3,
+        "min": 25,
+        "exp": 14
+      },
+      {
+        "name": "Jrue Holiday",
+        "role": "B",
+        "impact": 1,
+        "min": 22,
+        "exp": 17
+      },
+      {
+        "name": "Scoot Henderson",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 3
+      }
+    ],
+    "SAC": [
+      {
+        "name": "Domantas Sabonis",
+        "role": "S",
+        "impact": 5,
+        "min": 33,
+        "exp": 10
+      },
+      {
+        "name": "Zach LaVine",
+        "role": "S",
+        "impact": 4,
+        "min": 31,
+        "exp": 12
+      },
+      {
+        "name": "Keegan Murray",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 4
+      },
+      {
+        "name": "De'Andre Hunter",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 7
+      },
+      {
+        "name": "Darius Acuff Jr.",
+        "role": "S",
+        "impact": 1,
+        "min": 26,
+        "exp": 0
+      },
+      {
+        "name": "Malik Monk",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 10
+      },
+      {
+        "name": "Nique Clifford",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 2
+      },
+      {
+        "name": "Maxime Raynaud",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 1
+      }
+    ],
+    "SAS": [
+      {
+        "name": "Victor Wembanyama",
+        "role": "S",
+        "impact": 9,
+        "min": 35,
+        "exp": 3
+      },
+      {
+        "name": "De'Aaron Fox",
+        "role": "S",
+        "impact": 5,
+        "min": 33,
+        "exp": 9
+      },
+      {
+        "name": "Devin Vassell",
+        "role": "S",
+        "impact": 3,
+        "min": 30,
+        "exp": 6
+      },
+      {
+        "name": "Stephon Castle",
+        "role": "S",
+        "impact": 2,
+        "min": 29,
+        "exp": 1
+      },
+      {
+        "name": "Julian Champagnie",
+        "role": "S",
+        "impact": 1,
+        "min": 27,
+        "exp": 3
+      },
+      {
+        "name": "Tobias Harris",
+        "role": "B",
+        "impact": 1,
+        "min": 24,
+        "exp": 15
+      },
+      {
+        "name": "Dylan Harper",
+        "role": "B",
+        "impact": 1,
+        "min": 22,
+        "exp": 0
+      },
+      {
+        "name": "Keldon Johnson",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 8
+      }
+    ],
+    "UTA": [
+      {
+        "name": "Lauri Markkanen",
+        "role": "S",
+        "impact": 4,
+        "min": 33,
+        "exp": 9
+      },
+      {
+        "name": "Jaren Jackson Jr.",
+        "role": "S",
+        "impact": 4,
+        "min": 31,
+        "exp": 8
+      },
+      {
+        "name": "Keyonte George",
+        "role": "S",
+        "impact": 2,
+        "min": 30,
+        "exp": 3
+      },
+      {
+        "name": "Darryn Peterson",
+        "role": "S",
+        "impact": 1,
+        "min": 28,
+        "exp": 0
+      },
+      {
+        "name": "Jusuf Nurkic",
+        "role": "S",
+        "impact": 1,
+        "min": 26,
+        "exp": 12
+      },
+      {
+        "name": "Isaiah Collier",
+        "role": "B",
+        "impact": 0,
+        "min": 22,
+        "exp": 1
+      },
+      {
+        "name": "Ace Bailey",
+        "role": "B",
+        "impact": 0,
+        "min": 20,
+        "exp": 1
+      },
+      {
+        "name": "Cody Williams",
+        "role": "B",
+        "impact": 0,
+        "min": 18,
+        "exp": 2
+      }
+    ]
   }
 }
