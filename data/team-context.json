@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-09-24",
+  "generatedAt": "2026-09-25",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Young core with cap flexibility; potential buyer at deadline for a star."
+      "upside": 1.5,
+      "apron": "1st",
+      "note": "Rookie Veesaar (ACL) out, Gueye injured. Hard-capped 1st apron; many expiring contracts offer trade flexibility."
     },
     "BOS": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Tatum returns healthy. Deep into luxury tax, limited flexibility; stand-pat at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Some expiring contracts and draft assets; could be a buyer or seller."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core with cap space and trade exceptions; potential to make significant moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Likely retooling, some movable contracts; could be a seller at the deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
-      "upside": 1.2,
-      "apron": "2nd",
-      "note": "Expensive young core, limited cap flexibility; minor moves likely at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DET": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Very young team with significant cap space; high upside for free agency or trades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Haliburton returns healthy. Max contract in place, some flexibility for upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIA": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Veteran team, often active in trades; limited cap space but always a threat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
       "upside": 1,
-      "apron": "hard-capped",
-      "note": "Capped out with aging stars, hard-capped at first apron; minimal trade flexibility."
+      "apron": "",
+      "note": ""
     },
     "NYK": {
-      "upside": 1.2,
-      "apron": "2nd",
-      "note": "Expensive roster, deep into luxury tax; minor moves or stand-pat at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "ORL": {
-      "upside": 1.3,
-      "apron": "2nd",
-      "note": "Young core on large deals, over second apron; limited flexibility for major changes."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
-      "upside": 1.3,
-      "apron": "room",
-      "note": "Embiid's contract, but potential for significant cap space; buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "TOR": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Expensive roster, over first apron; potential to retool with movable contracts."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "WAS": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "AJ Dybantsa leads young core with significant cap space; major buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Anthony Davis in Dallas. Expensive roster, limited flexibility; minor upgrades likely."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DEN": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Jokic's supermax, deep into luxury tax; minimal flexibility, stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "GSW": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Aging core, deep into luxury tax; very limited flexibility for roster changes."
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young team with draft assets and cap flexibility; potential buyer for upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Expensive veteran team, deep into luxury tax; minimal flexibility, stand-pat."
+      "apron": "",
+      "note": ""
     },
     "LAL": {
-      "upside": 1.2,
-      "apron": "2nd",
-      "note": "Luka Doncic era. Expensive roster, deep into luxury tax; minor moves likely."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core on rising contracts; some flexibility for targeted upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Expensive core, deep into luxury tax and second apron; very limited flexibility."
+      "apron": "",
+      "note": ""
     },
     "NOP": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Zion's contract, some movable pieces; could be a buyer or seller."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Young core on rookie deals, significant cap space; major buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHX": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Expensive veteran core, deep into luxury tax; minimal flexibility, stand-pat."
+      "apron": "",
+      "note": ""
     },
     "POR": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "Rebuilding team with cap space and draft picks; high upside for future moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Tight against luxury tax, likely to shed salary; potential seller or stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Deep young core on cheap deals, high cap flexibility; major buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Young core with some cap flexibility; potential buyer for complementary pieces."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
