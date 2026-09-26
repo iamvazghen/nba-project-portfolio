@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-09-25",
+  "generatedAt": "2026-09-26",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "Rookie Veesaar (ACL) out, Gueye injured. Hard-capped 1st apron; many expiring contracts offer trade flexibility."
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Over cap but under tax. Many expiring contracts offer trade flexibility. Need to trim roster."
     },
     "BOS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "2nd",
+      "note": "Tatum returns healthy. Contending team, likely high payroll. Mitchell Robinson acquired."
     },
     "BKN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core, Randle addition, significant 2027 cap flexibility. Aiming for playoffs; potential buyers."
     },
     "CHA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core, draft capital, and trade exceptions. LaMelo Ball and Miles Bridges traded. Grant Williams injured."
     },
     "CHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Acquired Nic Claxton. Roster outlook unclear; potential for further changes."
     },
     "CLE": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "hard-capped",
+      "note": "Hard-capped at first apron. Core solidified with Harden, Mitchell, Mobley. Jarrett Allen is top trade chip. Stand-pat/minor buyer."
     },
     "DET": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core with high draft picks. Potential for significant in-season improvement."
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "hard-capped",
+      "note": "Haliburton returns healthy. Hard-capped at first apron, limiting flexibility. Young players could improve; potential minor buyer."
     },
     "MIA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "2nd",
+      "note": "Acquired Giannis Antetokounmpo, Klay Thompson. Contending team, likely deep into second apron."
     },
     "MIL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "under",
+      "note": "Traded Giannis Antetokounmpo and Bobby Portis. Entering a rebuild with new young assets."
     },
     "NYK": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Defending champions, core intact. High payroll, likely second apron. Stand-pat/minor buyer."
     },
     "ORL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Young core, high payroll, over luxury tax but below second apron. Limited flexibility."
     },
     "PHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "2nd",
+      "note": "LeBron James era. Contending team, likely deep into second apron."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "2nd",
+      "note": "Kawhi Leonard returns. Contending team with young talent. High payroll, likely second apron."
     },
     "WAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "#1 pick AJ Dybantsa. Young, rebuilding team with significant cap flexibility."
     },
     "DAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "2nd",
+      "note": "Anthony Davis acquired. Contending team, likely deep into second apron."
     },
     "DEN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Established championship core. High payroll, likely second apron. Aaron Gordon health a factor."
     },
     "GSW": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Veteran team, likely high payroll. Roster outlook unclear for 2026-27."
     },
     "HOU": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "room",
+      "note": "Young team, likely with cap flexibility. Roster outlook unclear for 2026-27."
     },
     "LAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Traded Kawhi Leonard. Retooling with new assets."
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "2nd",
+      "note": "Luka Doncic era. Contending team, likely deep into second apron."
     },
     "MEM": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core, potential for improvement. Roster outlook unclear for 2026-27."
     },
     "MIN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Acquired LaMelo Ball, traded Julius Randle. Retooling with young talent."
     },
     "NOP": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Roster outlook unclear for 2026-27."
     },
     "OKC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Young core, abundant draft capital. High upside for future contention."
     },
     "PHX": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "2nd",
+      "note": "Contending team with Booker and Bridges. High payroll, likely second apron."
     },
     "POR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "room",
+      "note": "Young team, likely with cap flexibility. Roster outlook unclear for 2026-27."
     },
     "SAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Roster outlook unclear for 2026-27."
     },
     "SAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Deep young core, cheap rookie deals, significant cap flexibility. High upside."
     },
     "UTA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "room",
+      "note": "Young team, likely with cap flexibility. Roster outlook unclear for 2026-27."
     }
   }
 }
