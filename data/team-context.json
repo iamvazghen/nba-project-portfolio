@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-09-27",
+  "generatedAt": "2026-09-28",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Young core, but limited cap space. Need to make smart trades to improve. Stand-pat/minor buyer."
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Jalen Johnson leads young core; ample expiring contracts offer trade flexibility. Under luxury tax, potential buyer."
     },
     "BOS": {
-      "upside": 1.3,
-      "apron": "2nd",
-      "note": "Tatum returns healthy. Deep into second apron, limiting flexibility. Contender, minor moves only."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Over the cap, but some movable contracts. Potential buyer at deadline for right piece."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Young core with cap space. Can be active in free agency or trades. Buyers at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Capped out, limited flexibility. Likely stand-pat at deadline unless major trade occurs."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Solid core, but cap constraints. Minor moves possible. Stand-pat/minor buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DET": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young, winning team with cap flexibility. Can make a splash at the deadline. Buyers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "Haliburton returns healthy. Strong core, aiming for contention. Buyers at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIA": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Giannis and Bam lead. Over tax line, limited apron space. Minor moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Aging core, deep into second apron. Limited flexibility for significant changes. Stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NYK": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Brunson, Towns, Anunoby locked in. Deep into second apron. Minimal flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "ORL": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Expensive core, deep in luxury tax and second apron. Limited flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Embiid, George, Maxey on max deals. Over tax line. Minor moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "TOR": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Rebuilding, some cap space. Can acquire assets. Sellers at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "WAS": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "#1 pick AJ Dybantsa. Young, rebuilding team with significant cap space. Buyers for future assets."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Anthony Davis gone, Luka Doncic era. Over the cap, limited flexibility. Minor moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DEN": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Contending core, deep into second apron. Limited flexibility. Stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "GSW": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Curry, Butler, Green on expiring deals. Deep into second apron. Limited flexibility."
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Not a cap-space team, but some apron room. Young core. Buyers/stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
       "upside": 1,
-      "apron": "1st",
-      "note": "Penalized for cap circumvention. Loss of picks. Trading veterans. Sellers."
+      "apron": "",
+      "note": ""
     },
     "LAL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Luka Doncic era. Over the cap, limited flexibility. Minor moves. Stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Young core, some cap flexibility. Can make trades to improve. Buyers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Expensive roster, deep into second apron. Limited flexibility. Stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NOP": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Over the cap, some movable contracts. Potential buyer at deadline for right piece."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "Young, talented core with significant cap space. Can make big moves. Buyers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHX": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Superstar contracts, deep into second apron. Limited flexibility. Stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "POR": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "Young, rebuilding team with significant cap space. Can acquire assets. Sellers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
-      "upside": 1.2,
-      "apron": "2nd",
-      "note": "LaVine expiring, Sabonis long-term. Over tax, near second apron. Hunter trade chip."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Deep young core on cheap deals. Significant cap flexibility. Major buyers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Some young talent, cap flexibility. Can make trades to improve. Buyers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
