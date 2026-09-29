@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-28",
+  "generatedAt": "2026-09-29",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Jalen Johnson leads young core; ample expiring contracts offer trade flexibility. Under luxury tax, potential buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
       "upside": 1,
