@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-10-01",
+  "generatedAt": "2026-10-02",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Several mid-tier contracts, under luxury tax, flexible for trades."
     },
     "BOS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Tatum returns healthy, championship core, over first apron, limited flexibility."
     },
     "BKN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "room",
+      "note": "Cap space, young core, Porter Jr. trade asset, buyers for contention."
     },
     "CHA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core developing, under luxury tax, potential buyers or sellers."
     },
     "CHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Young core, cap flexibility, Claxton health, active in trades."
     },
     "CLE": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Young core, Mitchell extended, under luxury tax, potential buyers."
     },
     "DET": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Young core, Duren extended, significant cap space, aggressive buyers."
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Haliburton returns healthy, two max contracts, likely buyers to contend."
     },
     "MIA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Giannis era, high payroll, seeking upgrades, Jovic a trade chip."
     },
     "MIL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Significant dead money (Lillard), under luxury tax, seeking value upgrades."
     },
     "NYK": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Championship core, Towns' contract, over first apron, limited flexibility."
     },
     "ORL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Young core with high salaries, over first apron. Buyer at deadline for upgrades."
     },
     "PHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Embiid/Maxey core, over first apron, limited flexibility."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Kawhi Leonard returns, over luxury tax, limited flexibility, likely buyers for minor upgrades."
     },
     "WAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "#1 pick Dybantsa, rebuilding, significant cap space, sellers."
     },
     "DAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Anthony Davis era, likely contenders, high payroll, buyers."
     },
     "DEN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Hard-capped at second apron, very limited trade flexibility, stand-pat."
     },
     "GSW": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Aging core, hard-capped at second apron, very limited flexibility."
     },
     "HOU": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Durant's age/injury concern, strong young core, over cap, buyers for win-now."
     },
     "LAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "room",
+      "note": "New core post-Kawhi, cap space, aggressive buyers."
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Doncic era, over luxury tax, limited flexibility, buyers."
     },
     "MEM": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Significant cap space, young core, buyers with trade exception."
     },
     "MIN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "High payroll, over first apron, limited flexibility, likely stand-pat."
     },
     "NOP": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Established core, under luxury tax, limited flexibility for major moves."
     },
     "OKC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Young, expensive core, over first apron, limited flexibility."
     },
     "PHX": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Expensive core, over first apron, limited flexibility."
     },
     "POR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core, Lillard injury, over cap but under tax, seeking trades."
     },
     "SAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Rebuilding, LaVine/Sabonis trade chips, over first apron, limited flexibility."
     },
     "SAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "under",
+      "note": "Young core led by Wembanyama, significant cap space, poised to be buyers."
     },
     "UTA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Mix of veterans and young talent, under luxury tax, flexible for trades."
     }
   }
 }
