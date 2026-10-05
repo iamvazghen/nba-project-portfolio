@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-04",
+  "generatedAt": "2026-10-05",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Young core with many expiring contracts. Hard-capped at first apron, offering trade flexibility. Buyer/stand-pat. Henri Veesaar ou"
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
       "upside": 1,
