@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-09",
+  "generatedAt": "2026-10-10",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Young core led by Jalen Johnson. 1st apron with expiring deals for trade flexibility. Frontcourt injuries. Buyers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
       "upside": 1,
