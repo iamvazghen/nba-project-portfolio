@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-11",
+  "generatedAt": "2026-10-12",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Under first apron with young core (Johnson, Daniels). Expiring contracts offer trade flexibility. Veesaar (ACL) out."
     },
     "BOS": {
       "upside": 1,
