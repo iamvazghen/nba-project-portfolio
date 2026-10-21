@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-10-20",
+  "generatedAt": "2026-10-21",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.3,
-      "apron": "2nd",
-      "note": "Over second apron. Young core (Johnson, Daniels, Okongwu). Limited flexibility, stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Tatum returns healthy. Over tax, under first apron. Strong core, modest flexibility. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Under cap with flexibility. Young core, multiple draft picks. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Young core (Miller, Knueppel). Under luxury tax, high flexibility. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Under luxury tax with flexibility. Young core, rebuilding. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Over second apron. Expensive core (Mitchell, Mobley, Harden, Allen). Frozen roster. Stand-pat."
+      "apron": "",
+      "note": ""
     },
     "DET": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Young core (Cunningham, Duren, Thompson). Over tax, under first apron. Good flexibility. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Haliburton returns healthy. Over tax, under first apron. Strong core, modest flexibility. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIA": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Expensive core (Giannis, Adebayo, Wiggins). Over first apron. Limited flexibility. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Under luxury tax. Core with Herro, Turner, Kuzma. Good flexibility. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NYK": {
       "upside": 1,
-      "apron": "hard-capped",
-      "note": "Hard-capped at second apron. Expensive core. Frozen roster, stand-pat at deadline."
+      "apron": "",
+      "note": ""
     },
     "ORL": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core (Banchero, Wagner, Suggs). Under first apron, good flexibility. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Embiid, Brown, Maxey, George on max deals. Over first apron. Limited flexibility. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "TOR": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Leonard's health is key. Over first apron, young core. Limited flexibility, buyer for upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "WAS": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "AJ Dybantsa. Young core (Dybantsa, Sarr, Coulibaly). Under luxury tax, good flexibility. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Doncic, Irving, Davis core. Over first apron. Limited flexibility, buyer for minor upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DEN": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Over second apron. Expensive core. Frozen roster, stand-pat at deadline."
+      "apron": "",
+      "note": ""
     },
     "GSW": {
       "upside": 1,
-      "apron": "hard-capped",
-      "note": "Hard-capped at second apron with aging core. Very limited flexibility. Stand-pat."
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Over first apron. Young core with expensive veterans. Limited flexibility. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Post-Leonard era. Over tax, under first apron. Young talent, good flexibility. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Doncic era. Over tax, under first apron. Strong core, modest flexibility. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Under cap with flexibility. Young core, favorable cap situation. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Over second apron. Expensive core (Edwards, Ball, Gobert). Frozen roster. Stand-pat."
+      "apron": "",
+      "note": ""
     },
     "NOP": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core (Zion, Murphy III). Over tax, under first apron. Moderate flexibility. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Young, expensive core (SGA, Holmgren, Williams). Over first apron. High upside, buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHX": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Under luxury tax. Core with Booker, Green. Good flexibility. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "POR": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core (Sharpe, Henderson, Camara). Over tax, under first apron. Good flexibility. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Over tax, under first apron. Moderate flexibility. Buyer for upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "1st",
-      "note": "Wemby, deep young core. Over tax, under first apron. High upside, buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Under luxury tax with flexibility. Young players, many draft picks. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
