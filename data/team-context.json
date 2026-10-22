@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-10-21",
+  "generatedAt": "2026-10-22",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "1st",
+      "note": "Young core (Johnson, Daniels, Okongwu) with expiring contracts for trade flexibility. Hard-capped at 1st apron. Veesaar (ACL) out."
     },
     "BOS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Tatum returns healthy. High payroll, limited flexibility, likely buyers at deadline for depth."
     },
     "BKN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Significant cap space and draft picks. Young core developing. Buyers at deadline for star talent."
     },
     "CHA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Young core, significant cap space. Buyers at deadline for talent to accelerate rebuild."
     },
     "CHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Mid-tier payroll, some flexibility. Potential buyer/seller depending on early season performance."
     },
     "CLE": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Young core, some movable contracts. Could be buyers for a playoff push or retooling."
     },
     "DET": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Deep young core, massive cap space. Aggressive buyers at deadline to build around stars."
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "1st",
+      "note": "Haliburton returns healthy. Core intact, limited cap space. Buyers for depth to contend."
     },
     "MIA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "High payroll, limited flexibility. Likely stand-pat or minor moves at deadline for depth."
     },
     "MIL": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Aging core, high payroll, second apron. Limited flexibility; stand-pat at deadline."
     },
     "NYK": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Solid core, some draft capital. Buyers at deadline for a piece to push for contention."
     },
     "ORL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core, cap flexibility. Buyers at deadline to add veteran presence or scoring."
     },
     "PHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Embiid's health key. Cap space for a star. Aggressive buyers at deadline if contending."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core, cap flexibility. Could be buyers or sellers depending on team trajectory."
     },
     "WAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Dybantsa leads young core, significant cap space. Aggressive buyers for talent."
     },
     "DAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Doncic era, high payroll. Limited flexibility. Buyers at deadline for depth/role players."
     },
     "DEN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Jokic-led contender, high payroll. Limited flexibility. Stand-pat or minor moves."
     },
     "GSW": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Aging core, high payroll. Limited flexibility. Stand-pat or minor moves at deadline."
     },
     "HOU": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Young core, cap flexibility. Buyers at deadline to accelerate competitive window."
     },
     "LAC": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "High payroll, limited flexibility. Stand-pat or minor moves for depth at deadline."
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Doncic era, high payroll. Limited flexibility. Buyers at deadline for depth/role players."
     },
     "MEM": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "1st",
+      "note": "Young core, some flexibility. Buyers at deadline to bolster playoff push."
     },
     "MIN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "High payroll, limited flexibility. Stand-pat or minor moves for depth at deadline."
     },
     "NOP": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Young core, some movable contracts. Buyers at deadline to improve playoff seeding."
     },
     "OKC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Deep young core, massive cap space. Aggressive buyers for star talent at deadline."
     },
     "PHX": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "High payroll, limited flexibility. Stand-pat or minor moves for depth at deadline."
     },
     "POR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Young core, significant cap space. Buyers at deadline for talent to accelerate rebuild."
     },
     "SAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Core intact, some flexibility. Buyers at deadline to improve playoff position."
     },
     "SAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Deep young core on cheap deals, real cap flexibility. Aggressive buyers for star talent."
     },
     "UTA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young core, cap flexibility. Buyers at deadline for talent to accelerate rebuild."
     }
   }
 }
