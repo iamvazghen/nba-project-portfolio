@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-10-29",
+  "generatedAt": "2026-10-30",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core led by All-NBA Jalen Johnson. Active in trades, adding depth. Buyers at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Tatum returns healthy. Top contender, likely in luxury tax. Will be buyers at the trade deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Low win projection, likely rebuilding. Will be sellers at the trade deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Over cap but under tax/aprons, offering flexibility. Young core. Could be active at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Low win projection, likely rebuilding. Will be sellers at the trade deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Playoff contender. Likely in luxury tax. Will be buyers or stand-pat at the trade deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DET": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Strong win projection, young core. Under tax/aprons with flexibility. Buyers at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "Haliburton returns healthy. Strong playoff push expected. High committed salaries. Buyers at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIA": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Underwhelming start (0-4). Historically competitive, likely buyers to turn season around."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Surprisingly low win projection despite Myles Turner addition. Likely rebuilding and sellers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NYK": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Reigning champions, high payroll. Likely hard-capped at second apron. Buyers for marginal upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "ORL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core with max contracts. In luxury tax but under aprons, some flexibility. Buyers or stand-pat."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Playoff contender. Likely in luxury tax. Will be buyers or stand-pat at the trade deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "TOR": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Strong playoff contender with young core. Over tax, under first apron. Buyers at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "WAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Rebuilding with #1 pick AJ Dybantsa. Acquired assets from Hawks. Likely sellers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Luka Doncic era. Low playoff odds. Likely in luxury tax. Could be active buyers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DEN": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Contending team, high floor. Likely hard-capped at second apron. Buyers for marginal upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "GSW": {
       "upside": 1,
-      "apron": "hard-capped",
-      "note": "Hard-capped at second apron with massive luxury tax bill. Very limited trade flexibility. Stand-pat."
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Contending team, high floor. Likely hard-capped at second apron. Buyers for marginal upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Significant regression, low playoff odds. Likely rebuilding and sellers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Luka Doncic era. Expected deep playoff run. Likely in luxury tax. Buyers at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "Rebuilding team. Likely sellers to acquire future assets."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "LaMelo Ball/Anthony Edwards duo. DiVincenzo out (Achilles). Depth is a question. Buyers at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NOP": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "Rebuilding team. Likely sellers to acquire future assets."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Top contender, high floor. Likely hard-capped at second apron. Buyers for marginal upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHX": {
       "upside": 1,
-      "apron": "hard-capped",
-      "note": "Hard-capped at second apron with Beal dead money. Very limited trade flexibility. Stand-pat."
+      "apron": "",
+      "note": ""
     },
     "POR": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "Lillard returns, added Morant. Sharpe injured. Scoot Henderson contract situation. Potential buyers/sellers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "Rebuilding team. Likely sellers to acquire future assets."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Deep young core on cheap deals, real cap flexibility. Top contender. Buyers at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Low playoff odds but potential for significant leap. Could be buyers or sellers."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
