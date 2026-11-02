@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-11-01",
+  "generatedAt": "2026-11-02",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Veesaar (ACL) out, Gueye (foot) injured. Moderate upside, likely retooling."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Jayson Tatum returns healthy. Veteran contender, limited cap flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "No major injuries reported. Moderate upside, potential for trades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "White, Knueppel, Williams injured. Revamped team, Brandon Miller extended. Retooling."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "No major injuries reported. Moderate upside, likely retooling."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
       "upside": 1,
-      "apron": "1st",
-      "note": "Hard-capped at first apron. Mobley, Mitchell, Harden, Allen on large deals. Contender."
+      "apron": "",
+      "note": ""
     },
     "DET": {
-      "upside": 1.4,
-      "apron": "room",
-      "note": "No major injuries reported. Young core, cap flexibility, high upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Tyrese Haliburton returns healthy. Young core, good cap flexibility, high upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIA": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "No major injuries reported. Veteran contender, likely capped out."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
       "upside": 1,
-      "apron": "1st",
-      "note": "No major injuries reported. Veteran contender, likely capped out."
+      "apron": "",
+      "note": ""
     },
     "NYK": {
       "upside": 1,
-      "apron": "1st",
-      "note": "Reigning champions, multiple large contracts. Capped out, limited flexibility."
+      "apron": "",
+      "note": ""
     },
     "ORL": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "First-apron team, deep in luxury tax. Young core, limited trade flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "No major injuries reported. Contender, likely capped out."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "TOR": {
       "upside": 1,
-      "apron": "hard-capped",
-      "note": "Hard-capped at first apron, over luxury tax. Limited flexibility, Poeltl/Barrett trade chips."
+      "apron": "",
+      "note": ""
     },
     "WAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "#1 pick AJ Dybantsa. Deep rebuild, high cap flexibility, high upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Luka Doncic era, Anthony Davis in Dallas. Contender, likely capped out."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DEN": {
       "upside": 1,
-      "apron": "1st",
-      "note": "No major injuries reported. Veteran contender, likely capped out."
+      "apron": "",
+      "note": ""
     },
     "GSW": {
       "upside": 1,
-      "apron": "1st",
-      "note": "No major injuries reported. Veteran contender, likely capped out."
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "No major injuries reported. Young core, cap flexibility, high upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
       "upside": 1,
-      "apron": "1st",
-      "note": "Beal, Ingram, Strus, Miller injured. Veteran team, significant injuries, capped out."
+      "apron": "",
+      "note": ""
     },
     "LAL": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Luka Doncic era. Contender, likely capped out."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Stewart, Edey injured. Morant, Jackson Jr. traded. New core, 5-0 start, high upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
       "upside": 1,
-      "apron": "1st",
-      "note": "No major injuries reported. Veteran contender, likely capped out."
+      "apron": "",
+      "note": ""
     },
     "NOP": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Poole, Missi injured. New coach, struggling 1-4 start. Young talent, potential seller."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Holmgren, Williams, Wallace, Caruso injured. Young core, 4-0 start, high upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHX": {
       "upside": 1,
-      "apron": "1st",
-      "note": "Williams, Bol, Kennard, Ighodaro injured. Slow start, capped out, limited flexibility."
+      "apron": "",
+      "note": ""
     },
     "POR": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Ja Morant acquired. Young core, cap flexibility, moderate upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
       "upside": 1,
-      "apron": "under",
-      "note": "Simmons (Achilles) out for season. Multiple injuries, 0-5 start, likely seller."
+      "apron": "",
+      "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Deep young core on cheap rookie deals, cap flexibility, high upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Jaren Jackson Jr. acquired. Rebuilding, cap flexibility, moderate upside."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
