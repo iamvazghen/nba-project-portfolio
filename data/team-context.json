@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-11-02",
+  "generatedAt": "2026-11-03",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "hard-capped",
+      "note": "Hard-capped at first apron. Young core, roster crunch. Expiring contracts offer future flexibility."
     },
     "BOS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Tatum returns from Achilles. Under tax, resetting repeater penalties. Large trade exception. Potential buyer."
     },
     "BKN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Significant cap space, young core. Not hard-capped. Buyers in free agency."
     },
     "CHA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Coby White returned from calf injury. Knueppel, Grant Williams out with hamstrings. Young team."
     },
     "CHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "room",
+      "note": "Cap space, under aprons. Flexible for trades/signings. Some potentially bad contracts."
     },
     "CLE": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "under",
+      "note": "Multiple injuries to rotation players (Allen, Watson, Tyson, Tomlin, Diop). Strong core."
     },
     "DET": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Young core, under tax/aprons, cap flexibility, tradeable contracts. Potential buyers at deadline."
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Haliburton returns healthy. Minimal luxury tax overage."
     },
     "MIA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Acquired Giannis, high expectations. Under both aprons, some tradeable contracts. Minor injuries."
     },
     "MIL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Under tax/aprons, good flexibility. Building for future."
     },
     "NYK": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "hard-capped",
+      "note": "Hard-capped at second apron. Championship roster, but minimal flexibility."
     },
     "ORL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Over first apron, under second. Young core, significant contracts. Several key injuries."
     },
     "PHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Over tax, under aprons. Core of Embiid, George, Maxey. Limited flexibility."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "hard-capped",
+      "note": "Hard-capped at first apron. Core of Barnes, Quickley, Barrett, Poeltl, Leonard. Young players."
     },
     "WAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "hard-capped",
+      "note": "Hard-capped at first apron. #1 pick AJ Dybantsa. Limited flexibility."
     },
     "DAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Luka Doncic era. Significant cap space under tax. Potential buyers."
     },
     "DEN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Deep into second apron, repeater tax. Severely limited flexibility. Jokic extension looming."
     },
     "GSW": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "hard-capped",
+      "note": "Hard-capped at second apron. High payroll. Significant expiring contracts for future flexibility."
     },
     "HOU": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Deep roster with veteran and young talent. At tax line, under aprons. VanVleet's option is key."
     },
     "LAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Under all aprons, good financial situation. Trade exceptions. Focused on future."
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Luka Doncic era. Massive cap space. Buyers in free agency/trades."
     },
     "MEM": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "hard-capped",
+      "note": "Significant cap space and trade exception. Hard-capped at first apron. Buyers for young talent."
     },
     "MIN": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "hard-capped",
+      "note": "Hard-capped at second apron. High payroll, deep into tax. Limited flexibility. Key injuries."
     },
     "NOP": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Under tax/aprons, some flexibility. Need roster changes. Poole's contract is a bad one."
     },
     "OKC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "Over first apron, high tax. Key injuries Williams, Wallace. Ownership pressure to cut costs."
     },
     "PHX": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "hard-capped",
+      "note": "Hard-capped at second apron. Limited flexibility, but some room for a move."
     },
     "POR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "under",
+      "note": "Young core, cap flexibility, trade assets. Lillard returning from Achilles. Potential buyer."
     },
     "SAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "hard-capped",
+      "note": "Hard-capped at first apron. Need depth at guard/wing. May need to shed salaries."
     },
     "SAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "under",
+      "note": "Deep young core (Wemby, Vassell, Johnson). Under tax/aprons, good flexibility."
     },
     "UTA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Under tax/aprons, good flexibility. Trade exceptions. Building for future."
     }
   }
 }
