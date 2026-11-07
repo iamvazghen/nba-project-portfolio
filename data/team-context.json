@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06",
+  "generatedAt": "2026-11-07",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
@@ -8,9 +8,9 @@
       "note": ""
     },
     "BOS": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Tatum returns from Achilles. Paul George acquired. Managing repeater tax, limited flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BKN": {
       "upside": 1,
@@ -33,9 +33,9 @@
       "note": ""
     },
     "DET": {
-      "upside": 1.6,
-      "apron": "under",
-      "note": "Young core, cap flexibility, draft picks. Strong buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
       "upside": 1,
@@ -43,9 +43,9 @@
       "note": ""
     },
     "MIA": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "Significant cap flexibility and draft assets. Buyer at deadline. Young core."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
       "upside": 1,
@@ -58,19 +58,19 @@
       "note": ""
     },
     "ORL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Capped at first apron with young core. Limited trade flexibility. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
       "upside": 1,
-      "apron": "1st",
-      "note": "Capped out with three max contracts. Limited flexibility, near first apron. Stand-pat."
+      "apron": "",
+      "note": ""
     },
     "TOR": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Kawhi Leonard returns, but injury concerns persist. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "WAS": {
       "upside": 1,
@@ -93,9 +93,9 @@
       "note": ""
     },
     "HOU": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "Durant and young core. Expiring contracts and picks for trades. Buyer."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
       "upside": 1,
@@ -114,13 +114,13 @@
     },
     "MIN": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Hard-capped at second apron. Limited flexibility. Gobert/Randle are trade chips."
+      "apron": "",
+      "note": ""
     },
     "NOP": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Under tax, young core. Poole's contract is a trade chip. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
       "upside": 1,
@@ -133,9 +133,9 @@
       "note": ""
     },
     "POR": {
-      "upside": 1.5,
-      "apron": "under",
-      "note": "Young core, acquired Ja Morant. Lillard returning from Achilles. Trade-focused."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
       "upside": 1,
@@ -143,9 +143,9 @@
       "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Deep young core on cheap deals. Significant cap flexibility. Buyer at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
       "upside": 1,
