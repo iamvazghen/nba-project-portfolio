@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-11",
+  "generatedAt": "2026-11-12",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "hard-capped",
+      "note": "Hard-capped at 1st apron. Many expiring contracts for trade upgrades. Young core, some injuries. Buyer at deadline."
     },
     "BOS": {
       "upside": 1,
@@ -29,8 +29,8 @@
     },
     "CLE": {
       "upside": 1,
-      "apron": "hard-capped",
-      "note": "Strong core but hard-capped at first apron, severely limiting in-season changes."
+      "apron": "",
+      "note": ""
     },
     "DET": {
       "upside": 1,
@@ -43,9 +43,9 @@
       "note": ""
     },
     "MIA": {
-      "upside": 1.5,
-      "apron": "1st",
-      "note": "Giannis Antetokounmpo on roster; over luxury tax, near first apron. High upside with superstar."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
       "upside": 1,
@@ -58,14 +58,14 @@
       "note": ""
     },
     "ORL": {
-      "upside": 1.3,
-      "apron": "1st",
-      "note": "Young core with significant contracts; operating as a first-apron team, limiting flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Embiid, George, Maxey on max deals; over luxury tax and first apron, limiting trade flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "TOR": {
       "upside": 1,
@@ -78,9 +78,9 @@
       "note": ""
     },
     "DAL": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Mix of veterans and young talent; under tax and aprons, offering some trade flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DEN": {
       "upside": 1,
@@ -93,9 +93,9 @@
       "note": ""
     },
     "HOU": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Young core secured with Durant; VanVleet expiring. Potential buyers for upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
       "upside": 1,
@@ -103,14 +103,14 @@
       "note": ""
     },
     "LAL": {
-      "upside": 1.2,
-      "apron": "hard-capped",
-      "note": "Luka Doncic era. Hard-capped at first apron, limiting roster flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Morant traded, key injuries (Edey, Saunders). Rebuilding with new draft picks."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
       "upside": 1,
@@ -124,8 +124,8 @@
     },
     "OKC": {
       "upside": 1,
-      "apron": "under",
-      "note": "Multiple key players injured for 2026-27, including Holmgren, Jalen Williams, Wallace."
+      "apron": "",
+      "note": ""
     },
     "PHX": {
       "upside": 1,
@@ -143,9 +143,9 @@
       "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "under",
-      "note": "Deep young core on cheap rookie deals; under tax line with cap flexibility."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
       "upside": 1,
