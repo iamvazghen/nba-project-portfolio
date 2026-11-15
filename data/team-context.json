@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-11-14",
+  "generatedAt": "2026-11-15",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.4,
-      "apron": "1st",
-      "note": "Young core, many expiring contracts for trade flexibility. Hard-capped at first apron. Buyer at deadline."
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Acquired Wiggins, Dort; cap unclear, likely retooling."
     },
     "BOS": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Tatum returns healthy. High payroll, hard-capped at first apron. Limited flexibility, stand-pat."
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Tatum healthy, George on roster; established contender, likely second apron."
     },
     "BKN": {
       "upside": 1.5,
-      "apron": "under",
-      "note": "Under cap, significant flexibility and draft assets. Young talent. Potential buyer at deadline."
+      "apron": "room",
+      "note": "Young core, significant cap space, draft picks; buyer at deadline."
     },
     "CHA": {
-      "upside": 1.5,
+      "upside": 1.2,
       "apron": "under",
-      "note": "Under cap with young core. Flexibility for trades/free agency. Buyer at deadline."
+      "note": "Roster outlook unclear; cap status unknown, likely retooling."
     },
     "CHI": {
-      "upside": 1.3,
+      "upside": 1.2,
       "apron": "under",
-      "note": "Under cap, some young talent. Flexibility for roster changes. Potential buyer."
+      "note": "Acquired Nic Claxton; roster outlook unclear, cap unknown."
     },
     "CLE": {
-      "upside": 1.1,
-      "apron": "",
-      "note": "Above tax line, limited flexibility. Roster largely set. Stand-pat or minor moves."
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Roster outlook unclear; cap status unknown, likely stand-pat."
     },
     "DET": {
       "upside": 1.4,
-      "apron": "1st",
-      "note": "Hard-capped at first apron. Young core, some flexibility with expiring deals. Buyer."
+      "apron": "under",
+      "note": "Young core, cap flexibility, movable contracts; potential buyer."
     },
     "IND": {
       "upside": 1.3,
-      "apron": "",
-      "note": "Haliburton returns healthy. Above tax line, limited flexibility. Buyer for minor upgrades."
+      "apron": "under",
+      "note": "Haliburton returns healthy from Achilles; high upside with star return."
     },
     "MIA": {
       "upside": 1.1,
-      "apron": "",
-      "note": "Above tax line, limited flexibility. Veteran core. Stand-pat or minor moves."
+      "apron": "under",
+      "note": "Roster outlook unclear; cap status unknown, likely stand-pat."
     },
     "MIL": {
       "upside": 1.1,
-      "apron": "under",
-      "note": "Under cap, but veteran roster. Limited flexibility. Stand-pat or minor moves."
+      "apron": "2nd",
+      "note": "Veteran core, traded Prince/Harris; likely second apron, stand-pat."
     },
     "NYK": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Over first apron, high payroll. Limited flexibility. Stand-pat or minor moves."
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Roster outlook unclear; cap status unknown, potential buyer."
     },
     "ORL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Over first apron, high payroll. Young core, but limited flexibility. Stand-pat."
+      "upside": 1.3,
+      "apron": "room",
+      "note": "Young, developing core; likely cap room for future moves."
     },
     "PHI": {
       "upside": 1.2,
-      "apron": "",
-      "note": "Above tax line, limited flexibility. Roster largely set. Stand-pat or minor moves."
+      "apron": "1st",
+      "note": "Star-studded, over tax, near first apron; LeBron's health a factor."
     },
     "TOR": {
       "upside": 1.2,
-      "apron": "",
-      "note": "Above tax line, limited flexibility. Roster largely set. Stand-pat or minor moves."
+      "apron": "under",
+      "note": "Roster outlook unclear; cap status unknown, likely retooling."
     },
     "WAS": {
-      "upside": 1.6,
-      "apron": "under",
-      "note": "Dybantsa #1 pick. Under cap, significant flexibility. Young core. Aggressive buyer at deadline."
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Young, rebuilding with #1 pick Dybantsa; high upside, cap room."
     },
     "DAL": {
       "upside": 1.1,
-      "apron": "under",
-      "note": "Under cap, but limited flexibility with existing contracts. Stand-pat or minor moves."
+      "apron": "2nd",
+      "note": "Anthony Davis era; likely capped out, limited flexibility."
     },
     "DEN": {
-      "upside": 1,
+      "upside": 1.1,
       "apron": "2nd",
-      "note": "Over second apron, hard-capped. Roster frozen. Stand-pat."
+      "note": "Established contender; likely second apron, limited flexibility."
     },
     "GSW": {
       "upside": 1.1,
-      "apron": "1st",
-      "note": "Over first apron, limited flexibility. Veteran core. Stand-pat or minor moves."
+      "apron": "2nd",
+      "note": "Veteran core; likely second apron, limited flexibility."
     },
     "HOU": {
-      "upside": 1.2,
-      "apron": "under",
-      "note": "Under cap, but limited flexibility with existing contracts. Stand-pat or minor moves."
+      "upside": 1.3,
+      "apron": "room",
+      "note": "Young, developing core; likely cap room for future moves."
     },
     "LAC": {
       "upside": 1.1,
-      "apron": "under",
-      "note": "Under cap, but limited flexibility with existing contracts. Stand-pat or minor moves."
+      "apron": "2nd",
+      "note": "Veteran core, traded Collins; likely second apron, limited flexibility."
     },
     "LAL": {
-      "upside": 1.3,
-      "apron": "",
-      "note": "Doncic era. Above tax line, limited flexibility. Buyer for upgrades."
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Doncic era, contender; likely second apron, limited flexibility."
     },
     "MEM": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Under cap, young core. Flexibility for trades/free agency. Potential buyer at deadline."
+      "upside": 1.3,
+      "apron": "room",
+      "note": "Young, developing core; likely cap room for future moves."
     },
     "MIN": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Over first apron, high payroll. Limited flexibility. Stand-pat or minor moves."
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Roster outlook unclear; cap status unknown, likely stand-pat."
     },
     "NOP": {
-      "upside": 1.2,
-      "apron": "",
-      "note": "Above tax line, limited flexibility. Roster largely set. Stand-pat or minor moves."
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core with Zion; multiple injuries, cap flexibility unknown."
     },
     "OKC": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Over first apron, high payroll. Young core, but limited flexibility. Stand-pat."
+      "upside": 1.6,
+      "apron": "under",
+      "note": "Young core, 2x MVP SGA; major injuries create high variance."
     },
     "PHX": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "Over first apron, high payroll. Limited flexibility. Stand-pat or minor moves."
+      "upside": 1.2,
+      "apron": "2nd",
+      "note": "Revamped roster, Booker leads; likely second apron, moderate flexibility."
     },
     "POR": {
       "upside": 1.4,
-      "apron": "under",
-      "note": "Under cap, young core. Flexibility for trades/free agency. Potential buyer at deadline."
+      "apron": "room",
+      "note": "Young, rebuilding core; likely cap room for future moves."
     },
     "SAC": {
       "upside": 1.2,
       "apron": "under",
-      "note": "Under cap, but limited flexibility with existing contracts. Stand-pat or minor moves."
+      "note": "Multiple injuries to key players; roster outlook unclear."
     },
     "SAS": {
       "upside": 1.6,
-      "apron": "",
-      "note": "Deep young core, cap flexibility. High upside. Aggressive buyer at deadline."
+      "apron": "room",
+      "note": "Deep young core, Wembanyama, Fox; cap room, high upside."
     },
     "UTA": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Under cap, some young talent. Flexibility for roster changes. Potential buyer."
+      "upside": 1.4,
+      "apron": "room",
+      "note": "Young, rebuilding core; likely cap room for future moves."
     }
   }
 }
