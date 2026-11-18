@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-11-17",
+  "generatedAt": "2026-11-18",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.5,
+      "upside": 1.2,
       "apron": "under",
-      "note": "Young core led by Johnson, Daniels. Under first apron with expiring deals for trade flexibility. Buyer at deadline. Veesaar out."
+      "note": "Mid-tier team, likely over cap but with some trade flexibility. Buyer at deadline."
     },
     "BOS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Tatum healthy, deep roster. High payroll, likely second apron. Championship contender, stand-pat/minor buyer."
     },
     "BKN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "room",
+      "note": "Cap space available. Young core developing. Potential buyer for future, likely seller of veterans."
     },
     "CHA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Young core with Miller and Knueppel. Over cap but under tax/aprons. Potential buyer."
     },
     "CHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Over cap, no space, but under aprons for trades. Losing team; likely seller."
     },
     "CLE": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "1st",
+      "note": "Capped out with high payroll. Strong core, limited flexibility. Buyer for minor upgrades."
     },
     "DET": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young, defensive-minded team. Likely cap flexibility. Potential buyer for key pieces."
     },
     "IND": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Haliburton returns healthy. Strong young core. Potential buyer to contend."
     },
     "MIA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Veteran team, strong culture. Likely over tax, always potential buyer for stars."
     },
     "MIL": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "1st",
+      "note": "High payroll, low win projection. Aging core, limited flexibility. Potential seller for assets."
     },
     "NYK": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Reigning champions, high payroll. Strong core, limited flexibility. Buyer for marginal upgrades."
     },
     "ORL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Young core with high extensions. Over tax, near 1st apron. Limited flexibility. Seller of expiring deals."
     },
     "PHI": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "1st",
+      "note": "High payroll, strong core. Over tax, under 1st apron. Limited flexibility. Buyer for marginal upgrades."
     },
     "TOR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Strong contender in the East. Likely over tax. Buyer for upgrades."
     },
     "WAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.5,
+      "apron": "room",
+      "note": "Rebuilding around #1 pick AJ Dybantsa. Cap space available. Seller of veteran assets."
     },
     "DAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Luka Doncic era. High payroll, likely second apron. Buyer for marginal upgrades."
     },
     "DEN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Championship contender. High payroll, limited flexibility. Buyer for marginal upgrades."
     },
     "GSW": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Aging core, likely capped out. Limited flexibility. Stand-pat or minor seller if struggling."
     },
     "HOU": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "under",
+      "note": "Young, developing core. Likely cap flexibility. Potential buyer for complementary pieces."
     },
     "LAC": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Veteran team, likely capped out. Limited flexibility. Buyer for marginal upgrades."
     },
     "LAL": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Luka Doncic era. High payroll, likely second apron. Buyer for marginal upgrades."
     },
     "MEM": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.4,
+      "apron": "room",
+      "note": "Young core on cheap deals, cap space. Dead money. Grant trade chip. Buyer/seller."
     },
     "MIN": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.1,
+      "apron": "2nd",
+      "note": "Contending team. High payroll, limited flexibility. Buyer for marginal upgrades."
     },
     "NOP": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Mix of young talent and veterans. Likely over tax. Buyer for complementary pieces."
     },
     "OKC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "1st",
+      "note": "Young core, rising salaries. Injuries early. Championship contender, buyer for depth."
     },
     "PHX": {
       "upside": 1,
-      "apron": "",
-      "note": ""
+      "apron": "2nd",
+      "note": "Veteran core, likely capped out. Limited flexibility. Buyer for marginal upgrades."
     },
     "POR": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "under",
+      "note": "Mix of young talent and veterans. Over cap, under tax. Potential buyer/seller."
     },
     "SAC": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.2,
+      "apron": "1st",
+      "note": "Competitive team. Likely over tax. Buyer for complementary pieces."
     },
     "SAS": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.6,
+      "apron": "room",
+      "note": "Deep young core on cheap deals. Significant cap space. Buyer for star talent."
     },
     "UTA": {
-      "upside": 1,
-      "apron": "",
-      "note": ""
+      "upside": 1.3,
+      "apron": "under",
+      "note": "Over cap, likely under tax. Potential seller of veteran contracts."
     }
   }
 }
