@@ -1,156 +1,156 @@
 {
-  "generatedAt": "2026-11-24",
+  "generatedAt": "2026-11-25",
   "model": "gemini-2.5-flash",
   "teams": {
     "ATL": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Under first apron. Young core, movable contracts for trade upgrade. Key injuries to McCollum, Newell, Veesaar."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BOS": {
-      "upside": 1.2,
-      "apron": "2nd",
-      "note": "Second apron team. Tatum returns healthy. Limited flexibility, likely stand-pat at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "BKN": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Significant cap space and young assets. High upside for major roster changes via free agency/trade."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHA": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Ample cap space and young talent. High upside for free agency and trade upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CHI": {
-      "upside": 1.1,
-      "apron": "1st",
-      "note": "First apron team. Limited flexibility, likely minor moves or stand-pat at deadline."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "CLE": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "First apron team. Core contracts limit flexibility. Minor trade adjustments possible."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DET": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Significant cap space and young core. High upside for major free agency or trade additions."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "IND": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Haliburton returns healthy. Under apron, some flexibility for in-season upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIA": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Second apron team. Limited flexibility, likely stand-pat. Key contracts are long-term."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIL": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Second apron team, hard-capped. Roster frozen, no flexibility for significant changes."
+      "apron": "",
+      "note": ""
     },
     "NYK": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "First apron team. Limited flexibility, but some trade assets for minor upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "ORL": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Under apron with young core. Flexibility for trades or free agency to improve roster."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHI": {
-      "upside": 1.3,
-      "apron": "room",
-      "note": "Significant cap space. High upside for major free agency signings or trades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "TOR": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Under apron with young talent. Flexibility to make impactful trade deadline moves."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "WAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "High upside with #1 pick Dybantsa and cap space. Building around young core."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DAL": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Second apron team. Doncic era, Davis in Dallas. Limited flexibility, minor changes only."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "DEN": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Second apron team, hard-capped. Roster frozen, no flexibility for significant changes."
+      "apron": "",
+      "note": ""
     },
     "GSW": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Second apron team. Limited flexibility, veteran contracts. Minor trade adjustments possible."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "HOU": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Under apron with young core. Flexibility for trades to accelerate development."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "LAC": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Second apron team, hard-capped. Roster frozen, no flexibility for significant changes."
+      "apron": "",
+      "note": ""
     },
     "LAL": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "Luka Doncic era. First apron team, limited flexibility. Seeking upgrades around star."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MEM": {
-      "upside": 1.3,
-      "apron": "under",
-      "note": "Under apron with young core. Flexibility for trades to improve competitive window."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "MIN": {
-      "upside": 1.1,
-      "apron": "2nd",
-      "note": "Second apron team. Limited flexibility, expensive core. Minor trade adjustments possible."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "NOP": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "First apron team. Limited flexibility, but some movable contracts for upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "OKC": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Deep young core, significant cap space. High upside for major additions or internal growth."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "PHX": {
       "upside": 1,
-      "apron": "2nd",
-      "note": "Second apron team, hard-capped. Roster frozen, no flexibility for significant changes."
+      "apron": "",
+      "note": ""
     },
     "POR": {
-      "upside": 1.5,
-      "apron": "room",
-      "note": "Significant cap space and young assets. High upside for major roster changes."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAC": {
-      "upside": 1.2,
-      "apron": "1st",
-      "note": "First apron team. Limited flexibility, but some trade assets for minor upgrades."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "SAS": {
-      "upside": 1.6,
-      "apron": "room",
-      "note": "Deep young core on cheap deals, real cap flexibility. High upside for growth/additions."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     },
     "UTA": {
-      "upside": 1.4,
-      "apron": "under",
-      "note": "Under apron with young talent. Flexibility for trades to improve competitive window."
+      "upside": 1,
+      "apron": "",
+      "note": ""
     }
   }
 }
